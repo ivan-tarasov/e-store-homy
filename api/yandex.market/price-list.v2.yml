@@ -1,0 +1,195 @@
+<?php
+/**
+* Формирование YML прайс-листа для Яндекс.Маркета
+* @author   Ivan Karapuzoff <ivan@karapuzoff.net>
+* @version  2.2
+*/
+
+// SPR-4 Автоподключение классов
+define('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT']);
+include_once(DOCUMENT_ROOT.'/class/core/autoload.inc.php');
+
+use \core\config\cfg;
+
+use \db\mysql\mysqlcrud;
+use \yml\yml;
+use \tmp\master;
+
+new cfg();
+
+class ymlGenerator {
+
+   public function __construct() {
+      $valid_pass = array(YML_LOGIN => YML_PASSWORD);
+      $valid_user = array_keys($valid_pass);
+
+      $user = $_SERVER['PHP_AUTH_USER'];
+      $pass = $_SERVER['PHP_AUTH_PW'];
+
+      $validated = (in_array($user,$valid_user)) && ($pass == $valid_pass[$user]);
+
+      if (!$validated) {
+         header('WWW-Authenticate: Basic realm="Are you realy Yandex.Market Bot?"');
+         header('HTTP/1.0 401 Unauthorized');
+         die ("You are not Yandex.Market Bot. Go away!");
+      }
+
+      $this->db = new mysqlcrud();
+      $this->db->connect();
+
+      $blacklist = '56197,29927,29921,26557,54154,43732,45640,31229,31230,45244,45760,42094,51808,45428,45239,56713,45859,40014,28589';
+
+      ### 1 - заголовки и информацио о магазине
+      $yml['@attributes'] = array('date' => date('Y-m-d H:i'));
+      $yml['shop'] = array(
+         'name'               => YML_SHOP_NAME,
+         'company'            => YML_SHOP_COMPANY,
+         'url'                => 'http://homy.su',
+         'email'              => 'ivan@karapuzoff.net',
+         'currencies'         => array(
+            'currency'        => array(
+               '@attributes'  => array(
+                  'id'        => YML_CURRENCY_ID,
+                  'rate'      => 1
+               )
+            )
+         ),
+      );
+
+      ### 2 - категории магазина
+      $categories = null;
+      $this->db->sql('SELECT cat_id,name FROM category WHERE lvl > 1');
+      $result = $this->db->getResult();
+      foreach ($result as $cat) {
+         $categories['category'][] = array(
+            '@attributes'  => array('id' => $cat['cat_id']),
+            '@value'       => $cat['name']
+         );
+      }
+      $yml['shop']['categories'] = $categories;
+
+      ### 3 - условия доставки
+      $yml['shop']['delivery-options'] = array(
+         'option' => array(
+            '@attributes' => array(
+               'cost'         => SHIPPING_COST,
+               'days'         => YML_DELIVERY_DAYS,
+               'order-before' => YML_ORDER_BEFORE
+            )
+         )
+      );
+
+      ### 4 - заказ на маркете
+      $yml['shop']['cpa'] = array(
+         '@value' => YML_CPA
+      );
+
+      ### 5 - товарные предложения
+      $this->db->sql('
+         SELECT
+            catalog.1c_id,
+            catalog.cat_id,
+            category.singular AS singular,
+            brands.brand_clean AS brand,
+            catalog.name,
+            catalog.description,
+            catalog.exist,
+            catalog.stock AS stock,
+            catalog.price,
+            catalog.cat_id AS category,
+            category.shipping_cost AS shipping_cost,
+            images.path_big AS picture
+         FROM catalog
+         LEFT JOIN
+            brands
+         ON
+            catalog.brand_id = brands.brand_id
+         LEFT JOIN
+            category
+         ON
+            catalog.cat_id = category.cat_id
+         LEFT JOIN
+            images
+         ON
+            catalog.1c_id = images.1c_id AND images.onmain = 1
+         WHERE
+            catalog.exist = 1 AND
+            catalog.price != 0 AND
+            catalog.cat_id != 0 AND
+            catalog.1c_id NOT IN ('.$blacklist.')
+         GROUP BY catalog.1c_id
+      ');
+      $result = $this->db->getResult();
+      //new dBug($offer);
+
+      $offers = null;
+      foreach ($result as $offer) {
+         // рассчитываем стоимость доставки позиции
+         if ($offer['shipping_cost'] == null) {
+            $shipping_cost = ($offer['price'] < SHIPPING_STEP ? SHIPPING_COST : SHIPPING_COST_ST);
+         } else {
+            $shipping_cost = $offer['shipping_cost'];
+         }
+
+         $offers['offer'][$offer['1c_id']] = array(
+            '@attributes'           => array(
+               'id'                 => $offer['1c_id'],
+               'available'          => 'true',
+               'bid'                => YML_BID,
+               'cbid'               => YML_CBID
+            ),
+            'name'                  => preg_replace("/[\r\n]+/", "",mb_strtoupper($offer['brand']) . ' ' . $offer['name']),
+            'vendor'                => mb_strtoupper($offer['brand']),
+            'model'                 => preg_replace("/[\r\n]+/", "",$offer['name']),
+            //'vendorCode'            => $offer['name'],
+            'url'                   => 'http://homy.su'.master::prodURL($offer['1c_id'],$offer['brand'] . ' ' . $offer['name']),
+            'price'                 => $offer['price'],
+            'currencyId'            => YML_CURRENCY_ID,
+            'categoryId'            => $offer['category'],
+            'picture'               => HTTP_PROTOCOL.STATIC_URL.IMG_DIR.$offer['picture'],
+            'sales_notes'           => YML_SALES_NOTES,
+            'pickup'                => YML_PICKUP,
+            'delivery'              => YML_DELIVERY,
+            'delivery-options'      => array(
+               'option'             => array(
+                  '@attributes'     => array(
+                     'cost'         => $shipping_cost,
+                     'days'         => ($offer['exist'] == 1 ? YML_DELIVERY_DAYS : '')
+                  )
+               )
+            ),
+            'outlets'               => array(
+               'outlet'             => array(
+                  '@attributes'     => array(
+                     'id'           => YML_OUTLET_ID,
+                     'instock'      => $offer['stock']
+                  )
+               )
+            ),/**/
+            //'typePrefix'            => $offer['singular'],
+            'description'           => ($offer['description'] != 'NULL'
+                                          ? htmlspecialchars(preg_replace("/[\r\n]+/", "",$offer['description']))
+                                          : htmlspecialchars(preg_replace("/[\r\n]+/", "",$offer['singular'].' '.mb_strtoupper($offer['brand']).' '.$offer['name']))
+                                       ),
+            'manufacturer_warranty' => 'true'
+         );
+
+         // если стоимость доставки разниться с общими условиями - указываем ее явно
+         if ($shipping_cost == SHIPPING_COST)
+            unset($offers['offer'][$offer['1c_id']]['delivery-options']);
+      }
+      $yml['shop']['offers'] = $offers;
+
+      ### END - формирование XML
+      $xml = yml::createXML(YML_ROOT_NODE, $yml);
+
+      header("Content-type: text/xml");
+      echo $xml->saveXML();
+      //file_put_contents(abs('API_PRICE_PATH').'market.yandex.yml',$xml->saveXML(),LOCK_EX);
+
+      //return true;
+   }
+
+}
+
+new ymlGenerator();

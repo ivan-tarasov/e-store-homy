@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /api/
+Disallow: /bower/
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my/

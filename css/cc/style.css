@@ -1,0 +1,50 @@
+/* margin spaces */
+.space10 {
+    margin-bottom: 10px;
+}
+.space20 {
+    margin-bottom: 20px;
+}
+.space30 {
+    margin-bottom: 30px;
+}
+.space40 {
+    margin-bottom: 40px;
+}
+.space50 {
+    margin-bottom: 50px;
+}
+.space60 {
+    margin-bottom: 60px;
+}
+.space70 {
+    margin-bottom: 70px;
+}
+.space80 {
+    margin-bottom: 80px;
+}
+.space90 {
+    margin-bottom: 90px;
+}
+.space100 {
+    margin-bottom: 90px;
+}
+
+
+.paid-status {
+	position: absolute;
+	visibility: hidden;
+	right: 0;
+	bottom: -11px;
+	width: 190px;
+	height: 121px;
+	z-index: 100;
+}
+.paid-status.not-paid {
+	background: url(/img/cc/not-paid.png);
+	visibility: visible;
+}
+.paid-status.paid {
+	background: url(/img/cc/paid.png);
+	visibility: visible;
+}
