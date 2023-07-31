@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+sitemap.xml
+/api/*
+!/api/sitemap.php
+!/api/Yandex.Market/
+/public/catalog/*
+!/public/catalog/no-image*.png
+/public/avatar/*
+!/public/avatar/empty-avatar.png
+!/public/avatar/system-avatar.png
