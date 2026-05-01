@@ -10,7 +10,10 @@
         "in_stock": true,
         "rating": 4.8,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/1001/01.jpg",
+            "/img/products/1001/02.jpg",
+            "/img/products/1001/03.png",
+            "/img/products/1001/04.jpg"
         ],
         "properties": {
             "Экран": "6.1\" OLED 2556×1179",
@@ -31,7 +34,10 @@
         "in_stock": true,
         "rating": 4.7,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/1002/01.png",
+            "/img/products/1002/02.jpg",
+            "/img/products/1002/03.jpg",
+            "/img/products/1002/04.jpg"
         ],
         "properties": {
             "Экран": "6.2\" AMOLED 120 Гц",
@@ -51,7 +57,10 @@
         "in_stock": true,
         "rating": 4.5,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/1003/01.jpg",
+            "/img/products/1003/02.jpg",
+            "/img/products/1003/03.jpg",
+            "/img/products/1003/04.jpg"
         ],
         "properties": {
             "Экран": "6.67\" AMOLED 120 Гц",
@@ -71,7 +80,10 @@
         "in_stock": true,
         "rating": 4.6,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/1004/01.jpg",
+            "/img/products/1004/02.jpg",
+            "/img/products/1004/03.jpg",
+            "/img/products/1004/04.jpg"
         ],
         "properties": {
             "Экран": "6.36\" AMOLED",
@@ -90,7 +102,10 @@
         "in_stock": true,
         "rating": 4.9,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/2001/01.png",
+            "/img/products/2001/02.jpg",
+            "/img/products/2001/03.png",
+            "/img/products/2001/04.jpg"
         ],
         "properties": {
             "Чип": "Apple M3",
@@ -110,7 +125,10 @@
         "in_stock": false,
         "rating": 4.4,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/2002/01.jpg",
+            "/img/products/2002/02.jpg",
+            "/img/products/2002/03.jpg",
+            "/img/products/2002/04.jpg"
         ],
         "properties": {
             "Процессор": "Intel Core i7",
@@ -129,7 +147,10 @@
         "in_stock": true,
         "rating": 4.5,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/2003/01.jpg",
+            "/img/products/2003/02.jpg",
+            "/img/products/2003/03.png",
+            "/img/products/2003/04.png"
         ],
         "properties": {
             "Процессор": "Intel Core i7-13700H",
@@ -148,7 +169,10 @@
         "in_stock": true,
         "rating": 4.8,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/3001/01.jpg",
+            "/img/products/3001/02.jpg",
+            "/img/products/3001/03.jpg",
+            "/img/products/3001/04.jpg"
         ],
         "properties": {
             "Диагональ": "55\"",
@@ -168,7 +192,10 @@
         "in_stock": true,
         "rating": 4.5,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/3002/01.jpg",
+            "/img/products/3002/02.jpg",
+            "/img/products/3002/03.jpg",
+            "/img/products/3002/04.jpg"
         ],
         "properties": {
             "Диагональ": "65\"",
@@ -187,7 +214,10 @@
         "in_stock": true,
         "rating": 4.6,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/3003/01.jpg",
+            "/img/products/3003/02.jpg",
+            "/img/products/3003/03.jpg",
+            "/img/products/3003/04.jpg"
         ],
         "properties": {
             "Диагональ": "55\"",
@@ -206,7 +236,10 @@
         "in_stock": true,
         "rating": 4.7,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/4001/01.jpg",
+            "/img/products/4001/02.jpg",
+            "/img/products/4001/03.jpg",
+            "/img/products/4001/04.jpg"
         ],
         "properties": {
             "Тип": "TWS",
@@ -225,7 +258,10 @@
         "in_stock": true,
         "rating": 4.9,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/4002/01.jpg",
+            "/img/products/4002/02.jpg",
+            "/img/products/4002/03.jpg",
+            "/img/products/4002/04.jpg"
         ],
         "properties": {
             "Тип": "Накладные",
@@ -244,7 +280,10 @@
         "in_stock": false,
         "rating": 4.3,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/4003/01.jpg",
+            "/img/products/4003/02.jpg",
+            "/img/products/4003/03.jpg",
+            "/img/products/4003/04.jpg"
         ],
         "properties": {
             "Тип": "Накладные",
@@ -262,7 +301,10 @@
         "in_stock": true,
         "rating": 4.4,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/5001/01.jpg",
+            "/img/products/5001/02.jpg",
+            "/img/products/5001/03.jpg",
+            "/img/products/5001/04.jpg"
         ],
         "properties": {
             "Объём": "366 л",
@@ -282,7 +324,10 @@
         "in_stock": true,
         "rating": 4.6,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/5002/01.jpg",
+            "/img/products/5002/02.jpg",
+            "/img/products/5002/03.jpg",
+            "/img/products/5002/04.jpg"
         ],
         "properties": {
             "Объём": "419 л",
@@ -301,7 +346,10 @@
         "in_stock": true,
         "rating": 4.5,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/5003/01.jpg",
+            "/img/products/5003/02.jpg",
+            "/img/products/5003/03.jpg",
+            "/img/products/5003/04.jpg"
         ],
         "properties": {
             "Объём": "367 л",
@@ -319,7 +367,10 @@
         "in_stock": true,
         "rating": 4.7,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/5101/01.png",
+            "/img/products/5101/02.jpg",
+            "/img/products/5101/03.jpg",
+            "/img/products/5101/04.jpg"
         ],
         "properties": {
             "Тип": "Автоматическая",
@@ -338,7 +389,10 @@
         "in_stock": true,
         "rating": 4.6,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/5102/01.jpg",
+            "/img/products/5102/02.jpg",
+            "/img/products/5102/03.jpg",
+            "/img/products/5102/04.jpg"
         ],
         "properties": {
             "Тип": "Автоматическая",
@@ -356,7 +410,10 @@
         "in_stock": true,
         "rating": 4.4,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/5103/01.jpg",
+            "/img/products/5103/02.jpg",
+            "/img/products/5103/03.jpg",
+            "/img/products/5103/04.jpg"
         ],
         "properties": {
             "Тип": "Рожковая",
@@ -374,7 +431,10 @@
         "in_stock": true,
         "rating": 4.8,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/6001/01.jpg",
+            "/img/products/6001/02.jpg",
+            "/img/products/6001/03.jpg",
+            "/img/products/6001/04.jpg"
         ],
         "properties": {
             "Тип": "Беспроводной",
@@ -393,7 +453,10 @@
         "in_stock": true,
         "rating": 4.5,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/6002/01.jpg",
+            "/img/products/6002/02.jpg",
+            "/img/products/6002/03.jpg",
+            "/img/products/6002/04.png"
         ],
         "properties": {
             "Тип": "Робот",
@@ -412,7 +475,10 @@
         "in_stock": true,
         "rating": 4.2,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/6003/01.jpg",
+            "/img/products/6003/02.jpg",
+            "/img/products/6003/03.jpg",
+            "/img/products/6003/04.jpg"
         ],
         "properties": {
             "Тип": "Беспроводной",
@@ -430,7 +496,10 @@
         "in_stock": true,
         "rating": 4.7,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/6101/01.jpg",
+            "/img/products/6101/02.jpg",
+            "/img/products/6101/03.jpg",
+            "/img/products/6101/04.jpg"
         ],
         "properties": {
             "Загрузка": "10 кг",
@@ -449,7 +518,10 @@
         "in_stock": true,
         "rating": 4.6,
         "photos": [
-            "/img/products/default.svg"
+            "/img/products/6102/01.png",
+            "/img/products/6102/02.jpg",
+            "/img/products/6102/03.jpg",
+            "/img/products/6102/04.jpg"
         ],
         "properties": {
             "Загрузка": "9 кг",

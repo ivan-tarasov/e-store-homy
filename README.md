@@ -26,6 +26,8 @@ php -S localhost:8080 -t public public/router.php
 
 That's it — no MySQL, no MongoDB, no Redis, no node toolchain.
 
+Product photos are sourced from Wikimedia Commons under CC-BY / CC-BY-SA / CC0 / Public Domain licenses; per-image attribution is in [IMAGE_CREDITS.md](IMAGE_CREDITS.md). Run `python3 bin/fetch-wikimedia-photos.py` to refresh them.
+
 Demo accounts (passwords are bcrypt hashes in [users.json](storage/data/users.json)):
 
 | Login              | Password |
