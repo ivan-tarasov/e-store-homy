@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "parent_id": null,
+        "slug": "smartphones",
+        "name": "Смартфоны",
+        "singular": "смартфон",
+        "icon": "smartphone",
+        "description": "Современные смартфоны от ведущих производителей."
+    },
+    {
+        "id": 2,
+        "parent_id": null,
+        "slug": "laptops",
+        "name": "Ноутбуки",
+        "singular": "ноутбук",
+        "icon": "laptop",
+        "description": "Игровые, ультрабуки, рабочие станции."
+    },
+    {
+        "id": 3,
+        "parent_id": null,
+        "slug": "tv",
+        "name": "Телевизоры",
+        "singular": "телевизор",
+        "icon": "monitor",
+        "description": "ЖК и OLED-телевизоры с диагональю от 32 до 75 дюймов."
+    },
+    {
+        "id": 4,
+        "parent_id": null,
+        "slug": "audio",
+        "name": "Аудио",
+        "singular": "наушники",
+        "icon": "headphones",
+        "description": "Наушники, колонки, саундбары."
+    },
+    {
+        "id": 5,
+        "parent_id": null,
+        "slug": "kitchen",
+        "name": "Кухня",
+        "singular": "техника для кухни",
+        "icon": "kitchen",
+        "description": "Холодильники, плиты, мелкая бытовая техника."
+    },
+    {
+        "id": 6,
+        "parent_id": 5,
+        "slug": "fridges",
+        "name": "Холодильники",
+        "singular": "холодильник",
+        "icon": "fridge",
+        "description": "Однокамерные и двухкамерные холодильники."
+    },
+    {
+        "id": 7,
+        "parent_id": 5,
+        "slug": "coffee",
+        "name": "Кофе",
+        "singular": "кофемашина",
+        "icon": "coffee",
+        "description": "Кофемашины и кофеварки."
+    },
+    {
+        "id": 8,
+        "parent_id": null,
+        "slug": "home",
+        "name": "Для дома",
+        "singular": "техника для дома",
+        "icon": "home",
+        "description": "Пылесосы, стиральные машины, климатическая техника."
+    },
+    {
+        "id": 9,
+        "parent_id": 8,
+        "slug": "vacuums",
+        "name": "Пылесосы",
+        "singular": "пылесос",
+        "icon": "vacuum",
+        "description": "Беспроводные и роботы-пылесосы."
+    },
+    {
+        "id": 10,
+        "parent_id": 8,
+        "slug": "washers",
+        "name": "Стиральные машины",
+        "singular": "стиральная машина",
+        "icon": "washer",
+        "description": "Фронтальная и вертикальная загрузка."
+    }
+]

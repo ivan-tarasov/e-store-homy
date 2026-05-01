@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "email": "demo@homy.local",
+        "password_hash": "$2y$10$R7nPRj9xNWcmOavuoO9CAO4dUR5MKzHqlczApCFdeqZv.oz3mFsdG",
+        "first_name": "Иван",
+        "last_name": "Петров",
+        "phone": "+7 (900) 000-00-00",
+        "is_admin": false
+    },
+    {
+        "id": 2,
+        "email": "admin@homy.local",
+        "password_hash": "$2y$10$4a5wW7.D3gRMaZzhnv5OKua4PBsPVPVtaaMmpEaI7s98/uo8aZ8GS",
+        "first_name": "Anna",
+        "last_name": "Admin",
+        "phone": null,
+        "is_admin": true
+    }
+]

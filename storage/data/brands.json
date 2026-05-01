@@ -1,0 +1,12 @@
+[
+    { "id": 1, "slug": "apple",     "name": "Apple",     "homepage": "https://apple.com" },
+    { "id": 2, "slug": "samsung",   "name": "Samsung",   "homepage": "https://samsung.com" },
+    { "id": 3, "slug": "lg",        "name": "LG",        "homepage": "https://lg.com" },
+    { "id": 4, "slug": "sony",      "name": "Sony",      "homepage": "https://sony.com" },
+    { "id": 5, "slug": "bosch",     "name": "Bosch",     "homepage": "https://bosch-home.com" },
+    { "id": 6, "slug": "dyson",     "name": "Dyson",     "homepage": "https://dyson.com" },
+    { "id": 7, "slug": "philips",   "name": "Philips",   "homepage": "https://philips.com" },
+    { "id": 8, "slug": "xiaomi",    "name": "Xiaomi",    "homepage": "https://mi.com" },
+    { "id": 9, "slug": "delonghi",  "name": "DeLonghi",  "homepage": "https://delonghi.com" },
+    { "id": 10, "slug": "tefal",    "name": "Tefal",     "homepage": "https://tefal.com" }
+]

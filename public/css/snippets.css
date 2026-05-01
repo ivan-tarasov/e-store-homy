@@ -1096,3 +1096,21 @@ color: #000;
 .single-item-title h1 {
 	font-weight: lighter;
 }
+
+/* product gallery */
+#product-gallery-main { background: #fafafa; }
+#product-gallery-main .owl-controls .owl-buttons div {
+    background: rgba(0, 0, 0, .35);
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    line-height: 32px;
+    font-size: 22px;
+    text-align: center;
+    opacity: .85;
+}
+#product-gallery-main .owl-controls .owl-buttons div:hover { background: rgba(0, 0, 0, .65); opacity: 1; }
+.product-gallery-thumb { transition: border-color .15s; }
+.product-gallery-thumb:hover { border-color: #ccc !important; }
+.product-gallery-thumb.is-active { border-color: #e57000 !important; }
