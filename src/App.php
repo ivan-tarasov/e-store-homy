@@ -6,6 +6,11 @@ namespace App;
 
 use App\Action\Account\AccountAction;
 use App\Action\Account\OrdersAction;
+use App\Action\Admin\DashboardAction as AdminDashboardAction;
+use App\Action\Admin\OrdersAction as AdminOrdersAction;
+use App\Action\Admin\OrderShowAction as AdminOrderShowAction;
+use App\Action\Admin\ProductsAction as AdminProductsAction;
+use App\Action\Admin\UsersAction as AdminUsersAction;
 use App\Action\Auth\LoginAction;
 use App\Action\Auth\LogoutAction;
 use App\Action\Auth\SubmitLoginAction;
@@ -194,6 +199,11 @@ final class App
             TermsAction::class => new TermsAction($this->layout, $this->tpl),
             FeedbackAction::class => new FeedbackAction($this->layout, $this->tpl, $this->session),
             SearchAction::class => new SearchAction($this->products, $this->categories, $this->brands, $this->slugify),
+            AdminDashboardAction::class => new AdminDashboardAction($this->layout, $this->auth, $this->products, $this->categories, $this->brands, $this->users, $this->orders, $this->price, $this->locale),
+            AdminOrdersAction::class => new AdminOrdersAction($this->layout, $this->auth, $this->orders, $this->price, $this->locale),
+            AdminOrderShowAction::class => new AdminOrderShowAction($this->layout, $this->auth, $this->orders, $this->users, $this->price, $this->locale),
+            AdminProductsAction::class => new AdminProductsAction($this->layout, $this->auth, $this->products, $this->categories, $this->brands, $this->price, $this->slugify),
+            AdminUsersAction::class => new AdminUsersAction($this->layout, $this->auth, $this->users, $this->orders),
             NotFoundAction::class => new NotFoundAction($this->layout),
             default => throw new \RuntimeException('Unknown action: ' . $class),
         };
@@ -247,6 +257,16 @@ final class App
             $r->addRoute('POST', '/feedback/', FeedbackAction::class);
 
             $r->addRoute('GET', '/search', SearchAction::class);
+
+            $r->addRoute('GET', '/admin', AdminDashboardAction::class);
+            $r->addRoute('GET', '/admin/', AdminDashboardAction::class);
+            $r->addRoute('GET', '/admin/orders', AdminOrdersAction::class);
+            $r->addRoute('GET', '/admin/orders/', AdminOrdersAction::class);
+            $r->addRoute('GET', '/admin/orders/{id}', AdminOrderShowAction::class);
+            $r->addRoute('GET', '/admin/products', AdminProductsAction::class);
+            $r->addRoute('GET', '/admin/products/', AdminProductsAction::class);
+            $r->addRoute('GET', '/admin/users', AdminUsersAction::class);
+            $r->addRoute('GET', '/admin/users/', AdminUsersAction::class);
         });
     }
 }

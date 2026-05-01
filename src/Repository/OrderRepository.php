@@ -45,4 +45,13 @@ final class OrderRepository
         }
         return null;
     }
+
+    /** @return list<Order> */
+    public function all(): array
+    {
+        $rows = $this->store->readOrEmpty('orders');
+        $orders = array_map(Order::fromArray(...), $rows);
+        usort($orders, static fn (Order $a, Order $b) => $b->createdAt <=> $a->createdAt);
+        return $orders;
+    }
 }

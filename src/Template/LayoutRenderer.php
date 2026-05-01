@@ -118,9 +118,12 @@ final class LayoutRenderer
         }
 
         $user = $this->auth->currentUser();
+        $adminLink = $this->auth->isAdmin()
+            ? '<li><a href="/admin/" title="Админ-панель"><i class="fa fa-cog"></i> Админ</a></li>'
+            : '';
         return $this->tpl->render('index', 'header/navigation/auth-true', [
             'username' => $user?->displayName() ?? 'Личный кабинет',
-            'admin' => '',
+            'admin' => $adminLink,
         ]);
     }
 

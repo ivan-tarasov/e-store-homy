@@ -32,6 +32,12 @@ final class UserRepository
         return null;
     }
 
+    /** @return list<User> */
+    public function all(): array
+    {
+        return array_values($this->loadById());
+    }
+
     /** @return array<int, User> */
     private function loadById(): array
     {

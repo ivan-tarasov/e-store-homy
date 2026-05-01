@@ -1114,3 +1114,56 @@ color: #000;
 .product-gallery-thumb { transition: border-color .15s; }
 .product-gallery-thumb:hover { border-color: #ccc !important; }
 .product-gallery-thumb.is-active { border-color: #e57000 !important; }
+
+/* admin panel */
+.admin-page h1 { margin-top: 0; }
+.admin-nav { background: #fafafa; border: 1px solid #eee; padding: 1em; }
+.admin-nav ul { margin: 0; }
+.admin-nav-link { display: block; padding: .5em .75em; color: #333; border-radius: 3px; }
+.admin-nav-link:hover { background: #fff; text-decoration: none; }
+.admin-nav-link.is-active { background: #e57000; color: #fff; }
+.admin-nav-link.is-active:hover { background: #cc6300; color: #fff; }
+
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1em;
+    margin: 1em 0 2em;
+}
+.admin-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 1.25em;
+    text-align: center;
+    color: #333;
+}
+.admin-card:hover { border-color: #e57000; text-decoration: none; }
+.admin-card-value { font-size: 1.8em; font-weight: 700; color: #e57000; line-height: 1.1; }
+.admin-card-label { font-size: .85em; color: #777; margin-top: .25em; text-transform: uppercase; letter-spacing: .04em; }
+
+.admin-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+    margin: 1em 0;
+}
+.admin-meta-grid label {
+    font-size: .75em;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    display: block;
+    margin: 0;
+}
+
+.stock-pill {
+    display: inline-block;
+    padding: .15em .6em;
+    font-size: .8em;
+    border-radius: 12px;
+    background: #eee;
+    color: #444;
+}
+.stock-pill.stock-in  { background: #d8f0d8; color: #2c6e2c; }
+.stock-pill.stock-out { background: #ffe5e0; color: #b34530; }
