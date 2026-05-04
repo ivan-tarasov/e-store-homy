@@ -39,9 +39,9 @@ final class FeedbackAction
    {$alert}
    <p class="text-muted">Демо-форма. Поля проверяются на стороне браузера, отправка ничего не делает.</p>
    <form method="post" action="/feedback/">
-      <div class="form-group"><label>Имя</label><input class="form-control" name="name" required /></div>
-      <div class="form-group"><label>E-mail</label><input class="form-control" type="email" name="email" required /></div>
-      <div class="form-group"><label>Сообщение</label><textarea class="form-control" name="message" required></textarea></div>
+      <div class="mb-3"><label>Имя</label><input class="form-control" name="name" required /></div>
+      <div class="mb-3"><label>E-mail</label><input class="form-control" type="email" name="email" required /></div>
+      <div class="mb-3"><label>Сообщение</label><textarea class="form-control" name="message" required></textarea></div>
       <button class="le-button" type="submit">Отправить</button>
    </form>
 </section>

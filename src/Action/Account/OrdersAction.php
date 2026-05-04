@@ -36,7 +36,7 @@ final class OrdersAction
         $rows = '';
         foreach ($orders as $order) {
             $rows .= sprintf(
-                '<tr><td>%s</td><td>%s</td><td>%d %s</td><td class="text-right">%s</td><td>%s</td></tr>',
+                '<tr><td>%s</td><td>%s</td><td>%d %s</td><td class="text-end">%s</td><td>%s</td></tr>',
                 htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8'),
                 $this->locale->formatDateTime($order->createdAt),
                 count($order->items),
@@ -54,7 +54,7 @@ final class OrdersAction
             '<section class="container" style="padding:2em 0;">'
             . '<h1>Мои заказы</h1>'
             . '<table class="table"><thead><tr>'
-            . '<th>Номер</th><th>Дата</th><th>Позиций</th><th class="text-right">Сумма</th><th>Статус</th>'
+            . '<th>Номер</th><th>Дата</th><th>Позиций</th><th class="text-end">Сумма</th><th>Статус</th>'
             . '</tr></thead><tbody>%s</tbody></table>'
             . '<p><a href="/my/">← В кабинет</a></p>'
             . '</section>',

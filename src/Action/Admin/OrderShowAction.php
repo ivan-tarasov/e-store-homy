@@ -43,7 +43,7 @@ final class OrderShowAction
         foreach ($order->items as $item) {
             $lineTotal = (int) $item['price'] * (int) $item['qty'];
             $itemRows .= sprintf(
-                '<tr><td>#%d</td><td>%s</td><td class="text-right">%s</td><td class="text-center">%d</td><td class="text-right">%s</td></tr>',
+                '<tr><td>#%d</td><td>%s</td><td class="text-end">%s</td><td class="text-center">%d</td><td class="text-end">%s</td></tr>',
                 (int) $item['product_id'],
                 htmlspecialchars((string) $item['name'], ENT_QUOTES, 'UTF-8'),
                 $this->price->format((int) $item['price']),
@@ -80,9 +80,9 @@ final class OrderShowAction
             . '%s'
             . '<h2 style="margin-top:2em;">Позиции</h2>'
             . '<table class="table"><thead><tr>'
-            . '<th>ID</th><th>Товар</th><th class="text-right">Цена</th><th class="text-center">Кол-во</th><th class="text-right">Сумма</th>'
+            . '<th>ID</th><th>Товар</th><th class="text-end">Цена</th><th class="text-center">Кол-во</th><th class="text-end">Сумма</th>'
             . '</tr></thead><tbody>%s</tbody>'
-            . '<tfoot><tr><th colspan="4" class="text-right">Итого</th><th class="text-right">%s</th></tr></tfoot></table>'
+            . '<tfoot><tr><th colspan="4" class="text-end">Итого</th><th class="text-end">%s</th></tr></tfoot></table>'
             . '</div></div></section>',
             AdminNav::render('orders'),
             htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8'),

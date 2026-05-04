@@ -8,7 +8,7 @@
                               
             </ul>
          </div>
-         <div class="breadcrumb-nav-holder minimal pull-right">
+         <div class="breadcrumb-nav-holder minimal float-end">
             <ul>
                <li class="breadcrumb-item"><a href="#" onclick="window.history.back();return false;"><i class="fa-solid fa-backward-fast"></i>&nbsp;&nbsp;Назад</a></li>
             </ul>

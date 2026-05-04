@@ -40,7 +40,7 @@ final class UsersAction
                 . '<td>%s</td>'
                 . '<td>%s</td>'
                 . '<td>%s</td>'
-                . '<td class="text-right">%d</td>'
+                . '<td class="text-end">%d</td>'
                 . '</tr>',
                 $user->id,
                 htmlspecialchars($user->email, ENT_QUOTES, 'UTF-8'),
@@ -57,7 +57,7 @@ final class UsersAction
             . '<h1>Пользователи (%d)</h1>'
             . '<p class="text-muted">Демо-пароли в документации: <code>demo@homy.local</code> / <code>demo</code>, <code>admin@homy.local</code> / <code>admin</code>.</p>'
             . '<table class="table"><thead><tr>'
-            . '<th>ID</th><th>E-mail</th><th>Имя</th><th>Телефон</th><th>Роль</th><th class="text-right">Заказов</th>'
+            . '<th>ID</th><th>E-mail</th><th>Имя</th><th>Телефон</th><th>Роль</th><th class="text-end">Заказов</th>'
             . '</tr></thead><tbody>%s</tbody></table>'
             . '</div></div></section>',
             AdminNav::render('users'),

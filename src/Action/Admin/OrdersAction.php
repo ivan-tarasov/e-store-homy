@@ -40,7 +40,7 @@ final class OrdersAction
                 . '<td>%s</td>'
                 . '<td>%s</td>'
                 . '<td>%s</td>'
-                . '<td class="text-right">%s</td>'
+                . '<td class="text-end">%s</td>'
                 . '<td>%d</td>'
                 . '<td>%s</td>'
                 . '</tr>',
@@ -63,7 +63,7 @@ final class OrdersAction
             . '<div class="row"><div class="col-md-3">%s</div><div class="col-md-9">'
             . '<h1>Заказы (%d)</h1>'
             . '<table class="table"><thead><tr>'
-            . '<th>Номер</th><th>Дата</th><th>Клиент</th><th>Телефон</th><th class="text-right">Сумма</th><th>Поз.</th><th>Статус</th>'
+            . '<th>Номер</th><th>Дата</th><th>Клиент</th><th>Телефон</th><th class="text-end">Сумма</th><th>Поз.</th><th>Статус</th>'
             . '</tr></thead><tbody>%s</tbody></table>'
             . '</div></div></section>',
             AdminNav::render('orders'),

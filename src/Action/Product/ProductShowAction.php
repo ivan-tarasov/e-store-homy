@@ -168,7 +168,7 @@ final class ProductShowAction
     private function renderReviews(array $reviews): string
     {
         if ($reviews === []) {
-            return '<div class="well well-lg">Отзывов пока нет.</div>';
+            return '<div class="card card-body bg-light">Отзывов пока нет.</div>';
         }
         $html = '';
         foreach ($reviews as $review) {

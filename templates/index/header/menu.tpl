@@ -3,11 +3,8 @@
       <div class="yamm navbar">
          
          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#mc-horizontal-menu-collapse">
-               <span class="sr-only">Категории товаров</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mc-horizontal-menu-collapse" aria-controls="mc-horizontal-menu-collapse" aria-expanded="false" aria-label="Категории товаров">
+               <span class="navbar-toggler-icon"></span>
             </button>
          </div>
          

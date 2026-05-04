@@ -68,7 +68,7 @@ final class DashboardAction
         $rows = '';
         foreach ($recent as $order) {
             $rows .= sprintf(
-                '<tr><td><a href="/admin/orders/%s">%s</a></td><td>%s</td><td>%s</td><td class="text-right">%s</td><td>%d поз.</td></tr>',
+                '<tr><td><a href="/admin/orders/%s">%s</a></td><td>%s</td><td>%s</td><td class="text-end">%s</td><td>%d поз.</td></tr>',
                 rawurlencode($order->id),
                 htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8'),
                 $this->locale->formatDateTime($order->createdAt),
@@ -88,7 +88,7 @@ final class DashboardAction
             . '<div class="admin-cards">%s</div>'
             . '<h2 style="margin-top:2em;">Последние заказы</h2>'
             . '<table class="table"><thead><tr>'
-            . '<th>Номер</th><th>Дата</th><th>Клиент</th><th class="text-right">Сумма</th><th>Позиций</th>'
+            . '<th>Номер</th><th>Дата</th><th>Клиент</th><th class="text-end">Сумма</th><th>Позиций</th>'
             . '</tr></thead><tbody>%s</tbody></table>'
             . '<p><a href="/admin/orders/">Все заказы →</a></p>'
             . '</div></div></section>',

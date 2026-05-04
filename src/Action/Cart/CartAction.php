@@ -41,14 +41,14 @@ final class CartAction
             $rows .= sprintf(
                 '<tr>'
                 . '<td><a href="%s">%s</a></td>'
-                . '<td class="text-right">%s</td>'
+                . '<td class="text-end">%s</td>'
                 . '<td class="text-center">'
                 . '<form method="post" action="/cart/update" style="display:inline-flex;gap:.25em;">'
                 . '<input type="hidden" name="id" value="%d" />'
                 . '<input type="number" name="qty" value="%d" min="1" max="99" style="width:4em;" />'
                 . '<button class="le-button small" type="submit">Обновить</button></form>'
                 . '</td>'
-                . '<td class="text-right">%s</td>'
+                . '<td class="text-end">%s</td>'
                 . '<td><form method="post" action="/cart/remove"><input type="hidden" name="id" value="%d" /><button class="le-button small" type="submit">×</button></form></td>'
                 . '</tr>',
                 $this->productUrl($product->id, $product->name),
@@ -67,11 +67,11 @@ final class CartAction
             '<section class="container" style="padding:2em 0;">'
             . '<h1>Корзина</h1>'
             . '<table class="table" style="width:100%%;"><thead><tr>'
-            . '<th>Товар</th><th class="text-right">Цена</th><th class="text-center">Кол-во</th><th class="text-right">Сумма</th><th></th>'
+            . '<th>Товар</th><th class="text-end">Цена</th><th class="text-center">Кол-во</th><th class="text-end">Сумма</th><th></th>'
             . '</tr></thead><tbody>%s</tbody>'
-            . '<tfoot><tr><th colspan="3" class="text-right">Итого</th><th class="text-right">%s</th><th></th></tr></tfoot>'
+            . '<tfoot><tr><th colspan="3" class="text-end">Итого</th><th class="text-end">%s</th><th></th></tr></tfoot>'
             . '</table>'
-            . '<p class="text-right" style="margin-top:2em;"><a class="le-button huge" href="/checkout/">Оформить заказ</a></p>'
+            . '<p class="text-end" style="margin-top:2em;"><a class="le-button huge" href="/checkout/">Оформить заказ</a></p>'
             . '</section>',
             $rows,
             $total,

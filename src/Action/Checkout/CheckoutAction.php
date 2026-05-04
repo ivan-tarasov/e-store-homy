@@ -44,7 +44,7 @@ final class CheckoutAction
         foreach ($this->cart->lineItems() as $line) {
             $product = $line['product'];
             $rows .= sprintf(
-                '<tr><td>%s</td><td class="text-right">%s × %d</td><td class="text-right">%s</td></tr>',
+                '<tr><td>%s</td><td class="text-end">%s × %d</td><td class="text-end">%s</td></tr>',
                 htmlspecialchars($product->name, ENT_QUOTES, 'UTF-8'),
                 $this->price->format($product->price),
                 $line['qty'],
@@ -62,15 +62,15 @@ final class CheckoutAction
             . '%s'
             . '<div class="row"><div class="col-md-7">'
             . '<form method="post" action="/checkout/">'
-            . '<div class="form-group"><label>Имя</label><input class="form-control" name="name" value="%s" required /></div>'
-            . '<div class="form-group"><label>Телефон</label><input class="form-control" name="phone" value="%s" required /></div>'
-            . '<div class="form-group"><label>Адрес доставки</label><textarea class="form-control" name="address" required></textarea></div>'
-            . '<div class="form-group"><label>Комментарий</label><textarea class="form-control" name="note"></textarea></div>'
+            . '<div class="mb-3"><label>Имя</label><input class="form-control" name="name" value="%s" required /></div>'
+            . '<div class="mb-3"><label>Телефон</label><input class="form-control" name="phone" value="%s" required /></div>'
+            . '<div class="mb-3"><label>Адрес доставки</label><textarea class="form-control" name="address" required></textarea></div>'
+            . '<div class="mb-3"><label>Комментарий</label><textarea class="form-control" name="note"></textarea></div>'
             . '<button class="le-button huge" type="submit">Оформить</button>'
             . '</form>'
             . '</div><div class="col-md-5">'
             . '<h3>Ваш заказ</h3>'
-            . '<table class="table">%s<tfoot><tr><th colspan="2" class="text-right">Итого</th><th class="text-right">%s</th></tr></tfoot></table>'
+            . '<table class="table">%s<tfoot><tr><th colspan="2" class="text-end">Итого</th><th class="text-end">%s</th></tr></tfoot></table>'
             . '</div></div>'
             . '</section>',
             $errorBox,

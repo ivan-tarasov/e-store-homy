@@ -39,8 +39,8 @@ final class LoginAction
     <h1>Вход</h1>
     {$errorBox}
     <form method="post" action="/login/">
-        <div class="form-group"><label>E-mail</label><input class="form-control" type="email" name="email" required autofocus /></div>
-        <div class="form-group"><label>Пароль</label><input class="form-control" type="password" name="password" required /></div>
+        <div class="mb-3"><label>E-mail</label><input class="form-control" type="email" name="email" required autofocus /></div>
+        <div class="mb-3"><label>Пароль</label><input class="form-control" type="password" name="password" required /></div>
         <button class="le-button huge" type="submit">Войти</button>
     </form>
     <hr/>

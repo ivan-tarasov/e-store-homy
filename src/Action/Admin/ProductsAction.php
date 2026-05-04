@@ -49,10 +49,10 @@ final class ProductsAction
                 . '<td><a href="%s" target="_blank">%s</a></td>'
                 . '<td>%s</td>'
                 . '<td>%s</td>'
-                . '<td class="text-right">%s</td>'
+                . '<td class="text-end">%s</td>'
                 . '<td class="text-center">%d</td>'
                 . '<td><span class="stock-pill stock-%s">%s</span></td>'
-                . '<td class="text-right">%.1f ★</td>'
+                . '<td class="text-end">%.1f ★</td>'
                 . '</tr>',
                 $product->id,
                 htmlspecialchars($url, ENT_QUOTES, 'UTF-8'),
@@ -73,7 +73,7 @@ final class ProductsAction
             . '<h1>Товары (%d)</h1>'
             . '<table class="table"><thead><tr>'
             . '<th>ID</th><th>Название</th><th>Категория</th><th>Бренд</th>'
-            . '<th class="text-right">Цена</th><th class="text-center">Запас</th><th>Наличие</th><th class="text-right">Рейтинг</th>'
+            . '<th class="text-end">Цена</th><th class="text-center">Запас</th><th>Наличие</th><th class="text-end">Рейтинг</th>'
             . '</tr></thead><tbody>%s</tbody></table>'
             . '</div></div></section>',
             AdminNav::render('products'),
