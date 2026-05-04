@@ -53,7 +53,7 @@
       </div>
 
       <div class="copyright-bar">
-         <div class="container">
+         <div class="container no-padding">
             <div class="col-xs-12">
                <small>{oferta}</small>
             </div>

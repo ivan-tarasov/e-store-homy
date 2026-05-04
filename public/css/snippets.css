@@ -1179,14 +1179,11 @@ header .top-cart-row .top-cart-holder .basket-item .thumb img { max-width: 100%;
 #hero {
     display: block;
     width: 100%;
-    aspect-ratio: 1600 / 640;
-    min-height: 480px;
-    max-height: calc(100vh - 200px);
-    margin: 2em 0 2.5em;
+    margin: 0;
+    padding: 4.5em 0 5em;
     background: #ffe4c4 url('/img/banners/hero-bg.svg') center center / cover no-repeat;
 }
 #hero .hero-content {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1260,7 +1257,7 @@ header .top-cart-row .top-cart-holder .basket-item .thumb img { max-width: 100%;
 #hero .hero-cta-secondary:hover { background: #1f2235; color: #ffffff; }
 
 @media (max-width: 768px) {
-    #hero { aspect-ratio: auto; height: auto; min-height: 0; max-height: none; padding: 2em 0; }
+    #hero { padding: 2.5em 0; }
     #hero .hero-content { flex-direction: column; text-align: center; }
     #hero .hero-products { max-width: 320px; }
     #hero .hero-ctas { justify-content: center; }
