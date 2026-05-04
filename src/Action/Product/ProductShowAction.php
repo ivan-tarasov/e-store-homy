@@ -113,12 +113,12 @@ final class ProductShowAction
 
         $alt = htmlspecialchars($product->name, ENT_QUOTES, 'UTF-8');
 
-        $main = '';
+        $slides = '';
         $thumbs = '';
         foreach ($product->photos as $i => $photo) {
             $src = htmlspecialchars($photo, ENT_QUOTES, 'UTF-8');
-            $main .= sprintf(
-                '<div class="product-gallery-slide" style="text-align:center;background:#fafafa;"><img src="%s" alt="%s" style="max-height:420px;max-width:100%%;display:inline-block;" /></div>',
+            $slides .= sprintf(
+                '<div class="swiper-slide product-gallery-slide" style="text-align:center;background:#fafafa;"><img src="%s" alt="%s" style="max-height:420px;max-width:100%%;display:inline-block;" /></div>',
                 $src,
                 $alt,
             );
@@ -133,10 +133,14 @@ final class ProductShowAction
 
         return sprintf(
             '<div id="product-gallery">'
-            . '<div id="product-gallery-main" class="owl-carousel">%s</div>'
+            . '<div id="product-gallery-main" class="swiper">'
+            . '<div class="swiper-wrapper">%s</div>'
+            . '<div class="swiper-button-prev"></div>'
+            . '<div class="swiper-button-next"></div>'
+            . '</div>'
             . '<div class="product-gallery-thumbs" style="text-align:center;margin-top:1em;">%s</div>'
             . '</div>',
-            $main,
+            $slides,
             $thumbs,
         );
     }

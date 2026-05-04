@@ -1,38 +1,46 @@
-(function ($) {
+(function () {
     'use strict';
 
-    if (!$ || !$.fn || !$.fn.owlCarousel) {
+    if (typeof window.Swiper !== 'function') {
         return;
     }
 
-    var $main = $('#product-gallery-main');
-    if ($main.length === 0) {
+    var main = document.getElementById('product-gallery-main');
+    if (!main) {
         return;
     }
 
-    $main.owlCarousel({
-        items: 1,
-        singleItem: true,
-        navigation: true,
-        navigationText: ['<span>‹</span>', '<span>›</span>'],
-        pagination: false,
-        autoPlay: false,
-        mouseDrag: true,
-        touchDrag: true,
-        afterAction: function (el) {
-            var current = this.currentItem;
-            $('.product-gallery-thumb').removeClass('is-active');
-            $('.product-gallery-thumb[data-index="' + current + '"]').addClass('is-active');
-        }
+    var thumbs = Array.prototype.slice.call(
+        document.querySelectorAll('.product-gallery-thumb')
+    );
+
+    function setActiveThumb(idx) {
+        thumbs.forEach(function (el) {
+            var i = parseInt(el.getAttribute('data-index'), 10);
+            el.classList.toggle('is-active', i === idx);
+        });
+    }
+
+    var swiper = new window.Swiper(main, {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '#product-gallery-main .swiper-button-next',
+            prevEl: '#product-gallery-main .swiper-button-prev',
+        },
+        on: {
+            slideChange: function () {
+                setActiveThumb(this.activeIndex);
+            },
+        },
     });
 
-    var owlInstance = $main.data('owlCarousel');
-
-    $('.product-gallery-thumb').on('click', function (e) {
-        e.preventDefault();
-        var idx = parseInt($(this).attr('data-index'), 10);
-        if (!isNaN(idx) && owlInstance) {
-            owlInstance.goTo(idx);
-        }
+    thumbs.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.preventDefault();
+            var idx = parseInt(el.getAttribute('data-index'), 10);
+            if (!isNaN(idx)) {
+                swiper.slideTo(idx);
+            }
+        });
     });
-})(window.jQuery);
+})();
