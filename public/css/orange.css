@@ -37,13 +37,7 @@ a:active {
 }*/
 .le-color {
   color: #f27a24;
-}
-.navbar .navbar-toggle {
-  background-color: #ee6c0e;
-  border-color: #d6610d;
-  border-radius: 0;
-}
-header .top-search-holder .contact-row i {
+}header .top-search-holder .contact-row i {
   color: #f27a24;
 }
 header .top-search-holder .search-area .search-button {
@@ -256,22 +250,7 @@ h2 {
 }
 .logo-svg {
   fill: #f27a24;
-}
-.owl-carousel:hover .owl-prev:hover,
-.owl-carousel:hover .owl-next:hover {
-  color: #f27a24;
-}
-.owl-pagination .owl-page.active span,
-.owl-pagination .owl-page:hover span {
-  background: #f27a24;
-}
-.panel-group-faq .panel-faq .panel-heading .panel-title > a:after {
-  color: #f27a24;
-}
-.panel-group-faq .panel-faq .panel-heading .panel-title > a:hover:after {
-  color: #f27a24;
-}
-.posts .post .meta > li a:hover {
+}.posts .post .meta > li a:hover {
   color: #f27a24;
 }
 .blog-sidebar .le-links > li > a:hover {
@@ -279,12 +258,7 @@ h2 {
 }
 .blog-sidebar .tagcloud a:hover {
   color: #f27a24 !important;
-}
-.owl-carousel-blog .owl-pagination .owl-page:hover span,
-.owl-carousel-blog .owl-pagination .owl-page.active span {
-  background: none repeat scroll 0 0 #f27a24;
-}
-.comment-item .comment-body .likes a:hover,
+}.comment-item .comment-body .likes a:hover,
 .comment-item .comment-body .likes .icon:hover {
   color: #f27a24;
 }
