@@ -71,8 +71,8 @@
 </div>
 
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/bootstrap-hover-dropdown.min.js"></script>
 <script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/homy.js"></script>
 <script src="/js/homy.gallery.js"></script>
 
 </body>
