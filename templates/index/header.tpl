@@ -27,6 +27,6 @@
 
 <body>
 
-   <a id="back-top" href="#top"><i class="fa fa-angle-up"></i></a>
+   <a id="back-top" href="#top"><i class="fa-solid fa-angle-up"></i></a>
 
    <div class="wrapper">

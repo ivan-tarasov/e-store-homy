@@ -88,7 +88,7 @@ final class LayoutRenderer
 
     public function breadcrumb(?int $categoryId, ?string $extra = null): string
     {
-        $items = '<li class="breadcrumb-item"><a href="/"><i class="fa fa-home"></i></a></li>';
+        $items = '<li class="breadcrumb-item"><a href="/"><i class="fa-solid fa-home"></i></a></li>';
         $items .= '<li class="breadcrumb-item"><a href="/category/">Каталог</a></li>';
 
         if ($categoryId !== null) {
@@ -119,7 +119,7 @@ final class LayoutRenderer
 
         $user = $this->auth->currentUser();
         $adminLink = $this->auth->isAdmin()
-            ? '<li><a href="/admin/" title="Админ-панель"><i class="fa fa-cog"></i> Админ</a></li>'
+            ? '<li><a href="/admin/" title="Админ-панель"><i class="fa-solid fa-cog"></i> Админ</a></li>'
             : '';
         return $this->tpl->render('index', 'header/navigation/auth-true', [
             'username' => $user?->displayName() ?? 'Личный кабинет',

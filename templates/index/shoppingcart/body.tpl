@@ -28,7 +28,7 @@
                   <div class="col-sm-12">
                      <a href="/cart/" class="le-button btn btn-sm btn-block">
                         Перейти в корзину
-                        <i class="fa fa-arrow-right"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
                      </a>
                   </div>
                </div>

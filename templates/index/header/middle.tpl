@@ -13,10 +13,10 @@
                
          <div class="contact-row">
             <div class="phone inline">
-               <i class="fa fa-phone"></i> {homy_phone}</span>
+               <i class="fa-solid fa-phone"></i> {homy_phone}</span>
             </div>
             <div class="contact inline">
-               <i class="fa fa-envelope"></i> {homy_email}
+               <i class="fa-solid fa-envelope"></i> {homy_email}
             </div>
          </div>
 
@@ -39,10 +39,10 @@
             
             <!--div class="wishlist-compare-holder">
                <div class="wishlist ">
-                  <a href="#"><i class="fa fa-heart"></i> <span class="value">---</span> </a>
+                  <a href="#"><i class="fa-solid fa-heart"></i> <span class="value">---</span> </a>
                </div>
                <div class="compare">
-                  <a href="#"><i class="fa fa-exchange"></i> <span class="value">---</span> </a>
+                  <a href="#"><i class="fa-solid fa-right-left"></i> <span class="value">---</span> </a>
                </div>
             </div-->
 
