@@ -172,7 +172,7 @@ final class LayoutRenderer
             }
 
             $html .= sprintf(
-                '<li class="dropdown yamm-fw"><a href="%s" class="dropdown-toggle" data-hover="dropdown">%s</a><ul class="dropdown-menu"><li><div class="yamm-content"><div class="row">%s</div></div></li></ul></li>',
+                '<li class="dropdown yamm-fw"><a href="%s" class="dropdown-toggle">%s</a><ul class="dropdown-menu"><li><div class="yamm-content"><div class="row">%s</div></div></li></ul></li>',
                 $href,
                 $name,
                 $this->renderRootChildren($children),

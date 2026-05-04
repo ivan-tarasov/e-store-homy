@@ -97,7 +97,7 @@ HTML;
             $logo = sprintf('/img/brands/%s.svg', rawurlencode($brand->slug));
             $name = htmlspecialchars($brand->name, ENT_QUOTES, 'UTF-8');
             $items .= sprintf(
-                '<div class="col-xs-6 col-sm-4 col-md-2" style="padding:1em;"><div style="background:#fff; border:1px solid #eee; padding:.5em; height:80px; display:flex; align-items:center; justify-content:center;"><img src="%s" alt="%s" style="max-width:100%%; max-height:60px;" /></div></div>',
+                '<div class="col-6 col-sm-4 col-md-2" style="padding:1em;"><div style="background:#fff; border:1px solid #eee; padding:.5em; height:80px; display:flex; align-items:center; justify-content:center;"><img src="%s" alt="%s" style="max-width:100%%; max-height:60px;" /></div></div>',
                 $logo,
                 $name,
             );
@@ -128,7 +128,7 @@ HTML;
         $priceLabel = $this->price->format($product->price);
 
         return <<<HTML
-<div class="col-xs-6 col-sm-4 col-md-3" style="padding:1em;">
+<div class="col-6 col-sm-4 col-md-3" style="padding:1em;">
    <div class="product-card" style="background:#fff; border:1px solid #eee; padding:1em; text-align:center;">
       <a href="{$url}"><img src="{$img}" alt="{$name}" style="max-width:100%; height:160px; object-fit:contain;" /></a>
       <div class="brand" style="font-size:.8em; color:#999; text-transform:uppercase;">{$singular}</div>

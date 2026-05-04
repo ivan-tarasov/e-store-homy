@@ -3,7 +3,7 @@
       <div class="yamm navbar">
          
          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mc-horizontal-menu-collapse">
+            <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#mc-horizontal-menu-collapse">
                <span class="sr-only">Категории товаров</span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>

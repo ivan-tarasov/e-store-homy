@@ -1,7 +1,7 @@
 <div class="top-cart-holder dropdown animate-dropdown">
 
    <div class="basket">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
          <div class="basket-item-count">
             <span class="count" id="total-qty">{total_items}</span>
             <img src="/img/icon-cart.png" alt="" />
@@ -35,7 +35,7 @@
             </div>
             <div class="basket-item">
                <div class="row">
-                  <div class="col-xs-12 col-sm-12">
+                  <div class="col-12 col-sm-12">
                      <a href="/checkout/" class="le-button btn btn-block">Оформить заказ</a>
                   </div>
                </div>

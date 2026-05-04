@@ -64,8 +64,8 @@ final class CategoryShowAction
 
         $body = sprintf(
             '<div class="container" style="padding:2em 0;"><div class="row">'
-            . '<div class="col-xs-12 col-sm-3">%s</div>'
-            . '<div class="col-xs-12 col-sm-9"><h1>%s%s</h1>%s%s%s</div>'
+            . '<div class="col-12 col-sm-3">%s</div>'
+            . '<div class="col-12 col-sm-9"><h1>%s%s</h1>%s%s%s</div>'
             . '</div></div>',
             $sidebar,
             htmlspecialchars($category->name, ENT_QUOTES, 'UTF-8'),
@@ -174,7 +174,7 @@ final class CategoryShowAction
             $stock = $product->inStock ? 'на складе' : 'под заказ';
             $stockClass = $product->inStock ? 'available' : 'not-available';
             $cards .= sprintf(
-                '<div class="col-xs-12 col-sm-6 col-md-4" style="padding:.75em;">'
+                '<div class="col-12 col-sm-6 col-md-4" style="padding:.75em;">'
                 . '<div class="product-card" style="background:#fff;border:1px solid #eee;padding:1em;">'
                 . '<a href="%s"><img src="%s" alt="%s" style="max-width:100%%;height:160px;object-fit:contain;display:block;margin:auto;" /></a>'
                 . '<div style="font-size:.8em;color:#999;text-transform:uppercase;margin-top:.5em;">%s</div>'

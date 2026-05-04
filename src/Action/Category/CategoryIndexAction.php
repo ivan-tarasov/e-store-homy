@@ -30,7 +30,7 @@ final class CategoryIndexAction
         $banners = '';
         foreach ($this->categories->rootCategories() as $cat) {
             $banners .= sprintf(
-                '<div class="col-xs-12 col-sm-6 col-md-4" style="padding:1em;">'
+                '<div class="col-12 col-sm-6 col-md-4" style="padding:1em;">'
                 . '<a href="/category/%s/" class="banner-card" style="display:block; padding:2em; background:#fff; border:1px solid #eee; text-align:center;">'
                 . '<h3>%s</h3>'
                 . '<p class="text-muted">%s</p>'

@@ -217,7 +217,7 @@ final class ProductShowAction
             $img = htmlspecialchars($item->mainPhoto() ?? '/img/default-product.svg', ENT_QUOTES, 'UTF-8');
             $name = htmlspecialchars(($brand?->name ?? '') . ' ' . $item->name, ENT_QUOTES, 'UTF-8');
             $cards .= sprintf(
-                '<div class="col-xs-6 col-sm-3" style="padding:.75em;">'
+                '<div class="col-6 col-sm-3" style="padding:.75em;">'
                 . '<a href="%s"><img src="%s" alt="%s" style="max-width:100%%;height:140px;object-fit:contain;" /></a>'
                 . '<div><a href="%s">%s</a></div>'
                 . '<div style="color:#e57000;font-weight:700;">%s</div>'

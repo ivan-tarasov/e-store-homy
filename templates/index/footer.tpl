@@ -3,7 +3,7 @@
       <div class="link-list-row">
          <div class="container no-padding">
 
-            <div class="col-xs-12 col-md-4">
+            <div class="col-12 col-md-4">
                <div class="contact-info">
                   <p class="regular-bold">{addr_descr}</p>
                   <p>
@@ -13,7 +13,7 @@
                </div>
             </div>
 
-            <div class="col-xs-12 col-md-3">
+            <div class="col-12 col-md-3">
                <div class="link-widget">
                   <div class="widget">
                      <h3>{prod_catalog}</h3>
@@ -24,7 +24,7 @@
                </div>
             </div>
 
-            <div class="col-xs-12 col-md-3">
+            <div class="col-12 col-md-3">
                <div class="link-widget">
                   <div class="widget">
                      <h3>Сервисы</h3>
@@ -37,7 +37,7 @@
                </div>
             </div>
 
-            <div class="col-xs-12 col-md-2">
+            <div class="col-12 col-md-2">
                <div class="link-widget">
                   <div class="widget">
                      <h3>Аккаунт</h3>
@@ -54,10 +54,10 @@
 
       <div class="copyright-bar">
          <div class="container no-padding">
-            <div class="col-xs-12">
+            <div class="col-12">
                <small>{oferta}</small>
             </div>
-            <div class="col-xs-12">
+            <div class="col-12">
                <div class="copyright">
                   {cp_year} &copy; <a href="/">Homy demo</a> — портфолио-проект.
                   {admin_inf}

@@ -1,6 +1,6 @@
 <nav class="top-bar animate-dropdown">
    <div class="container">
-      <div class="col-xs-12 col-sm-6 no-margin">
+      <div class="col-12 col-sm-6 no-margin">
          <ul>
             <li><a href="/"><i class="fa-solid fa-home"></i> Главная</a></li>
             <li><a href="/terms/">Оплата и доставка</a></li>
@@ -8,7 +8,7 @@
          </ul>
       </div>
 
-      <div class="col-xs-12 col-sm-6 no-margin">
+      <div class="col-12 col-sm-6 no-margin">
          <ul class="right">
          
             {auth_menu}

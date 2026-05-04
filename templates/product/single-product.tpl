@@ -3,13 +3,13 @@
 
       {promo_banner}
 
-      <div class="no-margin col-xs-12 col-sm-6 col-md-5 gallery-holder">
+      <div class="no-margin col-12 col-sm-6 col-md-5 gallery-holder">
          <div class="product-item-holder size-big single-product-gallery small-gallery">
             {gallery}
          </div>
       </div>
 
-      <div class="no-margin col-xs-12 col-sm-7 body-holder">
+      <div class="no-margin col-12 col-sm-7 body-holder">
          <div class="body">
 
             <div class="availability">
@@ -50,8 +50,8 @@
       <div class="tab-holder">
 
          <ul class="nav nav-tabs simple">
-            <li class="active"><a href="#additional-info" data-toggle="tab">Характеристики</a></li>
-            <li><a href="#reviews" data-toggle="tab">Отзывы ({reviews_count})</a></li>
+            <li class="active"><a href="#additional-info" data-bs-toggle="tab">Характеристики</a></li>
+            <li><a href="#reviews" data-bs-toggle="tab">Отзывы ({reviews_count})</a></li>
          </ul>
 
          <div class="tab-content">
