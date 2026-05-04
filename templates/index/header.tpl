@@ -20,7 +20,6 @@
    <link rel="stylesheet" href="/css/snippets.css" />
    <link rel="stylesheet" href="/css/font-awesome.min.css" />
    <link rel="stylesheet" href="/css/owl.carousel.css" />
-   <link rel="stylesheet" href="/css/owl.transitions.css" />
 
    <script src="/js/jquery-1.10.2.min.js"></script>
 
