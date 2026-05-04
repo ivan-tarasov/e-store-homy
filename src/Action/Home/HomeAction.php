@@ -49,10 +49,24 @@ final class HomeAction
     private function renderHero(): string
     {
         return <<<'HTML'
-<section id="hero" style="background:#fff;">
-   <a href="/category/" style="display:block;">
-      <img src="/img/banners/hero.svg" alt="Homy demo store" style="width:100%; max-height:380px; display:block;" />
-   </a>
+<section id="hero">
+   <div class="container hero-content">
+      <div class="hero-text">
+         <span class="hero-kicker"><span class="hero-kicker-dot"></span>PORTFOLIO DEMO</span>
+         <h1 class="hero-title">
+            Бытовая техника,<br/>
+            <span class="hero-title-accent">собранная для демо</span>
+         </h1>
+         <p class="hero-subtitle">PHP 8 · файловое хранилище · реальные фото с Wikimedia Commons</p>
+         <div class="hero-ctas">
+            <a class="hero-cta hero-cta-primary" href="/category/">Открыть каталог →</a>
+            <a class="hero-cta hero-cta-secondary" href="/about/">О проекте</a>
+         </div>
+      </div>
+      <div class="hero-products">
+         <img src="/img/banners/hero-products.svg" alt="" />
+      </div>
+   </div>
 </section>
 HTML;
     }
