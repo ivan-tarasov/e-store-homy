@@ -10,6 +10,7 @@ use App\Service\AuthService;
 use App\Service\CartService;
 use App\Service\PriceFormatter;
 use App\Service\Slugify;
+use App\Support\Session;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -23,6 +24,7 @@ final class CheckoutAction
         private readonly PriceFormatter $price,
         private readonly Slugify $slugify,
         private readonly AuthService $auth,
+        private readonly Session $session,
     ) {
     }
 
@@ -32,6 +34,11 @@ final class CheckoutAction
         if ($this->cart->isEmpty()) {
             return Response::redirect('/cart/');
         }
+
+        $error = $this->session->flash('checkout_error');
+        $errorBox = $error !== null
+            ? sprintf('<div class="alert alert-danger">%s</div>', htmlspecialchars((string) $error, ENT_QUOTES, 'UTF-8'))
+            : '';
 
         $rows = '';
         foreach ($this->cart->lineItems() as $line) {
@@ -52,6 +59,7 @@ final class CheckoutAction
         $body = sprintf(
             '<section class="container" style="padding:2em 0;">'
             . '<h1>Оформление заказа</h1>'
+            . '%s'
             . '<div class="row"><div class="col-md-7">'
             . '<form method="post" action="/checkout/">'
             . '<div class="form-group"><label>Имя</label><input class="form-control" name="name" value="%s" required /></div>'
@@ -65,12 +73,13 @@ final class CheckoutAction
             . '<table class="table">%s<tfoot><tr><th colspan="2" class="text-right">Итого</th><th class="text-right">%s</th></tr></tfoot></table>'
             . '</div></div>'
             . '</section>',
+            $errorBox,
             $name,
             $phone,
             $rows,
             $this->price->format($this->cart->totalAmount()),
         );
 
-        return Response::html($this->layout->render($body, new PageMeta('Оформление заказа'), $this->layout->breadcrumb(null, 'Checkout')));
+        return Response::html($this->layout->render($body, new PageMeta('Оформление заказа'), $this->layout->breadcrumb(null, 'Оформление заказа')));
     }
 }

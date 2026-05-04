@@ -58,17 +58,19 @@ final class CategoryShowAction
 
         $facets = $this->products->brandFacets($category->id);
         $sidebar = $this->renderBrandSidebar($facets, $category->slug, $brand?->slug);
+        $sortBar = $this->renderSortBar($category->slug, $brandSlug, $sort, $total);
         $grid = $this->renderProductGrid($items, $category->singular);
         $pagination = $this->renderPagination($category->slug, $brandSlug, $page, $total, $sort);
 
         $body = sprintf(
             '<div class="container" style="padding:2em 0;"><div class="row">'
             . '<div class="col-xs-12 col-sm-3">%s</div>'
-            . '<div class="col-xs-12 col-sm-9"><h1>%s%s</h1>%s%s</div>'
+            . '<div class="col-xs-12 col-sm-9"><h1>%s%s</h1>%s%s%s</div>'
             . '</div></div>',
             $sidebar,
             htmlspecialchars($category->name, ENT_QUOTES, 'UTF-8'),
             $brand !== null ? ' — ' . htmlspecialchars($brand->name, ENT_QUOTES, 'UTF-8') : '',
+            $sortBar,
             $grid,
             $pagination,
         );
@@ -115,6 +117,44 @@ final class CategoryShowAction
             '<aside class="sidebar"><h3>Производитель</h3><ul class="list-unstyled">%s</ul>%s</aside>',
             $items,
             $reset,
+        );
+    }
+
+    private function renderSortBar(string $catSlug, ?string $brandSlug, string $activeSort, int $total): string
+    {
+        $base = $brandSlug !== null
+            ? sprintf('/category/%s/brand/%s/', rawurlencode($catSlug), rawurlencode($brandSlug))
+            : sprintf('/category/%s/', rawurlencode($catSlug));
+
+        $options = [
+            'default'    => 'По умолчанию',
+            'price-asc'  => 'Цена ↑',
+            'price-desc' => 'Цена ↓',
+            'rating-desc' => 'По рейтингу',
+        ];
+
+        $select = '';
+        foreach ($options as $value => $label) {
+            $selected = $value === $activeSort ? ' selected' : '';
+            $select .= sprintf(
+                '<option value="%s"%s>%s</option>',
+                htmlspecialchars($value, ENT_QUOTES, 'UTF-8'),
+                $selected,
+                htmlspecialchars($label, ENT_QUOTES, 'UTF-8'),
+            );
+        }
+
+        return sprintf(
+            '<div class="sort-bar" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1em;">'
+            . '<span class="text-muted" style="font-size:.9em;">%d товар(ов)</span>'
+            . '<form method="get" action="%s" style="display:flex;align-items:center;gap:.5em;">'
+            . '<label style="font-size:.9em;margin:0;">Сортировка:</label>'
+            . '<select name="sort" class="form-control" style="width:auto;height:2em;padding:0 .5em;font-size:.9em;" onchange="this.form.submit()">%s</select>'
+            . '</form>'
+            . '</div>',
+            $total,
+            htmlspecialchars($base, ENT_QUOTES, 'UTF-8'),
+            $select,
         );
     }
 

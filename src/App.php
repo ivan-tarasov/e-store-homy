@@ -188,7 +188,7 @@ final class App
             AddToCartAction::class => new AddToCartAction($this->cart),
             UpdateCartAction::class => new UpdateCartAction($this->cart, $this->price),
             RemoveFromCartAction::class => new RemoveFromCartAction($this->cart),
-            CheckoutAction::class => new CheckoutAction($this->layout, $this->tpl, $this->cart, $this->price, $this->slugify, $this->auth),
+            CheckoutAction::class => new CheckoutAction($this->layout, $this->tpl, $this->cart, $this->price, $this->slugify, $this->auth, $this->session),
             SubmitCheckoutAction::class => new SubmitCheckoutAction($this->cart, $this->orders, $this->auth, $this->session, $this->layout),
             LoginAction::class => new LoginAction($this->layout, $this->tpl, $this->auth, $this->session),
             SubmitLoginAction::class => new SubmitLoginAction($this->auth, $this->session),
