@@ -162,13 +162,20 @@ final class LayoutRenderer
     {
         $html = '';
         foreach ($this->categories->rootCategories() as $root) {
+            $href = '/category/' . rawurlencode($root->slug) . '/';
+            $name = htmlspecialchars($root->name, ENT_QUOTES, 'UTF-8');
             $children = $this->categories->children($root->id);
-            $childHtml = $this->renderRootChildren($children);
+
+            if ($children === []) {
+                $html .= sprintf('<li><a href="%s">%s</a></li>', $href, $name);
+                continue;
+            }
+
             $html .= sprintf(
-                '<li class="dropdown yamm-fw"><a href="/category/%s/" class="dropdown-toggle" data-hover="dropdown">%s</a><ul class="dropdown-menu"><li><div class="yamm-content"><div class="row">%s</div></div></li></ul></li>',
-                rawurlencode($root->slug),
-                htmlspecialchars($root->name, ENT_QUOTES, 'UTF-8'),
-                $childHtml,
+                '<li class="dropdown yamm-fw"><a href="%s" class="dropdown-toggle" data-hover="dropdown">%s</a><ul class="dropdown-menu"><li><div class="yamm-content"><div class="row">%s</div></div></li></ul></li>',
+                $href,
+                $name,
+                $this->renderRootChildren($children),
             );
         }
         return $html;
