@@ -15,8 +15,8 @@ use App\Repository\ProductRepository;
 use App\Repository\ReviewRepository;
 use App\Service\CartService;
 use App\Service\PriceFormatter;
+use App\Service\ProductCardRenderer;
 use App\Service\RussianLocale;
-use App\Service\Slugify;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -31,7 +31,7 @@ final class ProductShowAction
         private readonly BrandRepository $brands,
         private readonly ReviewRepository $reviews,
         private readonly PriceFormatter $price,
-        private readonly Slugify $slugify,
+        private readonly ProductCardRenderer $cards,
         private readonly RussianLocale $locale,
         private readonly CartService $cart,
     ) {
@@ -56,7 +56,8 @@ final class ProductShowAction
 
         $properties = $this->renderProperties($product);
         $gallery = $this->renderGallery($product);
-        $reviews = $this->renderReviews($this->reviews->forProduct($product->id));
+        $rawReviews = $this->reviews->forProduct($product->id);
+        $reviews = $this->renderReviews($rawReviews);
         $similar = $this->renderSimilar($product);
 
         $stock = $product->inStock ? 'на складе' : 'под заказ';
@@ -89,7 +90,7 @@ final class ProductShowAction
             'no_exist_note' => '',
             'to_cart_button' => $cartButton,
             'to_cart_button_clc' => '',
-            'reviews_count' => (string) count($this->reviews->forProduct($product->id)),
+            'reviews_count' => (string) count($rawReviews),
             'opinions' => $reviews,
             'properties' => $properties,
             'same_category' => $similar,
@@ -210,21 +211,10 @@ final class ProductShowAction
         if ($items === []) {
             return '';
         }
-        $cards = '';
+        $html = '';
         foreach ($items as $item) {
-            $brand = $this->brands->find($item->brandId);
-            $url = $this->slugify->productPath($item->id, $brand?->slug ?? '', $item->name);
-            $img = htmlspecialchars($item->mainPhoto() ?? '/img/default-product.svg', ENT_QUOTES, 'UTF-8');
-            $name = htmlspecialchars(($brand?->name ?? '') . ' ' . $item->name, ENT_QUOTES, 'UTF-8');
-            $cards .= sprintf(
-                '<div class="col-6 col-sm-3" style="padding:.75em;">'
-                . '<a href="%s"><img src="%s" alt="%s" style="max-width:100%%;height:140px;object-fit:contain;" /></a>'
-                . '<div><a href="%s">%s</a></div>'
-                . '<div style="color:#e57000;font-weight:700;">%s</div>'
-                . '</div>',
-                $url, $img, $name, $url, $name, $this->price->format($item->price),
-            );
+            $html .= $this->cards->miniCard($item);
         }
-        return '<section class="container" style="padding:2em 0;"><h3>Похожие товары</h3><div class="row">' . $cards . '</div></section>';
+        return '<section class="container" style="padding:2em 0;"><h3>Похожие товары</h3><div class="row">' . $html . '</div></section>';
     }
 }

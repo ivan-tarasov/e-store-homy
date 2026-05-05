@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace App\Action\Category;
 
 use App\Action\Errors\NotFoundAction;
-use App\Domain\Product;
 use App\Http\Request;
 use App\Http\Response;
 use App\Repository\BrandRepository;
 use App\Repository\CategoryRepository;
 use App\Repository\ProductRepository;
-use App\Service\PriceFormatter;
-use App\Service\Slugify;
+use App\Service\ProductCardRenderer;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -27,8 +25,7 @@ final class CategoryShowAction
         private readonly CategoryRepository $categories,
         private readonly BrandRepository $brands,
         private readonly ProductRepository $products,
-        private readonly PriceFormatter $price,
-        private readonly Slugify $slugify,
+        private readonly ProductCardRenderer $cards,
     ) {
     }
 
@@ -59,7 +56,7 @@ final class CategoryShowAction
         $facets = $this->products->brandFacets($category->id);
         $sidebar = $this->renderBrandSidebar($facets, $category->slug, $brand?->slug);
         $sortBar = $this->renderSortBar($category->slug, $brandSlug, $sort, $total);
-        $grid = $this->renderProductGrid($items, $category->singular);
+        $grid = $this->renderProductGrid($items);
         $pagination = $this->renderPagination($category->slug, $brandSlug, $page, $total, $sort);
 
         $body = sprintf(
@@ -159,47 +156,18 @@ final class CategoryShowAction
     }
 
     /** @param list<Product> $items */
-    private function renderProductGrid(array $items, string $singular): string
+    private function renderProductGrid(array $items): string
     {
         if ($items === []) {
             return '<p class="text-muted">В этой категории пока нет товаров.</p>';
         }
 
-        $cards = '';
+        $html = '';
         foreach ($items as $product) {
-            $brand = $this->brands->find($product->brandId);
-            $url = $this->slugify->productPath($product->id, $brand?->slug ?? '', $product->name);
-            $img = htmlspecialchars($product->mainPhoto() ?? '/img/default-product.svg', ENT_QUOTES, 'UTF-8');
-            $name = htmlspecialchars(($brand?->name ?? '') . ' ' . $product->name, ENT_QUOTES, 'UTF-8');
-            $stock = $product->inStock ? 'на складе' : 'под заказ';
-            $stockClass = $product->inStock ? 'available' : 'not-available';
-            $cards .= sprintf(
-                '<div class="col-12 col-sm-6 col-md-4" style="padding:.75em;">'
-                . '<div class="product-card" style="background:#fff;border:1px solid #eee;padding:1em;">'
-                . '<a href="%s"><img src="%s" alt="%s" style="max-width:100%%;height:160px;object-fit:contain;display:block;margin:auto;" /></a>'
-                . '<div style="font-size:.8em;color:#999;text-transform:uppercase;margin-top:.5em;">%s</div>'
-                . '<div style="margin:.25em 0;"><a href="%s">%s</a></div>'
-                . '<div style="font-weight:700;color:#e57000;">%s</div>'
-                . '<div class="text-muted" style="font-size:.85em;"><span class="%s">%s</span></div>'
-                . '<form method="post" action="/cart/add" style="margin-top:.5em;">'
-                . '<input type="hidden" name="id" value="%d" />'
-                . '<button class="le-button small" type="submit">В корзину</button>'
-                . '</form>'
-                . '</div></div>',
-                $url,
-                $img,
-                $name,
-                htmlspecialchars($singular, ENT_QUOTES, 'UTF-8'),
-                $url,
-                $name,
-                $this->price->format($product->price),
-                $stockClass,
-                $stock,
-                $product->id,
-            );
+            $html .= $this->cards->card($product, withCart: true, withStock: true, colClass: 'col-12 col-sm-6 col-md-4');
         }
 
-        return '<div class="row">' . $cards . '</div>';
+        return '<div class="row">' . $html . '</div>';
     }
 
     private function renderPagination(string $catSlug, ?string $brandSlug, int $current, int $total, string $sort): string

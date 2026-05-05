@@ -40,6 +40,7 @@ use App\Repository\UserRepository;
 use App\Service\AuthService;
 use App\Service\CartService;
 use App\Service\PriceFormatter;
+use App\Service\ProductCardRenderer;
 use App\Service\RussianLocale;
 use App\Service\Slugify;
 use App\Storage\JsonStore;
@@ -75,6 +76,7 @@ final class App
         public readonly PriceFormatter $price,
         public readonly Slugify $slugify,
         public readonly RussianLocale $locale,
+        public readonly ProductCardRenderer $cardRenderer,
     ) {
     }
 
@@ -110,6 +112,7 @@ final class App
         $price = new PriceFormatter();
         $slugify = new Slugify();
         $locale = new RussianLocale();
+        $cardRenderer = new ProductCardRenderer($brandsRepo, $categoriesRepo, $slugify, $price);
 
         $layout = new LayoutRenderer(
             tpl: $tpl,
@@ -145,6 +148,7 @@ final class App
             price: $price,
             slugify: $slugify,
             locale: $locale,
+            cardRenderer: $cardRenderer,
         );
     }
 
@@ -180,10 +184,10 @@ final class App
     private function buildAction(string $class): object
     {
         return match ($class) {
-            HomeAction::class => new HomeAction($this->layout, $this->products, $this->brands, $this->categories, $this->price, $this->slugify),
+            HomeAction::class => new HomeAction($this->layout, $this->products, $this->brands, $this->cardRenderer),
             CategoryIndexAction::class => new CategoryIndexAction($this->layout, $this->tpl, $this->categories, $this->products, $this->locale),
-            CategoryShowAction::class => new CategoryShowAction($this->layout, $this->tpl, $this->categories, $this->brands, $this->products, $this->price, $this->slugify),
-            ProductShowAction::class => new ProductShowAction($this->layout, $this->tpl, $this->products, $this->categories, $this->brands, $this->reviews, $this->price, $this->slugify, $this->locale, $this->cart),
+            CategoryShowAction::class => new CategoryShowAction($this->layout, $this->tpl, $this->categories, $this->brands, $this->products, $this->cardRenderer),
+            ProductShowAction::class => new ProductShowAction($this->layout, $this->tpl, $this->products, $this->categories, $this->brands, $this->reviews, $this->price, $this->cardRenderer, $this->locale, $this->cart),
             CartAction::class => new CartAction($this->layout, $this->tpl, $this->cart, $this->price, $this->slugify),
             AddToCartAction::class => new AddToCartAction($this->cart),
             UpdateCartAction::class => new UpdateCartAction($this->cart, $this->price),
