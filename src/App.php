@@ -32,6 +32,7 @@ use App\Action\Pages\FeedbackAction;
 use App\Action\Pages\TermsAction;
 use App\Action\Product\ProductShowAction;
 use App\Action\Search\SearchAction;
+use App\Action\Search\SearchResultsAction;
 use App\Http\Request;
 use App\Http\Response;
 use App\Repository\BrandRepository;
@@ -206,6 +207,7 @@ final class App
             TermsAction::class => new TermsAction($this->layout, $this->tpl),
             FeedbackAction::class => new FeedbackAction($this->layout, $this->tpl, $this->session),
             SearchAction::class => new SearchAction($this->products, $this->categories, $this->brands, $this->slugify),
+            SearchResultsAction::class => new SearchResultsAction($this->layout, $this->products, $this->cardRenderer),
             AdminDashboardAction::class => new AdminDashboardAction($this->layout, $this->auth, $this->products, $this->categories, $this->brands, $this->users, $this->orders, $this->price, $this->locale),
             AdminOrdersAction::class => new AdminOrdersAction($this->layout, $this->auth, $this->orders, $this->price, $this->locale),
             AdminOrderShowAction::class => new AdminOrderShowAction($this->layout, $this->auth, $this->orders, $this->users, $this->price, $this->locale),
@@ -267,6 +269,7 @@ final class App
             $r->addRoute('POST', '/feedback/', FeedbackAction::class);
 
             $r->addRoute('GET', '/search', SearchAction::class);
+            $r->addRoute('GET', '/search/', SearchResultsAction::class);
 
             $r->addRoute('GET', '/admin', AdminDashboardAction::class);
             $r->addRoute('GET', '/admin/', AdminDashboardAction::class);

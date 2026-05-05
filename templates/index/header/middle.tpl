@@ -21,12 +21,12 @@
          </div>
 
          <div class="search-area">
-            <form>
+            <form method="get" action="/search/">
                <div class="control-group">
-                  <input id="search-form" placeholder="{search_txt}"
+                  <input id="search-form" name="q" placeholder="{search_txt}"
                      type="text" class="search-field"
                      autocomplete="off" aria-label="Поиск товаров" />
-                  <!--a class="search-button" href="#" ></a-->
+                  <button class="search-button" type="submit" aria-label="Найти"></button>
                </div>
             </form>
          </div>

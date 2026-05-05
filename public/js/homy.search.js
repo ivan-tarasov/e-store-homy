@@ -4,6 +4,10 @@
     var input = document.getElementById('search-form');
     if (!input) { return; }
 
+    // Pre-fill from URL ?q= on the results page
+    var urlQ = new URLSearchParams(window.location.search).get('q');
+    if (urlQ && input.value === '') { input.value = urlQ; }
+
     var dropdown = document.createElement('div');
     dropdown.id = 'search-dropdown';
     input.parentNode.appendChild(dropdown);
