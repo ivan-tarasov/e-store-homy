@@ -59,18 +59,16 @@ final class CategoryShowAction
         $grid = $this->renderProductGrid($items);
         $pagination = $this->renderPagination($category->slug, $brandSlug, $page, $total, $sort);
 
-        $body = sprintf(
-            '<div class="container" style="padding:2em 0;"><div class="row">'
-            . '<div class="col-12 col-sm-3">%s</div>'
-            . '<div class="col-12 col-sm-9"><h1>%s%s</h1>%s%s%s</div>'
-            . '</div></div>',
-            $sidebar,
-            htmlspecialchars($category->name, ENT_QUOTES, 'UTF-8'),
-            $brand !== null ? ' — ' . htmlspecialchars($brand->name, ENT_QUOTES, 'UTF-8') : '',
-            $sortBar,
-            $grid,
-            $pagination,
-        );
+        $heading = htmlspecialchars($category->name, ENT_QUOTES, 'UTF-8')
+            . ($brand !== null ? ' — ' . htmlspecialchars($brand->name, ENT_QUOTES, 'UTF-8') : '');
+
+        $body = $this->tpl->render('category', 'show', [
+            'sidebar'    => $sidebar,
+            'heading'    => $heading,
+            'sort_bar'   => $sortBar,
+            'grid'       => $grid,
+            'pagination' => $pagination,
+        ]);
 
         $meta = new PageMeta(
             title: $category->name . ' — Homy',

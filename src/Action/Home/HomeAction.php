@@ -12,11 +12,13 @@ use App\Repository\ProductRepository;
 use App\Service\ProductCardRenderer;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
+use App\Template\TemplateEngine;
 
 final class HomeAction
 {
     public function __construct(
         private readonly LayoutRenderer $layout,
+        private readonly TemplateEngine $tpl,
         private readonly ProductRepository $products,
         private readonly BrandRepository $brands,
         private readonly ProductCardRenderer $cards,
@@ -68,21 +70,11 @@ HTML;
 
     private function renderNewArrivals(): string
     {
-        $cardHtml = '';
+        $cards = '';
         foreach ($this->products->newestWithImages(8) as $product) {
-            $cardHtml .= $this->cards->card($product);
+            $cards .= $this->cards->card($product);
         }
-
-        return <<<HTML
-<section class="content-row" style="padding: 2em 0;">
-   <div class="container">
-      <div class="title-nav"><h1>Новинки каталога</h1></div>
-      <div class="row product-grid-holder">
-         {$cardHtml}
-      </div>
-   </div>
-</section>
-HTML;
+        return $this->tpl->render('home', 'new-arrivals', ['cards' => $cards]);
     }
 
     private function renderBrands(): string
@@ -97,14 +89,6 @@ HTML;
                 $name,
             );
         }
-
-        return <<<HTML
-<section class="brands-row" style="padding:2em 0; background:#fafafa;">
-   <div class="container">
-      <div class="title-nav"><h1>Производители</h1></div>
-      <div class="row">{$items}</div>
-   </div>
-</section>
-HTML;
+        return $this->tpl->render('home', 'brands', ['items' => $items]);
     }
 }

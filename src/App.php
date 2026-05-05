@@ -184,7 +184,7 @@ final class App
     private function buildAction(string $class): object
     {
         return match ($class) {
-            HomeAction::class => new HomeAction($this->layout, $this->products, $this->brands, $this->cardRenderer),
+            HomeAction::class => new HomeAction($this->layout, $this->tpl, $this->products, $this->brands, $this->cardRenderer),
             CategoryIndexAction::class => new CategoryIndexAction($this->layout, $this->tpl, $this->categories, $this->products, $this->locale),
             CategoryShowAction::class => new CategoryShowAction($this->layout, $this->tpl, $this->categories, $this->brands, $this->products, $this->cardRenderer),
             ProductShowAction::class => new ProductShowAction($this->layout, $this->tpl, $this->products, $this->categories, $this->brands, $this->reviews, $this->price, $this->cardRenderer, $this->locale, $this->cart),
