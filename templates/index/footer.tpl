@@ -74,6 +74,7 @@
 <script src="/js/swiper-bundle.min.js"></script>
 <script src="/js/homy.js"></script>
 <script src="/js/homy.gallery.js"></script>
+<script src="/js/homy.search.js"></script>
 
 </body>
 </html>

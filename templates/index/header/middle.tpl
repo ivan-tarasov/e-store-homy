@@ -24,9 +24,8 @@
             <form>
                <div class="control-group">
                   <input id="search-form" placeholder="{search_txt}"
-                     type="text" class="search-field" 
-                     onblur="if(this.value=='')this.value=this.defaultValue;" 
-                     onfocus="if(this.value==this.defaultValue)this.value='';" />
+                     type="text" class="search-field"
+                     autocomplete="off" aria-label="Поиск товаров" />
                   <!--a class="search-button" href="#" ></a-->
                </div>
             </form>
