@@ -1,6 +1,7 @@
 <header>
    <div class="container no-padding">
-      
+      <div class="row align-items-center">
+
       <div class="col-12 col-sm-12 col-md-3 logo-holder">
          <div class="logo">
             <a href="/">
@@ -50,6 +51,7 @@
          </div>
       </div>
 
+      </div><!-- /.row -->
    </div>
 
 </header>

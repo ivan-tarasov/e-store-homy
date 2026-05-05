@@ -2,6 +2,7 @@
 
       <div class="link-list-row">
          <div class="container no-padding">
+            <div class="row">
 
             <div class="col-12 col-md-4">
                <div class="contact-info">
@@ -49,20 +50,23 @@
                </div>
             </div>
 
+            </div><!-- /.row -->
          </div>
       </div>
 
       <div class="copyright-bar">
          <div class="container no-padding">
-            <div class="col-12">
-               <small>{oferta}</small>
-            </div>
-            <div class="col-12">
-               <div class="copyright">
-                  {cp_year} &copy; <a href="/">Homy demo</a> — портфолио-проект.
-                  {admin_inf}
+            <div class="row">
+               <div class="col-12">
+                  <small>{oferta}</small>
                </div>
-            </div>
+               <div class="col-12">
+                  <div class="copyright">
+                     {cp_year} &copy; <a href="/">Homy demo</a> — портфолио-проект.
+                     {admin_inf}
+                  </div>
+               </div>
+            </div><!-- /.row -->
          </div>
       </div>
 
