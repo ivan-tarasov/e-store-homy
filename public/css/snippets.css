@@ -387,3 +387,24 @@ header .top-cart-row .top-cart-holder .basket-item .thumb img { max-width: 100%;
     color: #aaa;
     cursor: default;
 }
+
+/* Search bar: flexbox override for BS5 (replaces BS3 float hack) */
+header .top-search-holder .search-area .control-group {
+    display: flex;
+    align-items: stretch;
+}
+header .top-search-holder .search-area .search-field {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+header .top-search-holder .search-area .search-button {
+    flex: 0 0 auto;
+    float: none;
+    margin: 0;
+}
+
+/* Override Bootstrap 5's default a { text-decoration: underline } */
+a {
+    text-decoration: none;
+}
