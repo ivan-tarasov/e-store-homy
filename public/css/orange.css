@@ -43,12 +43,6 @@ a:active {
 header .top-search-holder .search-area .search-button {
   background-color: #f27a24;
 }
-header .top-cart-row .wishlist-compare-holder a:hover {
-  color: #f27a24;
-}
-header .top-cart-row .wishlist-compare-holder a:hover i {
-  color: #f27a24;
-}
 header .top-cart-row .top-cart-holder .basket-item .price {
   color: #f27a24;
 }
@@ -252,12 +246,6 @@ h2 {
   fill: #f27a24;
 }.posts .post .meta > li a:hover {
   color: #f27a24;
-}
-.blog-sidebar .le-links > li > a:hover {
-  color: #f27a24 !important;
-}
-.blog-sidebar .tagcloud a:hover {
-  color: #f27a24 !important;
 }.comment-item .comment-body .likes a:hover,
 .comment-item .comment-body .likes .icon:hover {
   color: #f27a24;
@@ -266,8 +254,5 @@ h2 {
   color: #f27a24;
 }
 .comment-item .comment-body .comment-reply:hover {
-  color: #f27a24;
-}
-.blog-sidebar .widget .recent-post-list h5 a:hover {
   color: #f27a24;
 }

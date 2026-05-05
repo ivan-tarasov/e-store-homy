@@ -821,25 +821,6 @@ header .top-search-holder .search-area .search-button:after {
 header .top-cart-row {
   padding: 35px 0 0 21px;
 }
-header .top-cart-row .wishlist-compare-holder {
-  line-height: 24px;
-  margin: 0 18px 0 0;
-  font-size: 13px;
-  display: inline-block;
-  vertical-align: top;
-}
-header .top-cart-row .wishlist-compare-holder a {
-  color: #3d3d3d;
-}
-header .top-cart-row .wishlist-compare-holder i {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  color: #c6c6c6;
-  margin: 0 10px 0 0px;
-  font-size: 14px;
-}
 header .top-cart-row .top-cart-holder {
   position: relative;
   display: inline-block;
@@ -1742,46 +1723,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .le-button.big {
   padding: 15px 34px;
 }
-.btn-add-to-compare {
-  color: #3d3d3d;
-  font-size: 12px;
-  line-height: 24px;
-  display: inline-block;
-  vertical-align: top;
-}
-.btn-add-to-compare:before {
-  margin: 0 5px 0 0;
-  font-size: 18px;
-  color: #c6c6c6;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  font-family: fontawesome;
-}
-.btn-add-to-compare:before {
-  content: "\f0ec";
-}
-.btn-add-to-wishlist {
-  color: #3d3d3d;
-  font-size: 12px;
-  line-height: 24px;
-  display: inline-block;
-  vertical-align: top;
-}
-.btn-add-to-wishlist:before {
-  margin: 0 5px 0 0;
-  font-size: 18px;
-  color: #c6c6c6;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  font-family: fontawesome;
-}
-.btn-add-to-wishlist:before {
-  content: "\f004";
-}
 .dropdown .dropdown-toggle {
   padding: 0 14px 0 5px;
 }
@@ -1951,17 +1892,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .product-item-holder.hover.size-small .product-item .hover-area {
   bottom: 9px;
 }
-.product-item-holder.hover.size-small .product-item .hover-area .wish-compare a {
-  margin: 0 8px;
-  font-size: 11px!important;
-}
-.product-item-holder.hover.size-small .product-item .hover-area .wish-compare a:before {
-  font-size: 12px!important;
-  margin-right: 3px;
-}
-.product-item-holder.hover.size-medium .product-item .wish-compare a {
-  margin: 0 5px!important;
-}
 .product-item-holder.hover.size-medium .product-item .add-cart-button {
   margin-bottom: 10px;
 }
@@ -1977,9 +1907,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   bottom: 11px;
   width: 100%;
   display: none;
-}
-.product-item-holder.hover .product-item .hover-area .wish-compare a {
-  margin: 0 10px;
 }
 .product-item-holder.hover .product-item .hover-area .add-cart-button {
   position: relative;
@@ -2612,9 +2539,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 #single-product .body-holder .buttons-holder {
   margin: 0 0 0 10px;
-}
-#single-product .body-holder .buttons-holder .btn-add-to-wishlist {
-  margin: 0 20px 0 0;
 }
 #single-product .body-holder .excerpt {
   margin: 22px 0 ;
@@ -3440,119 +3364,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   margin-left: -38px;
   float: left;
 }
-.blog-pagination {
-  text-align: center;
-  width: 100%;
-}
-.blog-pagination > li {
-  display: inline-block !important;
-}
-.blog-sidebar .widget {
-  margin-bottom: 55px !important;
-}
-.blog-sidebar .widget:first-child .body {
-  margin-top: 0;
-  padding-top: 0;
-}
-.blog-sidebar .widget h4 {
-  border-bottom: 1px solid #ececec;
-  font-size: 24px;
-  font-weight: 400 !important;
-  line-height: 45px;
-}
-.blog-sidebar .widget .body {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  font-size: 14px;
-  line-height: 24px;
-  color: #868686;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-.blog-sidebar .widget .body .le-links > li {
-  line-height: 36px;
-  border-bottom: 1px solid #ececec;
-}
-.blog-sidebar .widget .body .le-links > li > a {
-  color: #686868;
-  font-weight: 600 !important;
-  display: block;
-}
-.blog-sidebar .widget .body .le-links > li > a:before {
-  content: none;
-}
-.blog-sidebar .widget .body .le-links > li > a:after {
-  content: "\f105";
-  font-family: fontawesome;
-  float: right;
-}
-.blog-sidebar .widget .body .le-links > li:last-child {
-  border-bottom: none;
-}
-.blog-sidebar .widget .body .tagcloud a {
-  color: #686868;
-  line-height: 34px;
-}.blog-sidebar .widget .body .search-form .form-control {
-  font-size: 14px;
-  border: none;
-  height: 42px;
-  border-radius: 0px;
-  background: none repeat scroll 0 0 #f6f6f6;
-  box-shadow: none;
-  color: #1A1A1A;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.blog-sidebar .widget .body .search-form .form-control:focus {
-  box-shadow: none;
-}
-.blog-sidebar .widget .body .search-form button {
-  border: 0 none;
-  float: left;
-  font-size: 13px;
-  margin: 0;
-  padding: 10px 10px 5px 0;
-  margin-top: 1px;
-  background: rgba(0, 0, 0, 0);
-}
-.blog-sidebar .widget .recent-post-list h5 {
-  margin: 7px 0px;
-  font-size: 14px;
-  font-weight: 300 !important;
-  line-height: 15.58px;
-}
-.blog-sidebar .widget .recent-post-list h5 a {
-  color: #434343;
-}
-.blog-sidebar .widget .recent-post-list .posted-date {
-  color: #8f8f8f;
-  font-size: 12px;
-}
-.blog-sidebar .widget .recent-post-list .sidebar-recent-post-item {
-  margin-bottom: 20px;
-}
-.blog-sidebar .widget .recent-post-list img {
-  height: 75px;
-  width: 75px;
-  overflow: hidden;
-}/* Blog Post Author */
-.blog-post-author {
-  background: none repeat scroll 0 0 #F8F8F8;
-  padding: 16px;
-  margin-bottom: 20px;
-  margin-top: 25px;
-}.blog-post-author .media .media-heading {
-  font-size: 22px;
-  margin: 5px 0px;
-}
-.blog-post-author .media .media-heading > a {
-  color: #747474;
-}
-.blog-post-author .media .media-body p {
-  color: #7f7f7f;
-  font-size: 16px;
-  line-height: 25px;
-}
 /* Blog COmments */
 #comments > h3 {
   font-size: 24px;
@@ -4324,8 +4135,6 @@ select.top-drop-menu {
     background-color: rgba(255, 255, 255, 0.5);
   }
 }
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
 
 
 
