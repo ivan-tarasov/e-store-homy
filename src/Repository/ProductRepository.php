@@ -204,6 +204,57 @@ final class ProductRepository
         });
     }
 
+    public function save(Product $product): void
+    {
+        $rows = $this->store->readOrEmpty('products');
+        $found = false;
+        foreach ($rows as &$row) {
+            if ((int) $row['id'] === $product->id) {
+                $row = $this->toArray($product);
+                $found = true;
+                break;
+            }
+        }
+        unset($row);
+        if (!$found) {
+            $rows[] = $this->toArray($product);
+        }
+        $this->store->write('products', $rows);
+        $this->byId = null;
+    }
+
+    public function delete(int $id): void
+    {
+        $rows = $this->store->readOrEmpty('products');
+        $rows = array_values(array_filter($rows, static fn (array $r) => (int) $r['id'] !== $id));
+        $this->store->write('products', $rows);
+        $this->byId = null;
+    }
+
+    public function nextId(): int
+    {
+        $all = $this->loadById();
+        return empty($all) ? 1001 : max(array_keys($all)) + 1;
+    }
+
+    /** @return array<string, mixed> */
+    private function toArray(Product $product): array
+    {
+        return [
+            'id'          => $product->id,
+            'category_id' => $product->categoryId,
+            'brand_id'    => $product->brandId,
+            'name'        => $product->name,
+            'description' => $product->description,
+            'price'       => $product->price,
+            'stock'       => $product->stock,
+            'in_stock'    => $product->inStock,
+            'rating'      => $product->rating,
+            'photos'      => $product->photos,
+            'properties'  => $product->properties,
+        ];
+    }
+
     /** @return list<int> */
     private function subtreeIds(int $rootId): array
     {

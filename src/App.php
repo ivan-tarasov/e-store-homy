@@ -9,6 +9,9 @@ use App\Action\Account\OrdersAction;
 use App\Action\Admin\DashboardAction as AdminDashboardAction;
 use App\Action\Admin\OrdersAction as AdminOrdersAction;
 use App\Action\Admin\OrderShowAction as AdminOrderShowAction;
+use App\Action\Admin\ProductDeleteAction as AdminProductDeleteAction;
+use App\Action\Admin\ProductEditAction as AdminProductEditAction;
+use App\Action\Admin\ProductSaveAction as AdminProductSaveAction;
 use App\Action\Admin\ProductsAction as AdminProductsAction;
 use App\Action\Admin\UsersAction as AdminUsersAction;
 use App\Action\Auth\LoginAction;
@@ -207,6 +210,9 @@ final class App
             AdminOrdersAction::class => new AdminOrdersAction($this->layout, $this->auth, $this->orders, $this->price, $this->locale),
             AdminOrderShowAction::class => new AdminOrderShowAction($this->layout, $this->auth, $this->orders, $this->users, $this->price, $this->locale),
             AdminProductsAction::class => new AdminProductsAction($this->layout, $this->auth, $this->products, $this->categories, $this->brands, $this->price, $this->slugify),
+            AdminProductEditAction::class => new AdminProductEditAction($this->layout, $this->auth, $this->products, $this->categories, $this->brands),
+            AdminProductSaveAction::class => new AdminProductSaveAction($this->auth, $this->products, $this->session),
+            AdminProductDeleteAction::class => new AdminProductDeleteAction($this->auth, $this->products),
             AdminUsersAction::class => new AdminUsersAction($this->layout, $this->auth, $this->users, $this->orders),
             NotFoundAction::class => new NotFoundAction($this->layout),
             default => throw new \RuntimeException('Unknown action: ' . $class),
@@ -269,6 +275,10 @@ final class App
             $r->addRoute('GET', '/admin/orders/{id}', AdminOrderShowAction::class);
             $r->addRoute('GET', '/admin/products', AdminProductsAction::class);
             $r->addRoute('GET', '/admin/products/', AdminProductsAction::class);
+            $r->addRoute('GET', '/admin/products/new', AdminProductEditAction::class);
+            $r->addRoute('GET', '/admin/products/{id}/edit', AdminProductEditAction::class);
+            $r->addRoute('POST', '/admin/products/save', AdminProductSaveAction::class);
+            $r->addRoute('POST', '/admin/products/{id}/delete', AdminProductDeleteAction::class);
             $r->addRoute('GET', '/admin/users', AdminUsersAction::class);
             $r->addRoute('GET', '/admin/users/', AdminUsersAction::class);
         });
