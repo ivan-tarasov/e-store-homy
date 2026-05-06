@@ -1187,11 +1187,13 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 #top-megamenu-nav .navbar-nav > li .dropdown-menu > li:last-child > a {
   border-bottom: none!important;
 }
-#top-megamenu-nav .navbar-nav .dropdown.open .dropdown-toggle:before {
+#top-megamenu-nav .navbar-nav .dropdown:hover .dropdown-toggle:before {
   display: block;
 }
-.animate-dropdown .open > .dropdown-menu,
-.animate-dropdown .open > .dropdown-menu > .dropdown-submenu > .dropdown-menu {
+#top-megamenu-nav .navbar-nav > li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.animate-dropdown li.dropdown:hover > .dropdown-menu {
   animation-name: slidenavAnimation;
   animation-duration: 200ms;
   animation-iteration-count: 1;

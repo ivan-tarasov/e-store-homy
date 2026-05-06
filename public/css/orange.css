@@ -154,7 +154,8 @@ h2 {
 #top-megamenu-nav .nav > li .dropdown-toggle:before {
   border-bottom-color: #f27a24;
 }
-#top-megamenu-nav .nav > li.open .dropdown-toggle {
+#top-megamenu-nav .nav > li.open .dropdown-toggle,
+#top-megamenu-nav .nav > li.dropdown:hover > .dropdown-toggle {
   background-color: #f1741a;
 }
 #top-megamenu-nav .dropdown {
@@ -174,7 +175,8 @@ h2 {
 #top-megamenu-nav .dropdown .dropdown-toggle:before {
   border-bottom-color: #f27a24;
 }
-#top-megamenu-nav .dropdown.open .dropdown-toggle {
+#top-megamenu-nav .dropdown.open .dropdown-toggle,
+#top-megamenu-nav .dropdown:hover > .dropdown-toggle {
   background-color: #f1741a;
 }
 #cart-page .widget .buttons-holder .simple-link:hover {
