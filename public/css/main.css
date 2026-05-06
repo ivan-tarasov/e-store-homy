@@ -865,7 +865,12 @@ header .top-cart-row .top-cart-holder .basket-item .close-btn {
 header .top-cart-row .top-cart-holder .basket-item .close-btn:after {
   color: #3d3d3d;
   content: "\f00d";
-  font-family: fontawesome;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  text-decoration: none;
+}
+header .top-cart-row .top-cart-holder .basket-item .close-btn {
+  text-decoration: none !important;
 }
 header .top-cart-row .top-cart-holder .basket-item-count {
   position: relative;

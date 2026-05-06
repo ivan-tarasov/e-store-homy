@@ -1,7 +1,7 @@
 <div class="top-cart-holder dropdown animate-dropdown">
 
    <div class="basket">
-      <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
+      <a class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" href="#">
          <div class="basket-item-count">
             <span class="count" id="total-qty">{total_items}</span>
             <img src="/img/icon-cart.png" alt="" />
@@ -24,19 +24,14 @@
 
          <li class="checkout">
             <div class="basket-item">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <a href="/cart/" class="le-button btn btn-sm btn-block">
-                        Перейти в корзину
-                        <i class="fa-solid fa-arrow-right"></i>
+               <div class="row g-2">
+                  <div class="col-6">
+                     <a href="/cart/" class="le-button btn btn-sm btn-block w-100">
+                        В корзину <i class="fa-solid fa-arrow-right"></i>
                      </a>
                   </div>
-               </div>
-            </div>
-            <div class="basket-item">
-               <div class="row">
-                  <div class="col-12 col-sm-12">
-                     <a href="/checkout/" class="le-button btn btn-block">Оформить заказ</a>
+                  <div class="col-6">
+                     <a href="/checkout/" class="le-button btn btn-block w-100">Оформить заказ</a>
                   </div>
                </div>
             </div>
