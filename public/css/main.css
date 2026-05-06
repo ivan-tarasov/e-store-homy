@@ -181,9 +181,6 @@
 /*===================================================================================*/
 /*	GENERAL
 /*===================================================================================*/
-.fontawesome {
-  font-family: fontawesome;
-}
 .inline {
   display: inline-block;
   vertical-align: top;
@@ -3735,27 +3732,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   -ms-filter: grayscale(100%);
 }
 /*===================================================================================*/
-/*  Browser Specific Styles
-/*===================================================================================*/
-.gecko .dropdown > a:after {
-  vertical-align: middle!important;
-}
-.gecko .dropdown-toggle:after {
-  vertical-align: middle!important;
-}
-.gecko header .top-search-holder .search-area .search-button:after {
-  vertical-align: middle!important;
-}
-.ie9 #top-megamenu-nav .dropdown .dropdown-toggle:before {
-  bottom: -23%;
-}
-.ie9 .le-select select {
-  padding: 5px;
-}
-.ie9 .le-select:after {
-  display: none;
-}
-/*===================================================================================*/
 /*  Responsive Layout
 /*===================================================================================*/
 select.top-drop-menu {
@@ -3763,12 +3739,6 @@ select.top-drop-menu {
   padding: 10px;
   width: 100%;
   color: #000;
-}
-.carousel-item.size-small {
-  min-width: 194px;
-}
-.carousel-item.size-medium {
-  min-width: 225px;
 }
 .navbar-collapse {
   padding: 0;
