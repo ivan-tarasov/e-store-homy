@@ -12,7 +12,7 @@ use App\Service\AuthService;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 
-final class UsersAction
+final class UsersAction extends AbstractAdminAction
 {
     public function __construct(
         private readonly LayoutRenderer $layout,
@@ -22,11 +22,13 @@ final class UsersAction
     ) {
     }
 
+    protected function auth(): AuthService { return $this->auth; }
+
     /** @param array<string, string> $vars */
     public function __invoke(Request $request, array $vars): Response
     {
-        if (!$this->auth->isAdmin()) {
-            return Response::redirect('/login/');
+        if ($redirect = $this->requireAdmin()) {
+            return $redirect;
         }
 
         $users = $this->users->all();

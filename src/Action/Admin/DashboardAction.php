@@ -17,8 +17,9 @@ use App\Service\PriceFormatter;
 use App\Service\RussianLocale;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
+use App\Template\TemplateEngine;
 
-final class DashboardAction
+final class DashboardAction extends AbstractAdminAction
 {
     public function __construct(
         private readonly LayoutRenderer $layout,
@@ -30,14 +31,17 @@ final class DashboardAction
         private readonly OrderRepository $orders,
         private readonly PriceFormatter $price,
         private readonly RussianLocale $locale,
+        private readonly TemplateEngine $tpl,
     ) {
     }
+
+    protected function auth(): AuthService { return $this->auth; }
 
     /** @param array<string, string> $vars */
     public function __invoke(Request $request, array $vars): Response
     {
-        if (!$this->auth->isAdmin()) {
-            return Response::redirect('/login/');
+        if ($redirect = $this->requireAdmin()) {
+            return $redirect;
         }
 
         $allOrders = $this->orders->all();
@@ -56,46 +60,34 @@ final class DashboardAction
 
         $cardHtml = '';
         foreach ($cards as [$label, $value, $href]) {
-            $cardHtml .= sprintf(
-                '<a href="%s" class="admin-card"><div class="admin-card-value">%s</div><div class="admin-card-label">%s</div></a>',
-                htmlspecialchars($href, ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars($label, ENT_QUOTES, 'UTF-8'),
-            );
+            $cardHtml .= $this->tpl->render('admin', 'dashboard-card', [
+                'href'  => htmlspecialchars($href, ENT_QUOTES, 'UTF-8'),
+                'value' => htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8'),
+                'label' => htmlspecialchars($label, ENT_QUOTES, 'UTF-8'),
+            ]);
         }
 
         $recent = array_slice($allOrders, 0, 5);
         $rows = '';
         foreach ($recent as $order) {
-            $rows .= sprintf(
-                '<tr><td><a href="/admin/orders/%s">%s</a></td><td>%s</td><td>%s</td><td class="text-end">%s</td><td>%d поз.</td></tr>',
-                rawurlencode($order->id),
-                htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8'),
-                $this->locale->formatDateTime($order->createdAt),
-                htmlspecialchars($order->customerName, ENT_QUOTES, 'UTF-8'),
-                $this->price->format($order->total),
-                count($order->items),
-            );
+            $rows .= $this->tpl->render('admin', 'orders-row', [
+                'id_encoded' => rawurlencode($order->id),
+                'id'         => htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8'),
+                'date'       => $this->locale->formatDateTime($order->createdAt),
+                'customer'   => htmlspecialchars($order->customerName, ENT_QUOTES, 'UTF-8'),
+                'total'      => $this->price->format($order->total),
+                'item_count' => count($order->items),
+            ]);
         }
         if ($rows === '') {
             $rows = '<tr><td colspan="5" class="text-muted text-center">Заказов ещё нет.</td></tr>';
         }
 
-        $body = sprintf(
-            '<section class="container admin-page" style="padding:2em 0;">'
-            . '<div class="row"><div class="col-md-3">%s</div><div class="col-md-9">'
-            . '<h1>Панель администратора</h1>'
-            . '<div class="admin-cards">%s</div>'
-            . '<h2 style="margin-top:2em;">Последние заказы</h2>'
-            . '<table class="table"><thead><tr>'
-            . '<th>Номер</th><th>Дата</th><th>Клиент</th><th class="text-end">Сумма</th><th>Позиций</th>'
-            . '</tr></thead><tbody>%s</tbody></table>'
-            . '<p><a href="/admin/orders/">Все заказы →</a></p>'
-            . '</div></div></section>',
-            AdminNav::render('dashboard'),
-            $cardHtml,
-            $rows,
-        );
+        $body = $this->tpl->render('admin', 'dashboard', [
+            'nav'   => AdminNav::render('dashboard'),
+            'cards' => $cardHtml,
+            'rows'  => $rows,
+        ]);
 
         return Response::html($this->layout->render($body, new PageMeta('Сводка — админ-панель')));
     }

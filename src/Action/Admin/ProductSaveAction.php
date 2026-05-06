@@ -11,7 +11,7 @@ use App\Repository\ProductRepository;
 use App\Service\AuthService;
 use App\Support\Session;
 
-final class ProductSaveAction
+final class ProductSaveAction extends AbstractAdminAction
 {
     public function __construct(
         private readonly AuthService $auth,
@@ -20,11 +20,13 @@ final class ProductSaveAction
     ) {
     }
 
+    protected function auth(): AuthService { return $this->auth; }
+
     /** @param array<string, string> $vars */
     public function __invoke(Request $request, array $vars): Response
     {
-        if (!$this->auth->isAdmin()) {
-            return Response::redirect('/login/');
+        if ($redirect = $this->requireAdmin()) {
+            return $redirect;
         }
 
         $id = $request->int('id', 0);

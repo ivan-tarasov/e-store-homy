@@ -9,7 +9,7 @@ use App\Http\Response;
 use App\Repository\ProductRepository;
 use App\Service\AuthService;
 
-final class ProductDeleteAction
+final class ProductDeleteAction extends AbstractAdminAction
 {
     public function __construct(
         private readonly AuthService $auth,
@@ -17,11 +17,13 @@ final class ProductDeleteAction
     ) {
     }
 
+    protected function auth(): AuthService { return $this->auth; }
+
     /** @param array<string, string> $vars */
     public function __invoke(Request $request, array $vars): Response
     {
-        if (!$this->auth->isAdmin()) {
-            return Response::redirect('/login/');
+        if ($redirect = $this->requireAdmin()) {
+            return $redirect;
         }
 
         $id = (int) ($vars['id'] ?? 0);

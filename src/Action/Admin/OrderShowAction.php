@@ -15,7 +15,7 @@ use App\Service\RussianLocale;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 
-final class OrderShowAction
+final class OrderShowAction extends AbstractAdminAction
 {
     public function __construct(
         private readonly LayoutRenderer $layout,
@@ -27,11 +27,13 @@ final class OrderShowAction
     ) {
     }
 
+    protected function auth(): AuthService { return $this->auth; }
+
     /** @param array<string, string> $vars */
     public function __invoke(Request $request, array $vars): Response
     {
-        if (!$this->auth->isAdmin()) {
-            return Response::redirect('/login/');
+        if ($redirect = $this->requireAdmin()) {
+            return $redirect;
         }
 
         $order = $this->orders->find($vars['id'] ?? '');

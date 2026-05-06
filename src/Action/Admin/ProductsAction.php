@@ -14,8 +14,9 @@ use App\Service\PriceFormatter;
 use App\Service\Slugify;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
+use App\Template\TemplateEngine;
 
-final class ProductsAction
+final class ProductsAction extends AbstractAdminAction
 {
     public function __construct(
         private readonly LayoutRenderer $layout,
@@ -25,71 +26,47 @@ final class ProductsAction
         private readonly BrandRepository $brands,
         private readonly PriceFormatter $price,
         private readonly Slugify $slugify,
+        private readonly TemplateEngine $tpl,
     ) {
     }
+
+    protected function auth(): AuthService { return $this->auth; }
 
     /** @param array<string, string> $vars */
     public function __invoke(Request $request, array $vars): Response
     {
-        if (!$this->auth->isAdmin()) {
-            return Response::redirect('/login/');
+        if ($redirect = $this->requireAdmin()) {
+            return $redirect;
         }
 
+        $allProducts = $this->products->all();
         $rows = '';
-        foreach ($this->products->all() as $product) {
+        foreach ($allProducts as $product) {
             $brand = $this->brands->find($product->brandId);
             $category = $this->categories->find($product->categoryId);
             $stockClass = $product->inStock ? 'in' : 'out';
             $stockLabel = $product->inStock ? 'на складе' : 'под заказ';
             $url = $this->slugify->productPath($product->id, $brand?->slug ?? '', $product->name);
 
-            $rows .= sprintf(
-                '<tr>'
-                . '<td>%d</td>'
-                . '<td><a href="%s" target="_blank">%s</a></td>'
-                . '<td>%s</td>'
-                . '<td>%s</td>'
-                . '<td class="text-end">%s</td>'
-                . '<td class="text-center">%d</td>'
-                . '<td><span class="stock-pill stock-%s">%s</span></td>'
-                . '<td class="text-end">%.1f ★</td>'
-                . '<td>'
-                . '<a class="btn btn-sm btn-outline-secondary" href="/admin/products/%d/edit">Изм.</a> '
-                . '<form method="post" action="/admin/products/%d/delete" style="display:inline;" onsubmit="return confirm(\'Удалить товар?\');">'
-                . '<button class="btn btn-sm btn-outline-danger" type="submit">Удал.</button></form>'
-                . '</td>'
-                . '</tr>',
-                $product->id,
-                htmlspecialchars($url, ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars($product->name, ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars($category?->name ?? '—', ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars($brand?->name ?? '—', ENT_QUOTES, 'UTF-8'),
-                $this->price->format($product->price),
-                $product->stock,
-                $stockClass,
-                $stockLabel,
-                $product->rating,
-                $product->id,
-                $product->id,
-            );
+            $rows .= $this->tpl->render('admin', 'products-row', [
+                'id'          => $product->id,
+                'url'         => htmlspecialchars($url, ENT_QUOTES, 'UTF-8'),
+                'name'        => htmlspecialchars($product->name, ENT_QUOTES, 'UTF-8'),
+                'category'    => htmlspecialchars($category?->name ?? '—', ENT_QUOTES, 'UTF-8'),
+                'brand'       => htmlspecialchars($brand?->name ?? '—', ENT_QUOTES, 'UTF-8'),
+                'price'       => $this->price->format($product->price),
+                'stock'       => $product->stock,
+                'stock_class' => $stockClass,
+                'stock_label' => $stockLabel,
+                'rating'      => number_format($product->rating, 1),
+            ]);
         }
 
-        $body = sprintf(
-            '<section class="container admin-page" style="padding:2em 0;">'
-            . '<div class="row"><div class="col-md-3">%s</div><div class="col-md-9">'
-            . '<div class="d-flex justify-content-between align-items-center mb-3">'
-            . '<h1 class="mb-0">Товары (%d)</h1>'
-            . '<a class="le-button" href="/admin/products/new">+ Новый товар</a>'
-            . '</div>'
-            . '<table class="table"><thead><tr>'
-            . '<th>ID</th><th>Название</th><th>Категория</th><th>Бренд</th>'
-            . '<th class="text-end">Цена</th><th class="text-center">Запас</th><th>Наличие</th><th class="text-end">Рейтинг</th><th></th>'
-            . '</tr></thead><tbody>%s</tbody></table>'
-            . '</div></div></section>',
-            AdminNav::render('products'),
-            count($this->products->all()),
-            $rows,
-        );
+        $body = $this->tpl->render('admin', 'products', [
+            'nav'   => AdminNav::render('products'),
+            'count' => count($allProducts),
+            'rows'  => $rows,
+        ]);
 
         return Response::html($this->layout->render($body, new PageMeta('Товары — админ-панель')));
     }

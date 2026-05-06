@@ -13,7 +13,7 @@ use App\Service\RussianLocale;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 
-final class OrdersAction
+final class OrdersAction extends AbstractAdminAction
 {
     public function __construct(
         private readonly LayoutRenderer $layout,
@@ -24,11 +24,13 @@ final class OrdersAction
     ) {
     }
 
+    protected function auth(): AuthService { return $this->auth; }
+
     /** @param array<string, string> $vars */
     public function __invoke(Request $request, array $vars): Response
     {
-        if (!$this->auth->isAdmin()) {
-            return Response::redirect('/login/');
+        if ($redirect = $this->requireAdmin()) {
+            return $redirect;
         }
 
         $orders = $this->orders->all();
