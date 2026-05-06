@@ -224,9 +224,6 @@ h2.border {
   margin: 0 5px 0 0;
   font-size: 18px;
   color: #c6c6c6;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-family: fontawesome;
 }
@@ -304,9 +301,6 @@ img {
   padding-bottom: 0;
 }
 a {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .caroufredsel_wrapper {
@@ -330,12 +324,10 @@ body {
 ::-moz-selection {
   color: #ffffff;
   text-shadow: none;
-  -webkit-text-shadow: none;
 }
 ::selection {
   color: #ffffff;
   text-shadow: none;
-  -webkit-text-shadow: none;
 }
 ul {
   margin: 0;
@@ -547,9 +539,6 @@ label.error {
   color: #3d3d3d;
   width: 100%;
   padding: 5px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding: 15px 14px;
   font-size: 13px;
@@ -937,9 +926,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   border: 1px solid #e0e0e0;
   border-top: 0;
   border-bottom: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .sidemenu-holder .side-menu nav .nav > li > .mega-menu {
@@ -955,9 +941,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .sidemenu-holder .side-menu nav .nav > li .yamm-content li {
   padding: 5px 0;
   border-bottom: 1px solid #e0e0e0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .sidemenu-holder .side-menu nav .nav > li .yamm-content li:last-child {
@@ -1052,9 +1035,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .megamenu-vertical .yamm-content li {
   padding: 5px;
   border-bottom: 1px solid #e0e0e0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .megamenu-vertical .yamm-content li:last-child {
@@ -1106,9 +1086,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   top: 0 !important;
 }
 .megamenu-horizontal .nav > li > .dropdown-toggle:after {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   content: "\f105";
   line-height: 18px;
@@ -1201,16 +1178,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  -webkit-animation-name: slidenavAnimation;
-  -webkit-animation-duration: 200ms;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-name: slidenavAnimation;
-  -moz-animation-duration: 200ms;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
 }
 @keyframes slidenavAnimation {
   from {
@@ -1282,9 +1249,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   width: 0;
   height: 0;
   border-style: solid;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .breadcrumb-nav-holder .breadcrumb-item:before {
@@ -1331,10 +1295,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   display: inline-block;
   vertical-align: bottom;
   margin: 0 0 0 5px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
 }
 #breadcrumb-alt {
   border-bottom: 1px solid #e0e0e0;
@@ -1554,9 +1514,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   margin: 0 5px 0 0;
   content: "\f105";
   font-family: fontawesome;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .le-links li a.active {
@@ -1601,9 +1558,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   margin: 0 5px 0 0;
   content: "\f105";
   font-family: fontawesome;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .accordion-widget .accordion .accordion-inner .accordion-body ul {
@@ -1671,8 +1625,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .slider-selection {
   position: absolute;
   background-repeat: repeat-x;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .slider-handle {
@@ -1699,9 +1651,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   border: none;
   font-size: 15px;
   color: #fff;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .le-button.huge {
@@ -2304,9 +2253,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   z-index: 100;
   position: absolute;
   top: 40%;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .homebanner-slider .nav-holder .btn-prev,
@@ -2339,16 +2285,9 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 .banner img {
   position: relative;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .banner:hover img {
-  -webkit-transform: rotate(-1deg) scale(1.1);
-  -moz-transform: rotate(-1deg) scale(1.1);
-  -ms-transform: rotate(-1deg) scale(1.1);
-  -o-transform: rotate(-1deg) scale(1.1);
   opacity: 0.9;
 }
 .banner .banner-text {
@@ -2399,9 +2338,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .nav-tabs li,
 .nav-tabs a,
 .nav-tabs ul {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .nav-tabs.simple li a {
@@ -2466,9 +2402,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   width: 22px;
   height: 22px;
   position: relative;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .btn-loadmore i:before {
@@ -2486,9 +2419,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   top: 0;
   bottom: 0;
   margin: auto;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 /*===================================================================================*/
@@ -2636,9 +2566,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .le-quantity .minus:after,
 .le-quantity .plus:after {
   color: #3d3d3d;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .le-quantity .minus:after,
@@ -2779,9 +2706,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
   color: #3d3d3d;
   width: 100%;
   padding: 5px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .le-input:focus,
@@ -3192,9 +3116,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .posts .meta > li,
 .posts .meta > li a {
   color: #9f9f9f;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .posts .meta > li:before {
@@ -3715,21 +3636,10 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 #footer .payment-methods li:hover img {
   filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
 }
 #footer .payment-methods li img {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
 }
 /*===================================================================================*/
 /*  Responsive Layout
