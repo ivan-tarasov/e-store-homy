@@ -14,10 +14,10 @@
 
    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
 
-   <link rel="stylesheet" href="/css/bootstrap.min.css" />
-   <link rel="stylesheet" href="/css/main.css" />
-   <link rel="stylesheet" href="/css/orange.css" />
-   <link rel="stylesheet" href="/css/snippets.css" />
+   <link rel="stylesheet" href="/css/bootstrap.min.css?v=8" />
+   <link rel="stylesheet" href="/css/main.css?v=8" />
+   <link rel="stylesheet" href="/css/orange.css?v=8" />
+   <link rel="stylesheet" href="/css/snippets.css?v=8" />
    <link rel="stylesheet" href="/css/font-awesome.min.css" />
    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
 

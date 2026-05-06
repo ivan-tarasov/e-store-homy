@@ -142,21 +142,21 @@ h2 {
 }
 #top-megamenu-nav .nav > li > a:hover,
 #top-megamenu-nav .nav > li > a:focus {
-  background-color: #f1741a;
+  background-color: transparent;
 }
 #top-megamenu-nav .nav > li.active a,
 #top-megamenu-nav .nav > li.active a:focus {
-  background-color: #f1741a;
+  background-color: transparent;
 }
 #top-megamenu-nav .nav > li .dropdown-toggle:focus {
-  background-color: #f1741a !important;
+  background-color: transparent !important;
 }
 #top-megamenu-nav .nav > li .dropdown-toggle:before {
   border-bottom-color: #f27a24;
 }
 #top-megamenu-nav .nav > li.open .dropdown-toggle,
 #top-megamenu-nav .nav > li.dropdown:hover > .dropdown-toggle {
-  background-color: #f1741a;
+  background-color: transparent;
 }
 #top-megamenu-nav .dropdown {
   border-right-color: #ee6c0e;
@@ -167,17 +167,17 @@ h2 {
 #top-megamenu-nav .dropdown:hover .dropdown-toggle:focus,
 #top-megamenu-nav .dropdown:focus .dropdown-toggle:focus,
 #top-megamenu-nav .dropdown.active .dropdown-toggle:focus {
-  background-color: #f1741a;
+  background-color: transparent;
 }
 #top-megamenu-nav .dropdown .dropdown-toggle:focus {
-  background-color: #f1741a !important;
+  background-color: transparent !important;
 }
 #top-megamenu-nav .dropdown .dropdown-toggle:before {
   border-bottom-color: #f27a24;
 }
 #top-megamenu-nav .dropdown.open .dropdown-toggle,
 #top-megamenu-nav .dropdown:hover > .dropdown-toggle {
-  background-color: #f1741a;
+  background-color: transparent;
 }
 #cart-page .widget .buttons-holder .simple-link:hover {
   color: #f27a24;

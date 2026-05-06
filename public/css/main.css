@@ -1212,21 +1212,21 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 @keyframes slidenavAnimation {
   from {
-    margin-top: -30px;
+    transform: translateY(-10px);
     opacity: 0;
   }
   to {
-    margin-top: 0;
+    transform: translateY(0);
     opacity: 1;
   }
 }
 @-webkit-keyframes slidenavAnimation {
   from {
-    margin-top: -30px;
+    transform: translateY(-10px);
     opacity: 0;
   }
   to {
-    margin-top: 0;
+    transform: translateY(0);
     opacity: 1;
   }
 }

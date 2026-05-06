@@ -408,3 +408,13 @@ header .top-search-holder .search-area .search-button {
 a {
     text-decoration: none;
 }
+
+/* Megamenu hover — Option B: white fill, orange text */
+#top-megamenu-nav .navbar-nav > li > a {
+    transition: background-color 0.15s ease, color 0.15s ease !important;
+}
+#top-megamenu-nav .navbar-nav > li > a:hover,
+#top-megamenu-nav .navbar-nav > li.dropdown:hover > a {
+    background-color: #fff !important;
+    color: #f27a24 !important;
+}
