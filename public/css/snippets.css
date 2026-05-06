@@ -409,6 +409,24 @@ a {
     text-decoration: none;
 }
 
+/* Cart dropdown: compact font, nowrap buttons */
+header .top-cart-row .top-cart-holder .dropdown-menu {
+    font-size: 13px;
+}
+header .top-cart-row .top-cart-holder .basket-item .title {
+    line-height: 20px;
+}
+header .top-cart-row .top-cart-holder .checkout .basket-item {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+header .top-cart-row .top-cart-holder .checkout .le-button {
+    font-size: 12px;
+    white-space: nowrap;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 /* Megamenu hover — Option B: white fill, orange text */
 #top-megamenu-nav .navbar-nav > li > a {
     transition: background-color 0.15s ease, color 0.15s ease !important;
