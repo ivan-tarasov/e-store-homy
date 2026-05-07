@@ -1,5 +1,5 @@
 <header>
-   <div class="container no-padding">
+   <div class="container">
       <div class="row align-items-center">
 
       <div class="col-12 col-md-3 logo-holder">

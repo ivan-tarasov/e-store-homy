@@ -452,3 +452,11 @@ header .top-cart-row .top-cart-holder .checkout .le-button {
         left: 0;
     }
 }
+
+/* Top-bar: at xs, both nav columns stack to col-12. Left-align the right
+ * (auth) column too so the login link doesn't look orphaned on the right. */
+@media (max-width: 575.98px) {
+    .top-bar .justify-content-end {
+        justify-content: flex-start !important;
+    }
+}

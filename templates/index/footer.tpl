@@ -1,7 +1,7 @@
    <footer id="footer" class="color-bg">
 
       <div class="link-list-row">
-         <div class="container no-padding">
+         <div class="container">
             <div class="row">
 
             <div class="col-12 col-md-4">
@@ -55,7 +55,7 @@
       </div>
 
       <div class="copyright-bar">
-         <div class="container no-padding">
+         <div class="container">
             <div class="row">
                <div class="col-12">
                   <small>{oferta}</small>
