@@ -428,6 +428,15 @@ header .top-cart-row .top-cart-holder .checkout .le-button {
     color: #f27a24 !important;
 }
 
+/* Product grid: make cards in a row stretch to equal height.
+ * BS5 .row is flex, so cols already match the tallest sibling; .product-card
+ * needs height:100% + flex-direction:column to fill its column. */
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Mobile: keep absolute-positioned dropdowns inside the viewport */
 @media (max-width: 767px) {
     /* Cart dropdown — full-width-ish, anchored to right edge */
