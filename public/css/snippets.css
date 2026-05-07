@@ -43,12 +43,6 @@
 #hero {
    height: 650px;
 }
-@media (max-width: 767px) {
-	#hero {
-		height: 0;
-      width: 0;
-	}
-}
 .label {
    margin-left: 3px;
 }
@@ -435,4 +429,20 @@ header .top-cart-row .top-cart-holder .checkout .le-button {
 #top-megamenu-nav .navbar-nav > li.dropdown:hover > a {
     background-color: #fff !important;
     color: #f27a24 !important;
+}
+
+/* Mobile: keep absolute-positioned dropdowns inside the viewport */
+@media (max-width: 767px) {
+    /* Cart dropdown — full-width-ish, anchored to right edge */
+    header .top-cart-row .top-cart-holder .dropdown-menu {
+        width: calc(100vw - 20px);
+        max-width: 360px;
+        left: auto;
+        right: 0;
+    }
+    /* Search categories filter — stay inside viewport */
+    header .top-search-holder .search-area .categories-filter .dropdown-menu {
+        width: 100%;
+        left: 0;
+    }
 }
