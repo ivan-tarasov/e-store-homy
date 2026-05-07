@@ -68,7 +68,7 @@ final class OrderShowAction extends AbstractAdminAction
 
         $body = sprintf(
             '<section class="container admin-page" style="padding:2em 0;">'
-            . '<div class="row"><div class="col-md-3">%s</div><div class="col-md-9">'
+            . '<div class="row"><div class="col-12 col-md-3">%s</div><div class="col-12 col-md-9">'
             . '<p><a href="/admin/orders/">← Все заказы</a></p>'
             . '<h1>Заказ %s</h1>'
             . '<div class="admin-meta-grid">'

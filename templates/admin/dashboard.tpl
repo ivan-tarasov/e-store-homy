@@ -1,7 +1,7 @@
 <section class="container admin-page" style="padding:2em 0;">
    <div class="row">
-      <div class="col-md-3">{nav}</div>
-      <div class="col-md-9">
+      <div class="col-12 col-md-3">{nav}</div>
+      <div class="col-12 col-md-9">
          <h1>Панель администратора</h1>
          <div class="admin-cards">{cards}</div>
 

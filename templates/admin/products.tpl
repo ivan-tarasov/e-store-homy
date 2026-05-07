@@ -1,7 +1,7 @@
 <section class="container admin-page" style="padding:2em 0;">
    <div class="row">
-      <div class="col-md-3">{nav}</div>
-      <div class="col-md-9">
+      <div class="col-12 col-md-3">{nav}</div>
+      <div class="col-12 col-md-9">
          <div class="d-flex justify-content-between align-items-center mb-3">
             <h1 class="mb-0">Товары ({count})</h1>
             <a class="le-button" href="/admin/products/new">+ Новый товар</a>

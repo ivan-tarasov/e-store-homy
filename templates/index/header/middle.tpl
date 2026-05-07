@@ -2,7 +2,7 @@
    <div class="container no-padding">
       <div class="row align-items-center">
 
-      <div class="col-12 col-sm-12 col-md-3 logo-holder">
+      <div class="col-12 col-md-3 logo-holder">
          <div class="logo">
             <a href="/">
                <img alt="{logo_alt}" title="{logo_alt}" src="/img/banner-02-sm2.png" width="233" height="54" />
@@ -10,7 +10,7 @@
          </div>
       </div>
 
-      <div class="col-12 col-sm-12 col-md-7 top-search-holder no-margin">
+      <div class="col-12 col-md-7 top-search-holder no-margin">
                
          <div class="contact-row">
             <div class="phone inline">
@@ -34,7 +34,7 @@
                
       </div>
 
-      <div class="col-12 col-sm-12 col-md-2 top-cart-row no-margin">
+      <div class="col-12 col-md-2 top-cart-row no-margin">
          <div class="top-cart-row-container">
             
             <!--div class="wishlist-compare-holder">

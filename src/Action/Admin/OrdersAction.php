@@ -62,7 +62,7 @@ final class OrdersAction extends AbstractAdminAction
 
         $body = sprintf(
             '<section class="container admin-page" style="padding:2em 0;">'
-            . '<div class="row"><div class="col-md-3">%s</div><div class="col-md-9">'
+            . '<div class="row"><div class="col-12 col-md-3">%s</div><div class="col-12 col-md-9">'
             . '<h1>Заказы (%d)</h1>'
             . '<table class="table"><thead><tr>'
             . '<th>Номер</th><th>Дата</th><th>Клиент</th><th>Телефон</th><th class="text-end">Сумма</th><th>Поз.</th><th>Статус</th>'
