@@ -12,7 +12,7 @@
 
       <div class="col-12 col-md-7 top-search-holder no-margin">
                
-         <div class="contact-row">
+         <div class="contact-row d-none d-sm-block">
             <div class="phone inline">
                <i class="fa-solid fa-phone"></i> {homy_phone}</span>
             </div>
