@@ -60,7 +60,7 @@ final class CheckoutAction
             '<section class="container" style="padding:2em 0;">'
             . '<h1>Оформление заказа</h1>'
             . '%s'
-            . '<div class="row"><div class="col-md-7">'
+            . '<div class="row"><div class="col-12 col-md-7">'
             . '<form method="post" action="/checkout/">'
             . '<div class="mb-3"><label>Имя</label><input class="form-control" name="name" value="%s" required /></div>'
             . '<div class="mb-3"><label>Телефон</label><input class="form-control" name="phone" value="%s" required /></div>'
@@ -68,9 +68,11 @@ final class CheckoutAction
             . '<div class="mb-3"><label>Комментарий</label><textarea class="form-control" name="note"></textarea></div>'
             . '<button class="le-button huge" type="submit">Оформить</button>'
             . '</form>'
-            . '</div><div class="col-md-5">'
+            . '</div><div class="col-12 col-md-5">'
             . '<h3>Ваш заказ</h3>'
+            . '<div class="table-responsive">'
             . '<table class="table">%s<tfoot><tr><th colspan="2" class="text-end">Итого</th><th class="text-end">%s</th></tr></tfoot></table>'
+            . '</div>'
             . '</div></div>'
             . '</section>',
             $errorBox,

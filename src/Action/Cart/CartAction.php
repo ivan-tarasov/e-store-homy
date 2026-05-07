@@ -66,11 +66,13 @@ final class CartAction
         $body = sprintf(
             '<section class="container" style="padding:2em 0;">'
             . '<h1>Корзина</h1>'
+            . '<div class="table-responsive">'
             . '<table class="table" style="width:100%%;"><thead><tr>'
             . '<th>Товар</th><th class="text-end">Цена</th><th class="text-center">Кол-во</th><th class="text-end">Сумма</th><th></th>'
             . '</tr></thead><tbody>%s</tbody>'
             . '<tfoot><tr><th colspan="3" class="text-end">Итого</th><th class="text-end">%s</th><th></th></tr></tfoot>'
             . '</table>'
+            . '</div>'
             . '<p class="text-end" style="margin-top:2em;"><a class="le-button huge" href="/checkout/">Оформить заказ</a></p>'
             . '</section>',
             $rows,
