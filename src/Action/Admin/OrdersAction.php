@@ -12,6 +12,7 @@ use App\Service\PriceFormatter;
 use App\Service\RussianLocale;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
+use App\Template\TemplateEngine;
 
 final class OrdersAction extends AbstractAdminAction
 {
@@ -21,6 +22,7 @@ final class OrdersAction extends AbstractAdminAction
         private readonly OrderRepository $orders,
         private readonly PriceFormatter $price,
         private readonly RussianLocale $locale,
+        private readonly TemplateEngine $tpl,
     ) {
     }
 
@@ -36,42 +38,26 @@ final class OrdersAction extends AbstractAdminAction
         $orders = $this->orders->all();
         $rows = '';
         foreach ($orders as $order) {
-            $rows .= sprintf(
-                '<tr>'
-                . '<td><a href="/admin/orders/%s">%s</a></td>'
-                . '<td>%s</td>'
-                . '<td>%s</td>'
-                . '<td>%s</td>'
-                . '<td class="text-end">%s</td>'
-                . '<td>%d</td>'
-                . '<td>%s</td>'
-                . '</tr>',
-                rawurlencode($order->id),
-                htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8'),
-                $this->locale->formatDateTime($order->createdAt),
-                htmlspecialchars($order->customerName, ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars($order->customerPhone, ENT_QUOTES, 'UTF-8'),
-                $this->price->format($order->total),
-                count($order->items),
-                htmlspecialchars($order->status, ENT_QUOTES, 'UTF-8'),
-            );
+            $rows .= $this->tpl->render('admin', 'orders-list-row', [
+                'id_encoded' => rawurlencode($order->id),
+                'id'         => htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8'),
+                'date'       => $this->locale->formatDateTime($order->createdAt),
+                'customer'   => htmlspecialchars($order->customerName, ENT_QUOTES, 'UTF-8'),
+                'phone'      => htmlspecialchars($order->customerPhone, ENT_QUOTES, 'UTF-8'),
+                'total'      => $this->price->format($order->total),
+                'item_count' => count($order->items),
+                'status'     => htmlspecialchars($order->status, ENT_QUOTES, 'UTF-8'),
+            ]);
         }
         if ($rows === '') {
             $rows = '<tr><td colspan="7" class="text-muted text-center">Заказов ещё нет. Оформите тестовый заказ из <a href="/">витрины</a>.</td></tr>';
         }
 
-        $body = sprintf(
-            '<section class="container admin-page" style="padding:2em 0;">'
-            . '<div class="row"><div class="col-12 col-md-3">%s</div><div class="col-12 col-md-9">'
-            . '<h1>Заказы (%d)</h1>'
-            . '<table class="table"><thead><tr>'
-            . '<th>Номер</th><th>Дата</th><th>Клиент</th><th>Телефон</th><th class="text-end">Сумма</th><th>Поз.</th><th>Статус</th>'
-            . '</tr></thead><tbody>%s</tbody></table>'
-            . '</div></div></section>',
-            AdminNav::render('orders'),
-            count($orders),
-            $rows,
-        );
+        $body = $this->tpl->render('admin', 'orders', [
+            'nav'   => AdminNav::render('orders'),
+            'count' => count($orders),
+            'rows'  => $rows,
+        ]);
 
         return Response::html($this->layout->render($body, new PageMeta('Заказы — админ-панель')));
     }
