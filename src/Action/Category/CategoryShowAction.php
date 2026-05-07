@@ -162,7 +162,7 @@ final class CategoryShowAction
 
         $html = '';
         foreach ($items as $product) {
-            $html .= $this->cards->card($product, withCart: true, withStock: true, colClass: 'col-12 col-sm-6 col-md-4');
+            $html .= $this->cards->card($product, withCart: true, withStock: true, colClass: 'col-6 col-sm-6 col-md-4');
         }
 
         return '<div class="row">' . $html . '</div>';
