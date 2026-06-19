@@ -88,5 +88,122 @@
         "singular": "стиральная машина",
         "icon": "washer",
         "description": "Фронтальная и вертикальная загрузка."
+    },
+    {
+        "id": 11,
+        "parent_id": null,
+        "slug": "tablets",
+        "name": "Планшеты",
+        "singular": "планшет",
+        "icon": "tablet",
+        "description": "Планшеты для работы, учёбы и развлечений."
+    },
+    {
+        "id": 12,
+        "parent_id": null,
+        "slug": "gaming",
+        "name": "Гейминг",
+        "singular": "игровое устройство",
+        "icon": "gamepad",
+        "description": "Игровые консоли и аксессуары."
+    },
+    {
+        "id": 13,
+        "parent_id": null,
+        "slug": "photo",
+        "name": "Фото и видео",
+        "singular": "фототехника",
+        "icon": "camera",
+        "description": "Фотоаппараты, объективы и аксессуары."
+    },
+    {
+        "id": 14,
+        "parent_id": null,
+        "slug": "smart-home",
+        "name": "Умный дом",
+        "singular": "устройство для умного дома",
+        "icon": "home",
+        "description": "Умные колонки, лампы, розетки и камеры."
+    },
+    {
+        "id": 15,
+        "parent_id": null,
+        "slug": "climate",
+        "name": "Климат",
+        "singular": "климатическая техника",
+        "icon": "climate",
+        "description": "Кондиционеры и увлажнители воздуха."
+    },
+    {
+        "id": 16,
+        "parent_id": 12,
+        "slug": "consoles",
+        "name": "Игровые консоли",
+        "singular": "игровая консоль",
+        "icon": "console",
+        "description": "Игровые приставки последнего поколения."
+    },
+    {
+        "id": 17,
+        "parent_id": 12,
+        "slug": "game-accessories",
+        "name": "Игровые аксессуары",
+        "singular": "игровой аксессуар",
+        "icon": "gamepad",
+        "description": "Геймпады, мыши и клавиатуры для игр."
+    },
+    {
+        "id": 18,
+        "parent_id": 13,
+        "slug": "cameras",
+        "name": "Фотоаппараты",
+        "singular": "фотоаппарат",
+        "icon": "camera",
+        "description": "Беззеркальные и зеркальные камеры."
+    },
+    {
+        "id": 19,
+        "parent_id": 13,
+        "slug": "lenses",
+        "name": "Объективы",
+        "singular": "объектив",
+        "icon": "lens",
+        "description": "Сменные объективы для системных камер."
+    },
+    {
+        "id": 20,
+        "parent_id": 15,
+        "slug": "air-conditioners",
+        "name": "Кондиционеры",
+        "singular": "кондиционер",
+        "icon": "snowflake",
+        "description": "Настенные сплит-системы для дома."
+    },
+    {
+        "id": 21,
+        "parent_id": 15,
+        "slug": "humidifiers",
+        "name": "Увлажнители",
+        "singular": "увлажнитель",
+        "icon": "droplet",
+        "description": "Увлажнители и очистители воздуха."
+    },
+    {
+        "id": 22,
+        "parent_id": 4,
+        "slug": "speakers",
+        "name": "Портативные колонки",
+        "singular": "колонка",
+        "icon": "speaker",
+        "description": "Беспроводные Bluetooth-колонки."
+    },
+    {
+        "id": 23,
+        "parent_id": 5,
+        "slug": "microwaves",
+        "name": "Микроволновки",
+        "singular": "микроволновая печь",
+        "icon": "microwave",
+        "description": "Микроволновые печи с грилем и без."
     }
 ]
