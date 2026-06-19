@@ -1,0 +1,519 @@
+/* margin spaces */
+.space10 {
+    margin-bottom: 10px;
+}
+.space20 {
+    margin-bottom: 20px;
+}
+.space30 {
+    margin-bottom: 30px;
+}
+.space40 {
+    margin-bottom: 40px;
+}
+.space50 {
+    margin-bottom: 50px;
+}
+.space60 {
+    margin-bottom: 60px;
+}
+.space70 {
+    margin-bottom: 70px;
+}
+.space80 {
+    margin-bottom: 80px;
+}
+.space90 {
+    margin-bottom: 90px;
+}
+.space100 {
+    margin-bottom: 100px;
+}
+
+.page-header {
+   padding: 20px 0;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+   margin: 2px !important;
+   font-size: 1em;
+}
+
+.label {
+   margin-left: 3px;
+}
+
+.has-error-border {
+   outline: 1px solid #a94442;
+}
+
+.banner {
+   padding: 7px 0;
+}
+
+/*===================================================================================*/
+/*  Properties list
+/*===================================================================================*/
+.prop-list {
+   list-style: none;
+   border-bottom: 1px solid #E8E8E8;
+   /*display: table-cell;/**/
+}
+ol.prop-list li {
+    display: table-row;
+    border-bottom: 1px solid #E8E8E8;
+}
+ol.prop-list li label,
+ol.prop-list li span {
+    display: table-cell;
+    border-bottom: 1px solid #e0e0e0;
+    color: #3d3d3d;
+    font-size: 14px;
+    padding: 7px 10px;
+}
+ol.prop-list li label {
+   width: 250px;
+}
+
+/*===================================================================================*/
+/*  Column gap
+/*===================================================================================*/
+.column {
+   -webkit-column-count: 3; /* Chrome, Safari, Opera */
+           column-count: 3;
+}
+.column-ff {
+      -moz-column-count: 3; /* Firefox */
+}
+.column .break-inside {
+   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+             page-break-inside: avoid; /* Firefox */
+                  break-inside: avoid; /* IE 10+ */
+}
+.column .break-inside h2 {
+   padding: 0;
+   /*margin: 10px 0 15px 0;/**/
+}
+.yamm-content {
+   padding: 1em !important;
+}
+.yamm-content h2 {
+   font-size: 1.4em !important;
+   padding-top: .5em !important;
+}
+.yamm-content h2 span {
+   font-weight: 100;
+   padding-right: 5px;
+}
+.column .break-inside img {
+   margin: 0 5px 7px 0;
+}
+
+.yamm-content p {
+   padding-left: 2.5rem;
+}
+
+
+
+/*===================================================================================*/
+/*  Back-to-top function v.2
+/*===================================================================================*/
+#back-top {
+  position: fixed;
+  bottom: 12px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 36px;
+  line-height: 100%;
+  color: #fff;
+  padding: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  opacity: .5;
+  height: 42px;
+  width: 42px;
+  text-align: center;
+}
+#back-top i {
+  display: inline-block;
+  vertical-align: top;
+}
+#back-top:hover {
+  opacity: 1;
+}
+#back-top {
+  background: #f27a24;
+}
+
+
+
+#additional-info .description-title {
+   margin: 20px 0;
+}
+#additional-info .prop-list {
+   margin: 0 0 0 1em;
+   padding: 5px 0 2px;
+}
+
+
+
+
+header .top-cart-row .top-cart-holder .basket-item .price {
+   font-size: 18px;
+}
+
+
+
+.le-button.incart {
+   background-color: #5cb85c;
+}
+.le-button.small {
+   font-size: 12px;
+   padding: 5px 10px;
+   z-index: 10;
+   position: relative;
+}
+
+
+
+header .top-cart-row .top-cart-holder .basket .dropdown-menu {
+   padding: 0;
+}
+.scroll-div {
+   /*width: 332px;*/
+   max-height: 430px;
+   overflow-y: scroll;
+}
+
+/* product gallery */
+#product-gallery-main { background: #fafafa; }
+.product-gallery-thumb { transition: border-color .15s; }
+.product-gallery-thumb:hover { border-color: #ccc !important; }
+.product-gallery-thumb.is-active { border-color: #e57000 !important; }
+
+/* admin panel */
+.admin-page h1 { margin-top: 0; }
+.admin-nav { background: #fafafa; border: 1px solid #eee; padding: 1em; }
+.admin-nav ul { margin: 0; }
+.admin-nav-link { display: block; padding: .5em .75em; color: #333; border-radius: 3px; }
+.admin-nav-link:hover { background: #fff; text-decoration: none; }
+.admin-nav-link.is-active { background: #e57000; color: #fff; }
+.admin-nav-link.is-active:hover { background: #cc6300; color: #fff; }
+
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1em;
+    margin: 1em 0 2em;
+}
+.admin-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 1.25em;
+    text-align: center;
+    color: #333;
+}
+.admin-card:hover { border-color: #e57000; text-decoration: none; }
+.admin-card-value { font-size: 1.8em; font-weight: 700; color: #e57000; line-height: 1.1; }
+.admin-card-label { font-size: .85em; color: #777; margin-top: .25em; text-transform: uppercase; letter-spacing: .04em; }
+
+.admin-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+    margin: 1em 0;
+}
+.admin-meta-grid label {
+    font-size: .75em;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    display: block;
+    margin: 0;
+}
+
+.stock-pill {
+    display: inline-block;
+    padding: .15em .6em;
+    font-size: .8em;
+    border-radius: 12px;
+    background: #eee;
+    color: #444;
+}
+.stock-pill.stock-in  { background: #d8f0d8; color: #2c6e2c; }
+.stock-pill.stock-out { background: #ffe5e0; color: #b34530; }
+header .top-cart-row .top-cart-holder .basket-item .thumb img { max-width: 100%; height: auto; }
+
+/* hero banner — two-layer:
+ *   1. background SVG fills 100% viewport width edge-to-edge
+ *   2. .container overlay keeps text + products aligned with the rest of the page
+ */
+#hero {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 4.5em 0 5em;
+    background: #ffe4c4 url('/img/banners/hero-bg.svg') center center / cover no-repeat;
+}
+#hero .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+#hero .hero-text { flex: 1 1 50%; max-width: 620px; min-width: 0; }
+#hero .hero-products {
+    flex: 0 1 45%;
+    max-width: 560px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+#hero .hero-products img { width: 100%; height: auto; max-height: 90%; }
+
+#hero .hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: .5em;
+    padding: .35em 1em;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    color: #e57000;
+    background: #ffffff;
+    border: 1.5px solid #e57000;
+    border-radius: 999px;
+}
+#hero .hero-kicker-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #e57000;
+}
+#hero .hero-title {
+    margin: 1em 0 .4em;
+    font-size: clamp(2.2em, 5.5vw, 4.5em);
+    line-height: 1.05;
+    font-weight: 800;
+    color: #1f2235;
+    letter-spacing: -1px;
+}
+#hero .hero-title-accent { color: #e57000; }
+#hero .hero-subtitle {
+    margin: 0 0 1.6em;
+    font-size: clamp(.95em, 1.4vw, 1.25em);
+    color: #5a4534;
+    font-weight: 500;
+}
+#hero .hero-ctas { display: flex; flex-wrap: wrap; gap: 1em; }
+#hero .hero-cta {
+    display: inline-block;
+    padding: 1em 1.6em;
+    font-size: 1.05em;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform .12s ease;
+}
+#hero .hero-cta:hover { transform: translateY(-1px); text-decoration: none; }
+#hero .hero-cta-primary {
+    background: #1f2235;
+    color: #ffffff;
+}
+#hero .hero-cta-primary:hover { background: #0e1020; color: #ffffff; }
+#hero .hero-cta-secondary {
+    color: #1f2235;
+    background: transparent;
+    border: 1.5px solid #1f2235;
+    font-weight: 500;
+}
+#hero .hero-cta-secondary:hover { background: #1f2235; color: #ffffff; }
+
+@media (max-width: 768px) {
+    #hero { padding: 2.5em 0; }
+    #hero .hero-content { flex-direction: column; text-align: center; }
+    #hero .hero-products { max-width: 320px; }
+    #hero .hero-ctas { justify-content: center; }
+}
+
+/* Search autocomplete dropdown */
+.search-area {
+    position: relative;
+}
+#search-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    z-index: 1050;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    max-height: 320px;
+    overflow-y: auto;
+}
+.search-result-item {
+    display: block;
+    padding: .55em 1em;
+    color: #333;
+    text-decoration: none;
+    font-size: .9em;
+    border-bottom: 1px solid #f0f0f0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-result-item:last-child {
+    border-bottom: none;
+}
+.search-result-item:hover {
+    background: #fff8f2;
+    color: #e57000;
+}
+.search-result-item.no-results {
+    color: #aaa;
+    cursor: default;
+}
+
+/* Search bar: flexbox override for BS5 (replaces BS3 float hack) */
+header .top-search-holder .search-area .control-group {
+    display: flex;
+    align-items: stretch;
+}
+header .top-search-holder .search-area .search-field {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+header .top-search-holder .search-area .search-button {
+    flex: 0 0 auto;
+    float: none;
+    margin: 0;
+}
+
+/* Override Bootstrap 5's default a { text-decoration: underline } */
+a {
+    text-decoration: none;
+}
+
+/* Cart dropdown: compact font, nowrap buttons */
+header .top-cart-row .top-cart-holder .dropdown-menu {
+    font-size: 13px;
+}
+header .top-cart-row .top-cart-holder .basket-item .title {
+    line-height: 20px;
+}
+header .top-cart-row .top-cart-holder .checkout .basket-item {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+header .top-cart-row .top-cart-holder .checkout .le-button {
+    font-size: 12px;
+    white-space: nowrap;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Megamenu hover — Option B: white fill, orange text */
+#top-megamenu-nav .navbar-nav > li > a {
+    transition: background-color 0.15s ease, color 0.15s ease !important;
+}
+#top-megamenu-nav .navbar-nav > li > a:hover,
+#top-megamenu-nav .navbar-nav > li.dropdown:hover > a {
+    background-color: #fff !important;
+    color: #f27a24 !important;
+}
+
+/* Product grid: make cards in a row stretch to equal height.
+ * BS5 .row is flex, so cols already match the tallest sibling; .product-card
+ * needs height:100% + flex-direction:column to fill its column. */
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Language switcher in the top bar */
+.top-bar ul.right li.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: .35em;
+}
+.top-bar ul.right li.lang-switch i {
+    opacity: .6;
+    font-size: .85em;
+}
+.top-bar ul.right li.lang-switch a {
+    display: inline-block;
+    padding: 0 .3em;
+    font-weight: 600;
+    font-size: .85em;
+    letter-spacing: .03em;
+    opacity: .6;
+}
+.top-bar ul.right li.lang-switch a:hover {
+    opacity: 1;
+}
+.top-bar ul.right li.lang-switch a.active {
+    opacity: 1;
+    color: var(--color-primary, #f27a24);
+    text-decoration: underline;
+}
+
+/* Brand strip: borderless logos, muted grayscale that colorises on hover.
+ * row-gap gives vertical breathing room between wrapped rows; the row is
+ * centre-aligned so a partial last row never leaves a lopsided gap. */
+.brands-row {
+    padding: 2.5em 0;
+    border-top: 1px solid #eee;
+}
+.brands-row .brand-grid {
+    row-gap: 1.75em;
+}
+.brands-row .brand-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    min-height: 56px;
+}
+.brands-row .brand-logo {
+    max-width: 100%;
+    max-height: 38px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.55;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+}
+.brands-row .brand-logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Mobile: keep absolute-positioned dropdowns inside the viewport */
+@media (max-width: 767px) {
+    /* Cart dropdown — full-width-ish, anchored to right edge */
+    header .top-cart-row .top-cart-holder .dropdown-menu {
+        width: calc(100vw - 20px);
+        max-width: 360px;
+        left: auto;
+        right: 0;
+    }
+    /* Search categories filter — stay inside viewport */
+    header .top-search-holder .search-area .categories-filter .dropdown-menu {
+        width: 100%;
+        left: 0;
+    }
+}
+
+/* Top-bar: at xs, both nav columns stack to col-12. Left-align the right
+ * (auth) column too so the login link doesn't look orphaned on the right. */
+@media (max-width: 575.98px) {
+    .top-bar .justify-content-end {
+        justify-content: flex-start !important;
+    }
+}

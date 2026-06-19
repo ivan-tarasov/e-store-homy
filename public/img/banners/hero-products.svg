@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f2235"/>
+      <stop offset="100%" stop-color="#0e1020"/>
+    </linearGradient>
+  </defs>
+
+  <!-- TV at the back -->
+  <g transform="translate(40, 60)">
+    <rect x="0"  y="0"  width="320" height="195" rx="12" fill="url(#ink)"/>
+    <rect x="12" y="12" width="296" height="171" rx="5"  fill="#2c4f7c"/>
+    <rect x="26" y="26" width="268" height="143" rx="3"  fill="#3877c1"/>
+    <rect x="138" y="195" width="44"  height="22" fill="url(#ink)"/>
+    <rect x="92"  y="217" width="136" height="9"  rx="2" fill="url(#ink)"/>
+  </g>
+
+  <!-- Phone in front -->
+  <g transform="translate(380, 110)">
+    <rect x="0"  y="0"  width="120" height="240" rx="20" fill="url(#ink)"/>
+    <rect x="7"  y="16" width="106" height="194" rx="7"  fill="#0e1020"/>
+    <rect x="44" y="7"  width="32"  height="3"   rx="1.5" fill="#3a3f55"/>
+    <circle cx="60" cy="226" r="4" fill="#3a3f55"/>
+    <rect x="7"  y="16" width="106" height="194" rx="7"  fill="#1d3b66" opacity="0.6"/>
+    <rect x="7"  y="16" width="22"  height="194" rx="7"  fill="#3877c1" opacity="0.7"/>
+  </g>
+
+  <!-- Headphones above the TV -->
+  <g transform="translate(20, 10)">
+    <path d="M0 80 Q0 0 80 0 Q160 0 160 80" fill="none" stroke="#1f2235" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="0"   cy="105" rx="25" ry="34" fill="#1f2235"/>
+    <ellipse cx="160" cy="105" rx="25" ry="34" fill="#1f2235"/>
+    <ellipse cx="2"   cy="105" rx="13" ry="22" fill="#3877c1"/>
+    <ellipse cx="158" cy="105" rx="13" ry="22" fill="#3877c1"/>
+  </g>
+
+  <!-- Coffee cup near the bottom -->
+  <g transform="translate(50, 320)">
+    <path d="M0 0 H80 V70 Q80 105 40 105 Q0 105 0 70 Z" fill="#ffffff" stroke="#1f2235" stroke-width="3"/>
+    <path d="M80 22 Q104 22 104 46 Q104 70 80 70" fill="none" stroke="#1f2235" stroke-width="3"/>
+    <ellipse cx="40" cy="6" rx="36" ry="7" fill="#5b3b1c"/>
+    <path d="M22 -10 Q26 -20 22 -28 Q18 -36 22 -46" stroke="#1f2235" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.65"/>
+    <path d="M48 -10 Q52 -20 48 -28 Q44 -36 48 -46" stroke="#1f2235" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.65"/>
+  </g>
+</svg>

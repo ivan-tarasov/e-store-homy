@@ -1,0 +1,264 @@
+/*===================================================================================*/
+/*  Orange Color
+/*===================================================================================*/
+:root {
+  --color-primary:      #f27a24;
+  --color-primary-dark: #ee6c0e;
+}
+.primary-bg {
+  background-color: var(--color-primary);
+  color: #FFF;
+}
+.primary-color {
+  color: var(--color-primary);
+}
+.le-dropdown {
+  background-color: var(--color-primary);
+}
+.le-dropdown.open {
+  background-color: var(--color-primary-dark);
+}
+.le-button {
+  background-color: var(--color-primary);
+}
+.le-button:hover {
+  background-color: #f38332;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-primary);
+}
+::-moz-selection {
+  background-color: var(--color-primary);
+}
+::selection {
+  background-color: var(--color-primary);
+}
+/*.social-icons li a:hover {
+  background-color: var(--color-primary);
+}*/
+.le-color {
+  color: var(--color-primary);
+}header .top-search-holder .contact-row i {
+  color: var(--color-primary);
+}
+header .top-search-holder .search-area .search-button {
+  background-color: var(--color-primary);
+}
+header .top-cart-row .top-cart-holder .basket-item .price {
+  color: var(--color-primary);
+}
+header .top-cart-row .top-cart-holder .basket-item-count .count {
+  background-color: var(--color-primary);
+}
+.sidemenu-holder .side-menu .head {
+  background-color: var(--color-primary);
+}
+.sidemenu-holder .side-menu .menu-item:hover,
+.sidemenu-holder .side-menu .menu-item.open {
+  border-color: var(--color-primary);
+}
+.megamenu-horizontal .nav > li > a:hover,
+.megamenu-horizontal .nav > li > a:focus {
+  background-color: var(--color-primary) !important;
+}
+.megamenu-horizontal .dropdown:hover .dropdown-toggle:focus,
+.megamenu-horizontal .dropdown.open .dropdown-toggle:focus,
+.megamenu-horizontal .dropdown:focus .dropdown-toggle:focus,
+.megamenu-horizontal .dropdown:hover .dropdown-toggle,
+.megamenu-horizontal .dropdown.open .dropdown-toggle,
+.megamenu-horizontal .dropdown:focus .dropdown-toggle {
+  background-color: var(--color-primary) !important;
+}
+.breadcrumb-nav-holder .breadcrumb-item.current a {
+  color: var(--color-primary);
+}
+.carousel-holder .title-nav .inverse {
+  color: var(--color-primary);
+}
+.carousel-holder .title-nav .nav-holder a:hover {
+  color: var(--color-primary) !important;
+}
+.le-radio:checked + .fake-box:after {
+  background-color: var(--color-primary);
+}
+.le-checkbox:checked + .fake-box {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.le-links li a:hover {
+  color: var(--color-primary);
+}
+.accordion-widget .accordion .accordion-toggle {
+  color: var(--color-primary);
+}
+.accordion-widget .accordion .accordion-toggle:after {
+  color: var(--color-primary);
+}
+.dropdown .dropdown-menu {
+  border-top-color: var(--color-primary);
+}
+.slider-selection {
+  background-color: var(--color-primary);
+}
+.slider-handle {
+  border-color: var(--color-primary);
+}
+#footer .widget .body li a:hover {
+  color: var(--color-primary);
+}
+#footer .link-list-row .link-widget li a:hover {
+  color: var(--color-primary);
+}
+h2 {
+  color: var(--color-primary);
+}
+.iconic-link:hover {
+  color: var(--color-primary);
+}
+.iconic-link:hover:before {
+  color: var(--color-primary);
+}
+/*.dropdown{
+    .dropdown-menu{
+        box-shadow: inset 0px 2px 0px @primary-color, inset 0px 0px 0px 2px darken(@second-color,10%) ;
+
+        &:before{
+            border-bottom-color: @primary-color;
+        }
+    }
+}*/
+.pagination li:hover a,
+.pagination li.current a {
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary);
+}
+.simple-link:hover {
+  color: var(--color-primary);
+}
+#top-megamenu-nav {
+  background-color: var(--color-primary);
+}
+#top-megamenu-nav .nav > li {
+  border-right-color: var(--color-primary-dark);
+}
+#top-megamenu-nav .nav > li > a:hover,
+#top-megamenu-nav .nav > li > a:focus {
+  background-color: transparent;
+}
+#top-megamenu-nav .nav > li.active a,
+#top-megamenu-nav .nav > li.active a:focus {
+  background-color: transparent;
+}
+#top-megamenu-nav .nav > li .dropdown-toggle:focus {
+  background-color: transparent !important;
+}
+#top-megamenu-nav .nav > li .dropdown-toggle:before {
+  border-bottom-color: var(--color-primary);
+}
+#top-megamenu-nav .nav > li.open .dropdown-toggle,
+#top-megamenu-nav .nav > li.dropdown:hover > .dropdown-toggle {
+  background-color: transparent;
+}
+#top-megamenu-nav .dropdown {
+  border-right-color: var(--color-primary-dark);
+}
+#top-megamenu-nav .dropdown:hover .dropdown-toggle,
+#top-megamenu-nav .dropdown:focus .dropdown-toggle,
+#top-megamenu-nav .dropdown.active .dropdown-toggle,
+#top-megamenu-nav .dropdown:hover .dropdown-toggle:focus,
+#top-megamenu-nav .dropdown:focus .dropdown-toggle:focus,
+#top-megamenu-nav .dropdown.active .dropdown-toggle:focus {
+  background-color: transparent;
+}
+#top-megamenu-nav .dropdown .dropdown-toggle:focus {
+  background-color: transparent !important;
+}
+#top-megamenu-nav .dropdown .dropdown-toggle:before {
+  border-bottom-color: var(--color-primary);
+}
+#top-megamenu-nav .dropdown.open .dropdown-toggle,
+#top-megamenu-nav .dropdown:hover > .dropdown-toggle {
+  background-color: transparent;
+}
+#cart-page .widget .buttons-holder .simple-link:hover {
+  color: var(--color-primary);
+}
+#cart-page .items-holder .close-btn:hover:after {
+  color: var(--color-primary);
+}
+#cart-page .items-holder .cart-item .title a:hover {
+  color: var(--color-primary);
+}
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus {
+  background-color: var(--color-primary) !important;
+}
+.nav-tabs li.active a:hover {
+  background-color: #f38637;
+}
+.btn-loadmore:hover i {
+  background-color: var(--color-primary);
+}
+.le-quantity .minus:hover:after,
+.le-quantity .plus:hover:after {
+  color: var(--color-primary);
+}
+.meta-row span a {
+  color: var(--color-primary);
+}
+.comment-item .comment-body .author {
+  color: var(--color-primary);
+}
+.product-item-holder .body .title a:hover {
+  color: var(--color-primary);
+}
+.single-product-gallery .gallery-thumbs .next-btn:hover,
+.single-product-gallery .gallery-thumbs .prev-btn:hover {
+  background-color: var(--color-primary);
+}
+.single-product-gallery .gallery-thumbs li a.active {
+  border-bottom-color: var(--color-primary);
+}
+.grid-list-products .grid-list-buttons ul li.active a i {
+  color: var(--color-primary);
+}
+.grid-list-products .grid-list-buttons ul li a:hover i {
+  color: #d6610d;
+}
+@media (max-width: 767px) {
+  #top-megamenu-nav .nav {
+    border-color: #d6610d !important;
+  }
+  #top-megamenu-nav .nav > .dropdown {
+    border-color: #d6610d !important;
+  }
+}
+.sidebar .price-range-holder .filter-button a {
+  color: var(--color-primary);
+}
+.sidebar .widget .product-list li a:hover {
+  color: var(--color-primary);
+}
+.sidebar .widget .product-list .price .price-current {
+  color: var(--color-primary);
+}
+.top-bar ul > li a:hover {
+  color: var(--color-primary);
+}
+.logo-svg {
+  fill: var(--color-primary);
+}.posts .post .meta > li a:hover {
+  color: var(--color-primary);
+}.comment-item .comment-body .likes a:hover,
+.comment-item .comment-body .likes .icon:hover {
+  color: var(--color-primary);
+}
+.comment-item .comment-body .likes .dislikes .icon:hover {
+  color: var(--color-primary);
+}
+.comment-item .comment-body .comment-reply:hover {
+  color: var(--color-primary);
+}

@@ -1,0 +1,12 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteBase /
+
+# serve real files (assets, images, css, js) directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [L]
+
+# everything else flows through the front controller
+RewriteRule ^.*$ index.php [L]

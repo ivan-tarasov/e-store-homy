@@ -1,0 +1,2289 @@
+[
+    {
+        "id": 1001,
+        "category_id": 1,
+        "brand_id": 1,
+        "name": "iPhone 15 128GB",
+        "description": "Смартфон с 6.1\" Super Retina XDR дисплеем, чипом A16 Bionic и системой камер 48 Мп.",
+        "price": 79990,
+        "stock": 12,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/1001/01.jpg",
+            "/img/products/1001/02.jpg",
+            "/img/products/1001/03.png",
+            "/img/products/1001/04.jpg"
+        ],
+        "properties": {
+            "Экран": "6.1\" OLED 2556×1179",
+            "Чип": "Apple A16 Bionic",
+            "Память": "128 GB",
+            "Камера": "48 Мп + 12 Мп",
+            "Аккумулятор": "до 20 ч видео"
+        },
+        "description_en": "Smartphone with a 6.1\" Super Retina XDR display, A16 Bionic chip and a 48 MP camera system.",
+        "properties_en": {
+            "Display": "6.1\" OLED 2556×1179",
+            "Chip": "Apple A16 Bionic",
+            "Memory": "128 GB",
+            "Camera": "48 MP + 12 MP",
+            "Battery": "up to 20h video"
+        }
+    },
+    {
+        "id": 1002,
+        "category_id": 1,
+        "brand_id": 2,
+        "name": "Galaxy S24",
+        "description": "Флагманский смартфон Samsung с экраном 6.2\" Dynamic AMOLED 2X и AI-функциями.",
+        "price": 69990,
+        "stock": 8,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/1002/01.png",
+            "/img/products/1002/02.jpg",
+            "/img/products/1002/03.jpg",
+            "/img/products/1002/04.jpg"
+        ],
+        "properties": {
+            "Экран": "6.2\" AMOLED 120 Гц",
+            "Чип": "Snapdragon 8 Gen 3",
+            "Память": "256 GB",
+            "Камера": "50 + 12 + 10 Мп"
+        },
+        "description_en": "Samsung flagship smartphone with a 6.2\" Dynamic AMOLED 2X display and AI features.",
+        "properties_en": {
+            "Display": "6.2\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 8 Gen 3",
+            "Memory": "256 GB",
+            "Camera": "50 + 12 + 10 MP"
+        }
+    },
+    {
+        "id": 1003,
+        "category_id": 1,
+        "brand_id": 8,
+        "name": "Redmi Note 13 Pro",
+        "description": "Смартфон с 200-Мп основной камерой, AMOLED-экраном 120 Гц и батареей 5100 мАч.",
+        "price": 24990,
+        "stock": 35,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/1003/01.jpg",
+            "/img/products/1003/02.jpg",
+            "/img/products/1003/03.jpg",
+            "/img/products/1003/04.jpg"
+        ],
+        "properties": {
+            "Экран": "6.67\" AMOLED 120 Гц",
+            "Чип": "Snapdragon 7s Gen 2",
+            "Память": "256 GB",
+            "Камера": "200 Мп"
+        },
+        "description_en": "Smartphone with a 200 MP main camera, a 120 Hz AMOLED display and a 5100 mAh battery.",
+        "properties_en": {
+            "Display": "6.67\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 7s Gen 2",
+            "Memory": "256 GB",
+            "Camera": "200 MP"
+        }
+    },
+    {
+        "id": 1004,
+        "category_id": 1,
+        "brand_id": 8,
+        "name": "Xiaomi 14",
+        "description": "Компактный флагман с камерой Leica и Snapdragon 8 Gen 3.",
+        "price": 64990,
+        "stock": 6,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/1004/01.jpg",
+            "/img/products/1004/02.jpg",
+            "/img/products/1004/03.jpg",
+            "/img/products/1004/04.jpg"
+        ],
+        "properties": {
+            "Экран": "6.36\" AMOLED",
+            "Чип": "Snapdragon 8 Gen 3",
+            "Память": "512 GB"
+        },
+        "description_en": "Compact flagship with a Leica camera and Snapdragon 8 Gen 3.",
+        "properties_en": {
+            "Display": "6.36\" AMOLED",
+            "Chip": "Snapdragon 8 Gen 3",
+            "Memory": "512 GB"
+        }
+    },
+    {
+        "id": 2001,
+        "category_id": 2,
+        "brand_id": 1,
+        "name": "MacBook Air 13 M3",
+        "description": "Тонкий ультрабук на чипе Apple M3 с экраном Liquid Retina 13.6\".",
+        "price": 119990,
+        "stock": 4,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/2001/01.png",
+            "/img/products/2001/02.jpg",
+            "/img/products/2001/03.png",
+            "/img/products/2001/04.jpg"
+        ],
+        "properties": {
+            "Чип": "Apple M3",
+            "Память": "16 GB",
+            "Накопитель": "512 GB SSD",
+            "Экран": "13.6\" Liquid Retina"
+        },
+        "description_en": "Slim ultrabook powered by the Apple M3 chip with a 13.6\" Liquid Retina display.",
+        "properties_en": {
+            "Chip": "Apple M3",
+            "Memory": "16 GB",
+            "Storage": "512 GB SSD",
+            "Display": "13.6\" Liquid Retina"
+        }
+    },
+    {
+        "id": 2002,
+        "category_id": 2,
+        "brand_id": 4,
+        "name": "VAIO SX14",
+        "description": "Лёгкий бизнес-ноутбук с экраном 14\" 4K и магниевым корпусом.",
+        "price": 154990,
+        "stock": 0,
+        "in_stock": false,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/2002/01.jpg",
+            "/img/products/2002/02.jpg",
+            "/img/products/2002/03.jpg",
+            "/img/products/2002/04.jpg"
+        ],
+        "properties": {
+            "Процессор": "Intel Core i7",
+            "Память": "16 GB",
+            "Экран": "14\" 4K"
+        },
+        "description_en": "Lightweight business laptop with a 14\" 4K display and a magnesium body.",
+        "properties_en": {
+            "Processor": "Intel Core i7",
+            "Memory": "16 GB",
+            "Display": "14\" 4K"
+        }
+    },
+    {
+        "id": 2003,
+        "category_id": 2,
+        "brand_id": 8,
+        "name": "Mi Notebook Pro 14",
+        "description": "Производительный ноутбук с дискретной графикой и 2.5K-экраном 120 Гц.",
+        "price": 84990,
+        "stock": 9,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/2003/01.jpg",
+            "/img/products/2003/02.jpg",
+            "/img/products/2003/03.png",
+            "/img/products/2003/04.png"
+        ],
+        "properties": {
+            "Процессор": "Intel Core i7-13700H",
+            "Память": "16 GB",
+            "Видеокарта": "RTX 4050"
+        },
+        "description_en": "Powerful laptop with discrete graphics and a 120 Hz 2.5K display.",
+        "properties_en": {
+            "Processor": "Intel Core i7-13700H",
+            "Memory": "16 GB",
+            "Graphics": "RTX 4050"
+        }
+    },
+    {
+        "id": 3001,
+        "category_id": 3,
+        "brand_id": 3,
+        "name": "OLED55C3",
+        "description": "55-дюймовый OLED-телевизор с процессором α9 Gen6 и поддержкой Dolby Vision.",
+        "price": 129990,
+        "stock": 3,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/3001/01.jpg",
+            "/img/products/3001/02.jpg",
+            "/img/products/3001/03.jpg",
+            "/img/products/3001/04.jpg"
+        ],
+        "properties": {
+            "Диагональ": "55\"",
+            "Тип матрицы": "OLED",
+            "HDR": "Dolby Vision IQ",
+            "Частота": "120 Гц"
+        },
+        "description_en": "55-inch OLED TV with the α9 Gen6 processor and Dolby Vision support.",
+        "properties_en": {
+            "Screen size": "55\"",
+            "Panel type": "OLED",
+            "HDR": "Dolby Vision IQ",
+            "Refresh rate": "120 Hz"
+        }
+    },
+    {
+        "id": 3002,
+        "category_id": 3,
+        "brand_id": 2,
+        "name": "QLED 65Q70C",
+        "description": "65\" QLED-телевизор с поддержкой 4K HDR.",
+        "price": 109990,
+        "stock": 7,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/3002/01.jpg",
+            "/img/products/3002/02.jpg",
+            "/img/products/3002/03.jpg",
+            "/img/products/3002/04.jpg"
+        ],
+        "properties": {
+            "Диагональ": "65\"",
+            "Разрешение": "4K Ultra HD",
+            "Тип матрицы": "QLED"
+        },
+        "description_en": "65\" QLED TV with 4K HDR support.",
+        "properties_en": {
+            "Screen size": "65\"",
+            "Resolution": "4K Ultra HD",
+            "Panel type": "QLED"
+        }
+    },
+    {
+        "id": 3003,
+        "category_id": 3,
+        "brand_id": 4,
+        "name": "Bravia 55X90L",
+        "description": "Full-array LED-телевизор с XR-процессором и Google TV.",
+        "price": 99990,
+        "stock": 5,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/3003/01.jpg",
+            "/img/products/3003/02.jpg",
+            "/img/products/3003/03.jpg",
+            "/img/products/3003/04.jpg"
+        ],
+        "properties": {
+            "Диагональ": "55\"",
+            "Тип матрицы": "Full-array LED",
+            "Платформа": "Google TV"
+        },
+        "description_en": "Full-array LED TV with an XR processor and Google TV.",
+        "properties_en": {
+            "Screen size": "55\"",
+            "Panel type": "Full-array LED",
+            "Platform": "Google TV"
+        }
+    },
+    {
+        "id": 4001,
+        "category_id": 4,
+        "brand_id": 1,
+        "name": "AirPods Pro 2",
+        "description": "Беспроводные наушники с активным шумоподавлением и пространственным звуком.",
+        "price": 22990,
+        "stock": 25,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/4001/01.jpg",
+            "/img/products/4001/02.jpg",
+            "/img/products/4001/03.jpg",
+            "/img/products/4001/04.jpg"
+        ],
+        "properties": {
+            "Тип": "TWS",
+            "Шумоподавление": "Активное",
+            "Время работы": "до 30 ч с кейсом"
+        },
+        "description_en": "Wireless earbuds with active noise cancellation and spatial audio.",
+        "properties_en": {
+            "Type": "TWS",
+            "Noise cancellation": "Active",
+            "Battery life": "up to 30h with case"
+        }
+    },
+    {
+        "id": 4002,
+        "category_id": 4,
+        "brand_id": 4,
+        "name": "WH-1000XM5",
+        "description": "Полноразмерные наушники с лучшим в классе шумоподавлением.",
+        "price": 32990,
+        "stock": 11,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/4002/01.jpg",
+            "/img/products/4002/02.jpg",
+            "/img/products/4002/03.jpg",
+            "/img/products/4002/04.jpg"
+        ],
+        "properties": {
+            "Тип": "Накладные",
+            "Шумоподавление": "Активное",
+            "Время работы": "30 ч"
+        },
+        "description_en": "Over-ear headphones with best-in-class noise cancellation.",
+        "properties_en": {
+            "Type": "Over-ear",
+            "Noise cancellation": "Active",
+            "Battery life": "30h"
+        }
+    },
+    {
+        "id": 4003,
+        "category_id": 4,
+        "brand_id": 7,
+        "name": "Fidelio L4",
+        "description": "Премиальные наушники с Hi-Res Audio и адаптивным шумоподавлением.",
+        "price": 24990,
+        "stock": 0,
+        "in_stock": false,
+        "rating": 4.3,
+        "photos": [
+            "/img/products/4003/01.jpg",
+            "/img/products/4003/02.jpg",
+            "/img/products/4003/03.jpg",
+            "/img/products/4003/04.jpg"
+        ],
+        "properties": {
+            "Тип": "Накладные",
+            "Hi-Res": "Да"
+        },
+        "description_en": "Premium headphones with Hi-Res Audio and adaptive noise cancellation.",
+        "properties_en": {
+            "Type": "Over-ear",
+            "Hi-Res": "Yes"
+        }
+    },
+    {
+        "id": 5001,
+        "category_id": 6,
+        "brand_id": 5,
+        "name": "Bosch KGN39VL21R",
+        "description": "Двухкамерный холодильник с системой NoFrost.",
+        "price": 64990,
+        "stock": 4,
+        "in_stock": true,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/5001/01.jpg",
+            "/img/products/5001/02.jpg",
+            "/img/products/5001/03.jpg",
+            "/img/products/5001/04.jpg"
+        ],
+        "properties": {
+            "Объём": "366 л",
+            "Тип": "Двухкамерный",
+            "NoFrost": "Да",
+            "Энергопотребление": "A++"
+        },
+        "description_en": "Two-compartment refrigerator with a NoFrost system.",
+        "properties_en": {
+            "Volume": "366 L",
+            "Type": "Two-compartment",
+            "NoFrost": "Yes",
+            "Energy consumption": "A++"
+        }
+    },
+    {
+        "id": 5002,
+        "category_id": 6,
+        "brand_id": 3,
+        "name": "LG GA-B509SLKM",
+        "description": "Холодильник с инверторным компрессором и зоной свежести.",
+        "price": 58990,
+        "stock": 6,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/5002/01.jpg",
+            "/img/products/5002/02.jpg",
+            "/img/products/5002/03.jpg",
+            "/img/products/5002/04.jpg"
+        ],
+        "properties": {
+            "Объём": "419 л",
+            "Тип": "Двухкамерный",
+            "Инверторный компрессор": "Да"
+        },
+        "description_en": "Refrigerator with an inverter compressor and a fresh zone.",
+        "properties_en": {
+            "Volume": "419 L",
+            "Type": "Two-compartment",
+            "Inverter compressor": "Yes"
+        }
+    },
+    {
+        "id": 5003,
+        "category_id": 6,
+        "brand_id": 2,
+        "name": "Samsung RB37A50N",
+        "description": "Холодильник с технологией Twin Cooling Plus.",
+        "price": 56990,
+        "stock": 3,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/5003/01.jpg",
+            "/img/products/5003/02.jpg",
+            "/img/products/5003/03.jpg",
+            "/img/products/5003/04.jpg"
+        ],
+        "properties": {
+            "Объём": "367 л",
+            "Twin Cooling": "Да"
+        },
+        "description_en": "Refrigerator with Twin Cooling Plus technology.",
+        "properties_en": {
+            "Volume": "367 L",
+            "Twin Cooling": "Yes"
+        }
+    },
+    {
+        "id": 5102,
+        "category_id": 7,
+        "brand_id": 7,
+        "name": "Philips 3200 LatteGo",
+        "description": "Полностью автоматическая кофемашина с системой LatteGo.",
+        "price": 54990,
+        "stock": 5,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/5102/01.jpg",
+            "/img/products/5102/02.jpg",
+            "/img/products/5102/03.jpg",
+            "/img/products/5102/04.jpg"
+        ],
+        "properties": {
+            "Тип": "Автоматическая",
+            "LatteGo": "Да"
+        },
+        "description_en": "Fully automatic coffee machine with the LatteGo system.",
+        "properties_en": {
+            "Type": "Automatic",
+            "LatteGo": "Yes"
+        }
+    },
+    {
+        "id": 6001,
+        "category_id": 9,
+        "brand_id": 6,
+        "name": "Dyson V15 Detect",
+        "description": "Беспроводной пылесос с лазерной подсветкой и LCD-экраном.",
+        "price": 79990,
+        "stock": 4,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/6001/01.jpg",
+            "/img/products/6001/02.jpg",
+            "/img/products/6001/03.jpg",
+            "/img/products/6001/04.jpg"
+        ],
+        "properties": {
+            "Тип": "Беспроводной",
+            "Лазерная подсветка": "Да",
+            "Время работы": "до 60 мин"
+        },
+        "description_en": "Cordless vacuum cleaner with a laser illumination and an LCD screen.",
+        "properties_en": {
+            "Type": "Cordless",
+            "Laser illumination": "Yes",
+            "Battery life": "up to 60 min"
+        }
+    },
+    {
+        "id": 6002,
+        "category_id": 9,
+        "brand_id": 8,
+        "name": "Mi Robot Vacuum X10+",
+        "description": "Робот-пылесос с лидаром и автоматической мойкой щёток.",
+        "price": 49990,
+        "stock": 9,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/6002/01.jpg",
+            "/img/products/6002/02.jpg",
+            "/img/products/6002/03.jpg",
+            "/img/products/6002/04.png"
+        ],
+        "properties": {
+            "Тип": "Робот",
+            "Лидар": "Да",
+            "Самоочистка": "Да"
+        },
+        "description_en": "Robot vacuum with LiDAR and automatic brush washing.",
+        "properties_en": {
+            "Type": "Robot",
+            "LiDAR": "Yes",
+            "Self-cleaning": "Yes"
+        }
+    },
+    {
+        "id": 6003,
+        "category_id": 9,
+        "brand_id": 10,
+        "name": "Tefal X-Force Flex",
+        "description": "Лёгкий вертикальный пылесос с гибкой трубкой.",
+        "price": 24990,
+        "stock": 14,
+        "in_stock": true,
+        "rating": 4.2,
+        "photos": [
+            "/img/products/6003/01.jpg",
+            "/img/products/6003/02.jpg",
+            "/img/products/6003/03.jpg",
+            "/img/products/6003/04.jpg"
+        ],
+        "properties": {
+            "Тип": "Беспроводной",
+            "Время работы": "45 мин"
+        },
+        "description_en": "Lightweight stick vacuum cleaner with a flexible tube.",
+        "properties_en": {
+            "Type": "Cordless",
+            "Battery life": "45 min"
+        }
+    },
+    {
+        "id": 6101,
+        "category_id": 10,
+        "brand_id": 5,
+        "name": "Bosch WAX32M02ME",
+        "description": "Стиральная машина с инверторным мотором и загрузкой 10 кг.",
+        "price": 89990,
+        "stock": 3,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/6101/01.jpg",
+            "/img/products/6101/02.jpg",
+            "/img/products/6101/03.jpg",
+            "/img/products/6101/04.jpg"
+        ],
+        "properties": {
+            "Загрузка": "10 кг",
+            "Класс": "A+++",
+            "Отжим": "1600 об/мин"
+        },
+        "description_en": "Washing machine with an inverter motor and 10 kg load capacity.",
+        "properties_en": {
+            "Load": "10 kg",
+            "Class": "A+++",
+            "Spin": "1600 rpm"
+        }
+    },
+    {
+        "id": 6102,
+        "category_id": 10,
+        "brand_id": 3,
+        "name": "LG F4V5VG0W",
+        "description": "Стиральная машина с прямым приводом и AI DD.",
+        "price": 74990,
+        "stock": 5,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/6102/01.png",
+            "/img/products/6102/02.jpg",
+            "/img/products/6102/03.jpg",
+            "/img/products/6102/04.jpg"
+        ],
+        "properties": {
+            "Загрузка": "9 кг",
+            "AI DD": "Да",
+            "Отжим": "1400 об/мин"
+        },
+        "description_en": "Washing machine with a direct drive and AI DD.",
+        "properties_en": {
+            "Load": "9 kg",
+            "AI DD": "Yes",
+            "Spin": "1400 rpm"
+        }
+    },
+    {
+        "id": 7001,
+        "category_id": 11,
+        "brand_id": 1,
+        "name": "iPad Air 11 M2",
+        "description": "Планшет Apple с дисплеем Liquid Retina 11\", чипом M2 и поддержкой Apple Pencil Pro.",
+        "price": 64990,
+        "stock": 14,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/7001/01.png",
+            "/img/products/7001/02.jpg",
+            "/img/products/7001/03.jpg"
+        ],
+        "properties": {
+            "Экран": "11\" Liquid Retina 2360×1640",
+            "Чип": "Apple M2",
+            "Память": "128 GB",
+            "Связь": "Wi-Fi 6E"
+        },
+        "description_en": "Apple tablet with an 11\" Liquid Retina display, M2 chip and Apple Pencil Pro support.",
+        "properties_en": {
+            "Display": "11\" Liquid Retina 2360×1640",
+            "Chip": "Apple M2",
+            "Memory": "128 GB",
+            "Connectivity": "Wi-Fi 6E"
+        }
+    },
+    {
+        "id": 7002,
+        "category_id": 11,
+        "brand_id": 1,
+        "name": "iPad Pro 12.9 M4",
+        "description": "Профессиональный планшет с дисплеем Ultra Retina XDR (OLED) 12.9\" и чипом M4.",
+        "price": 119990,
+        "stock": 6,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/7002/01.jpg",
+            "/img/products/7002/02.jpg",
+            "/img/products/7002/03.png"
+        ],
+        "properties": {
+            "Экран": "12.9\" OLED 120 Гц",
+            "Чип": "Apple M4",
+            "Память": "256 GB",
+            "Вес": "579 г"
+        },
+        "description_en": "Professional tablet with a 12.9\" Ultra Retina XDR (OLED) display and the M4 chip.",
+        "properties_en": {
+            "Display": "12.9\" OLED 120 Hz",
+            "Chip": "Apple M4",
+            "Memory": "256 GB",
+            "Weight": "579 g"
+        }
+    },
+    {
+        "id": 7003,
+        "category_id": 11,
+        "brand_id": 2,
+        "name": "Galaxy Tab S9",
+        "description": "Флагманский Android-планшет Samsung с экраном Dynamic AMOLED 2X 11\" и пером S Pen в комплекте.",
+        "price": 79990,
+        "stock": 9,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7003/01.jpg",
+            "/img/products/7003/02.jpg",
+            "/img/products/7003/03.png"
+        ],
+        "properties": {
+            "Экран": "11\" AMOLED 120 Гц",
+            "Чип": "Snapdragon 8 Gen 2",
+            "Память": "256 GB",
+            "Защита": "IP68"
+        },
+        "description_en": "Samsung flagship Android tablet with an 11\" Dynamic AMOLED 2X display and an included S Pen.",
+        "properties_en": {
+            "Display": "11\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 8 Gen 2",
+            "Memory": "256 GB",
+            "Protection": "IP68"
+        }
+    },
+    {
+        "id": 7004,
+        "category_id": 11,
+        "brand_id": 8,
+        "name": "Xiaomi Pad 6",
+        "description": "Доступный планшет с экраном 11\" 144 Гц и стереозвуком из четырёх динамиков.",
+        "price": 29990,
+        "stock": 21,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7004/01.jpg",
+            "/img/products/7004/02.jpg",
+            "/img/products/7004/03.jpg"
+        ],
+        "properties": {
+            "Экран": "11\" IPS 144 Гц",
+            "Чип": "Snapdragon 870",
+            "Память": "128 GB",
+            "Батарея": "8840 мА·ч"
+        },
+        "description_en": "Affordable tablet with an 11\" 144 Hz display and quad-speaker stereo sound.",
+        "properties_en": {
+            "Display": "11\" IPS 144 Hz",
+            "Chip": "Snapdragon 870",
+            "Memory": "128 GB",
+            "Battery": "8840 mAh"
+        }
+    },
+    {
+        "id": 7005,
+        "category_id": 11,
+        "brand_id": 12,
+        "name": "Lenovo Tab P12",
+        "description": "Большой планшет 12.7\" для развлечений и заметок с пером Lenovo Tab Pen Plus.",
+        "price": 32990,
+        "stock": 12,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/7005/01.jpg",
+            "/img/products/7005/02.jpg",
+            "/img/products/7005/03.jpg"
+        ],
+        "properties": {
+            "Экран": "12.7\" IPS 2944×1840",
+            "Чип": "MediaTek Dimensity 7050",
+            "Память": "128 GB",
+            "Звук": "4× JBL"
+        },
+        "description_en": "Large 12.7\" tablet for entertainment and note-taking with the Lenovo Tab Pen Plus.",
+        "properties_en": {
+            "Display": "12.7\" IPS 2944×1840",
+            "Chip": "MediaTek Dimensity 7050",
+            "Memory": "128 GB",
+            "Sound": "4× JBL"
+        }
+    },
+    {
+        "id": 7006,
+        "category_id": 11,
+        "brand_id": 2,
+        "name": "Galaxy Tab A9",
+        "description": "Компактный и недорогой планшет для веба, чтения и видео.",
+        "price": 17990,
+        "stock": 30,
+        "in_stock": true,
+        "rating": 4.3,
+        "photos": [
+            "/img/products/7006/01.png",
+            "/img/products/7006/02.jpg",
+            "/img/products/7006/03.jpg"
+        ],
+        "properties": {
+            "Экран": "8.7\" TFT",
+            "Чип": "MediaTek Helio G99",
+            "Память": "64 GB",
+            "Батарея": "5100 мА·ч"
+        },
+        "description_en": "Compact and affordable tablet for the web, reading and video.",
+        "properties_en": {
+            "Display": "8.7\" TFT",
+            "Chip": "MediaTek Helio G99",
+            "Memory": "64 GB",
+            "Battery": "5100 mAh"
+        }
+    },
+    {
+        "id": 7101,
+        "category_id": 16,
+        "brand_id": 4,
+        "name": "PlayStation 5 Slim",
+        "description": "Обновлённая компактная версия PS5 с дисководом и накопителем 1 ТБ.",
+        "price": 59990,
+        "stock": 18,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/7101/01.png",
+            "/img/products/7101/02.jpg",
+            "/img/products/7101/03.png"
+        ],
+        "properties": {
+            "Накопитель": "1 TB SSD",
+            "Разрешение": "до 4K 120 Гц",
+            "GPU": "10.3 TFLOPs RDNA2"
+        },
+        "description_en": "Updated compact version of the PS5 with a disc drive and 1 TB of storage.",
+        "properties_en": {
+            "Storage": "1 TB SSD",
+            "Resolution": "up to 4K 120 Hz",
+            "GPU": "10.3 TFLOPs RDNA2"
+        }
+    },
+    {
+        "id": 7102,
+        "category_id": 16,
+        "brand_id": 16,
+        "name": "Xbox Series X",
+        "description": "Самая мощная консоль Microsoft с поддержкой 4K и быстрым SSD.",
+        "price": 54990,
+        "stock": 11,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/7102/01.jpg",
+            "/img/products/7102/02.jpg",
+            "/img/products/7102/03.png"
+        ],
+        "properties": {
+            "Накопитель": "1 TB SSD",
+            "Разрешение": "до 4K 120 Гц",
+            "GPU": "12 TFLOPs RDNA2"
+        },
+        "description_en": "Microsoft's most powerful console with 4K support and a fast SSD.",
+        "properties_en": {
+            "Storage": "1 TB SSD",
+            "Resolution": "up to 4K 120 Hz",
+            "GPU": "12 TFLOPs RDNA2"
+        }
+    },
+    {
+        "id": 7103,
+        "category_id": 16,
+        "brand_id": 16,
+        "name": "Xbox Series S",
+        "description": "Компактная цифровая консоль для игр в 1440p без дисковода.",
+        "price": 34990,
+        "stock": 25,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7103/01.jpg",
+            "/img/products/7103/02.png"
+        ],
+        "properties": {
+            "Накопитель": "512 GB SSD",
+            "Разрешение": "до 1440p 120 Гц",
+            "Формат": "цифровой"
+        },
+        "description_en": "Compact digital console for 1440p gaming without a disc drive.",
+        "properties_en": {
+            "Storage": "512 GB SSD",
+            "Resolution": "up to 1440p 120 Hz",
+            "Format": "digital"
+        }
+    },
+    {
+        "id": 7104,
+        "category_id": 16,
+        "brand_id": 15,
+        "name": "Nintendo Switch OLED",
+        "description": "Гибридная консоль с ярким 7\" OLED-экраном для игры дома и в дороге.",
+        "price": 32990,
+        "stock": 22,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/7104/01.jpg"
+        ],
+        "properties": {
+            "Экран": "7\" OLED",
+            "Накопитель": "64 GB",
+            "Режимы": "ТВ / настольный / портативный"
+        },
+        "description_en": "Hybrid console with a vivid 7\" OLED screen for gaming at home and on the go.",
+        "properties_en": {
+            "Display": "7\" OLED",
+            "Storage": "64 GB",
+            "Modes": "TV / tabletop / handheld"
+        }
+    },
+    {
+        "id": 7105,
+        "category_id": 16,
+        "brand_id": 15,
+        "name": "Nintendo Switch Lite",
+        "description": "Лёгкая портативная версия Switch для игры в дороге.",
+        "price": 19990,
+        "stock": 28,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/7105/01.jpg"
+        ],
+        "properties": {
+            "Экран": "5.5\" LCD",
+            "Накопитель": "32 GB",
+            "Вес": "275 г"
+        },
+        "description_en": "Lightweight portable version of the Switch for gaming on the go.",
+        "properties_en": {
+            "Display": "5.5\" LCD",
+            "Storage": "32 GB",
+            "Weight": "275 g"
+        }
+    },
+    {
+        "id": 7106,
+        "category_id": 16,
+        "brand_id": 4,
+        "name": "PlayStation 5 Pro",
+        "description": "Продвинутая версия PS5 с улучшенной графикой и трассировкой лучей.",
+        "price": 89990,
+        "stock": 4,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7106/01.png",
+            "/img/products/7106/02.jpg",
+            "/img/products/7106/03.png"
+        ],
+        "properties": {
+            "Накопитель": "2 TB SSD",
+            "Разрешение": "до 8K",
+            "Особенности": "PSSR апскейл"
+        },
+        "description_en": "Advanced version of the PS5 with enhanced graphics and ray tracing.",
+        "properties_en": {
+            "Storage": "2 TB SSD",
+            "Resolution": "up to 8K",
+            "Features": "PSSR upscaling"
+        }
+    },
+    {
+        "id": 7201,
+        "category_id": 17,
+        "brand_id": 4,
+        "name": "DualSense",
+        "description": "Беспроводной контроллер для PS5 с тактильной отдачей и адаптивными триггерами.",
+        "price": 7990,
+        "stock": 40,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7201/01.png",
+            "/img/products/7201/02.jpg",
+            "/img/products/7201/03.jpg"
+        ],
+        "properties": {
+            "Подключение": "Bluetooth / USB-C",
+            "Батарея": "1560 мА·ч",
+            "Особенности": "haptic feedback"
+        },
+        "description_en": "Wireless controller for the PS5 with haptic feedback and adaptive triggers.",
+        "properties_en": {
+            "Connection": "Bluetooth / USB-C",
+            "Battery": "1560 mAh",
+            "Features": "haptic feedback"
+        }
+    },
+    {
+        "id": 7202,
+        "category_id": 17,
+        "brand_id": 16,
+        "name": "Xbox Wireless Controller",
+        "description": "Геймпад Xbox с текстурированными триггерами и кнопкой Share.",
+        "price": 6990,
+        "stock": 35,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7202/01.jpg",
+            "/img/products/7202/02.jpg",
+            "/img/products/7202/03.jpg"
+        ],
+        "properties": {
+            "Подключение": "Bluetooth / USB-C",
+            "Питание": "2× AA",
+            "Совместимость": "Xbox / PC"
+        },
+        "description_en": "Xbox gamepad with textured triggers and a Share button.",
+        "properties_en": {
+            "Connection": "Bluetooth / USB-C",
+            "Power": "2× AA",
+            "Compatibility": "Xbox / PC"
+        }
+    },
+    {
+        "id": 7203,
+        "category_id": 17,
+        "brand_id": 11,
+        "name": "ROG Gladius III",
+        "description": "Игровая мышь ASUS ROG с сенсором 19000 dpi и сменными переключателями.",
+        "price": 4990,
+        "stock": 27,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/7203/01.jpg",
+            "/img/products/7203/02.jpg",
+            "/img/products/7203/03.jpg"
+        ],
+        "properties": {
+            "Сенсор": "19000 dpi",
+            "Кнопки": "6",
+            "Подключение": "USB / 2.4 ГГц"
+        },
+        "description_en": "ASUS ROG gaming mouse with a 19000 dpi sensor and swappable switches.",
+        "properties_en": {
+            "Sensor": "19000 dpi",
+            "Buttons": "6",
+            "Connection": "USB / 2.4 GHz"
+        }
+    },
+    {
+        "id": 7204,
+        "category_id": 17,
+        "brand_id": 11,
+        "name": "ROG Strix Scope",
+        "description": "Механическая игровая клавиатура ASUS ROG с RGB-подсветкой.",
+        "price": 9990,
+        "stock": 16,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7204/01.jpg",
+            "/img/products/7204/02.jpg",
+            "/img/products/7204/03.jpg"
+        ],
+        "properties": {
+            "Переключатели": "ROG NX",
+            "Подсветка": "RGB Aura Sync",
+            "Формат": "full-size"
+        },
+        "description_en": "ASUS ROG mechanical gaming keyboard with RGB backlighting.",
+        "properties_en": {
+            "Switches": "ROG NX",
+            "Backlighting": "RGB Aura Sync",
+            "Format": "full-size"
+        }
+    },
+    {
+        "id": 7301,
+        "category_id": 18,
+        "brand_id": 13,
+        "name": "Canon EOS R6 Mark II",
+        "description": "Полнокадровая беззеркальная камера с матрицей 24 Мп и съёмкой 4K 60p.",
+        "price": 219990,
+        "stock": 5,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/7301/01.jpg",
+            "/img/products/7301/02.jpg",
+            "/img/products/7301/03.jpg"
+        ],
+        "properties": {
+            "Матрица": "24.2 Мп full-frame",
+            "Видео": "4K 60p",
+            "Стабилизация": "до 8 ступеней",
+            "Серия": "40 кадр/с"
+        },
+        "description_en": "Full-frame mirrorless camera with a 24 MP sensor and 4K 60p recording.",
+        "properties_en": {
+            "Sensor": "24.2 MP full-frame",
+            "Video": "4K 60p",
+            "Stabilization": "up to 8 stops",
+            "Burst": "40 fps"
+        }
+    },
+    {
+        "id": 7302,
+        "category_id": 18,
+        "brand_id": 13,
+        "name": "Canon EOS R50",
+        "description": "Лёгкая беззеркальная камера APS-C для начинающих и блогеров.",
+        "price": 79990,
+        "stock": 13,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7302/01.jpg",
+            "/img/products/7302/02.jpg"
+        ],
+        "properties": {
+            "Матрица": "24.2 Мп APS-C",
+            "Видео": "4K 30p",
+            "Вес": "375 г",
+            "Видоискатель": "OLED 2.36 млн"
+        },
+        "description_en": "Lightweight APS-C mirrorless camera for beginners and vloggers.",
+        "properties_en": {
+            "Sensor": "24.2 MP APS-C",
+            "Video": "4K 30p",
+            "Weight": "375 g",
+            "Viewfinder": "OLED 2.36M"
+        }
+    },
+    {
+        "id": 7303,
+        "category_id": 18,
+        "brand_id": 4,
+        "name": "Sony Alpha A7 IV",
+        "description": "Универсальная полнокадровая камера с матрицей 33 Мп и продвинутым автофокусом.",
+        "price": 229990,
+        "stock": 6,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/7303/01.jpg",
+            "/img/products/7303/02.jpg",
+            "/img/products/7303/03.jpg"
+        ],
+        "properties": {
+            "Матрица": "33 Мп full-frame",
+            "Видео": "4K 60p",
+            "Автофокус": "759 точек",
+            "Стабилизация": "5.5 ступеней"
+        },
+        "description_en": "Versatile full-frame camera with a 33 MP sensor and advanced autofocus.",
+        "properties_en": {
+            "Sensor": "33 MP full-frame",
+            "Video": "4K 60p",
+            "Autofocus": "759 points",
+            "Stabilization": "5.5 stops"
+        }
+    },
+    {
+        "id": 7304,
+        "category_id": 18,
+        "brand_id": 4,
+        "name": "Sony ZV-E10",
+        "description": "Камера для блогинга со сменной оптикой APS-C и поворотным экраном.",
+        "price": 69990,
+        "stock": 17,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7304/01.jpg",
+            "/img/products/7304/02.jpg",
+            "/img/products/7304/03.jpg"
+        ],
+        "properties": {
+            "Матрица": "24.2 Мп APS-C",
+            "Видео": "4K 30p",
+            "Экран": "поворотный",
+            "Микрофон": "направленный 3-капсюльный"
+        },
+        "description_en": "Vlogging camera with interchangeable APS-C lenses and a swivel screen.",
+        "properties_en": {
+            "Sensor": "24.2 MP APS-C",
+            "Video": "4K 30p",
+            "Screen": "swivel",
+            "Microphone": "directional 3-capsule"
+        }
+    },
+    {
+        "id": 7305,
+        "category_id": 18,
+        "brand_id": 13,
+        "name": "Canon EOS 250D",
+        "description": "Компактная зеркальная камера с поворотным экраном и Dual Pixel AF.",
+        "price": 54990,
+        "stock": 19,
+        "in_stock": true,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/7305/01.jpg",
+            "/img/products/7305/02.jpg"
+        ],
+        "properties": {
+            "Матрица": "24.1 Мп APS-C",
+            "Видео": "4K 25p",
+            "Экран": "поворотный сенсорный",
+            "Вес": "449 г"
+        },
+        "description_en": "Compact DSLR camera with a swivel screen and Dual Pixel AF.",
+        "properties_en": {
+            "Sensor": "24.1 MP APS-C",
+            "Video": "4K 25p",
+            "Screen": "swivel touchscreen",
+            "Weight": "449 g"
+        }
+    },
+    {
+        "id": 7306,
+        "category_id": 18,
+        "brand_id": 4,
+        "name": "Sony Alpha A6400",
+        "description": "Беззеркальная камера APS-C с быстрым автофокусом 0.02 с.",
+        "price": 89990,
+        "stock": 10,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7306/01.jpg"
+        ],
+        "properties": {
+            "Матрица": "24.2 Мп APS-C",
+            "Видео": "4K 30p",
+            "Автофокус": "425 точек",
+            "Серия": "11 кадр/с"
+        },
+        "description_en": "APS-C mirrorless camera with fast 0.02s autofocus.",
+        "properties_en": {
+            "Sensor": "24.2 MP APS-C",
+            "Video": "4K 30p",
+            "Autofocus": "425 points",
+            "Burst": "11 fps"
+        }
+    },
+    {
+        "id": 7401,
+        "category_id": 19,
+        "brand_id": 13,
+        "name": "Canon RF 50mm f/1.8 STM",
+        "description": "Светосильный портретный объектив с фиксированным фокусным 50 мм.",
+        "price": 16990,
+        "stock": 24,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7401/01.jpg",
+            "/img/products/7401/02.jpg",
+            "/img/products/7401/03.jpg"
+        ],
+        "properties": {
+            "Крепление": "Canon RF",
+            "Светосила": "f/1.8",
+            "Фокус": "50 мм",
+            "Вес": "160 г"
+        },
+        "description_en": "Bright portrait lens with a fixed 50 mm focal length.",
+        "properties_en": {
+            "Mount": "Canon RF",
+            "Aperture": "f/1.8",
+            "Focal length": "50 mm",
+            "Weight": "160 g"
+        }
+    },
+    {
+        "id": 7402,
+        "category_id": 19,
+        "brand_id": 4,
+        "name": "Sony FE 50mm f/1.8",
+        "description": "Доступный полнокадровый фикс 50 мм для камер Sony E-mount.",
+        "price": 19990,
+        "stock": 18,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/7402/01.jpg",
+            "/img/products/7402/02.jpg",
+            "/img/products/7402/03.jpg"
+        ],
+        "properties": {
+            "Крепление": "Sony FE",
+            "Светосила": "f/1.8",
+            "Фокус": "50 мм",
+            "Вес": "186 г"
+        },
+        "description_en": "Affordable full-frame 50 mm prime for Sony E-mount cameras.",
+        "properties_en": {
+            "Mount": "Sony FE",
+            "Aperture": "f/1.8",
+            "Focal length": "50 mm",
+            "Weight": "186 g"
+        }
+    },
+    {
+        "id": 7403,
+        "category_id": 19,
+        "brand_id": 13,
+        "name": "Canon RF 24-105mm f/4L",
+        "description": "Универсальный профессиональный зум-объектив серии L с стабилизацией.",
+        "price": 109990,
+        "stock": 7,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/7403/01.jpg",
+            "/img/products/7403/02.jpg",
+            "/img/products/7403/03.jpg"
+        ],
+        "properties": {
+            "Крепление": "Canon RF",
+            "Светосила": "f/4",
+            "Диапазон": "24-105 мм",
+            "Стабилизация": "до 5 ступеней"
+        },
+        "description_en": "Versatile professional L-series zoom lens with image stabilization.",
+        "properties_en": {
+            "Mount": "Canon RF",
+            "Aperture": "f/4",
+            "Range": "24-105 mm",
+            "Stabilization": "up to 5 stops"
+        }
+    },
+    {
+        "id": 7501,
+        "category_id": 14,
+        "brand_id": 8,
+        "name": "Mi Smart Speaker",
+        "description": "Умная колонка с голосовым ассистентом и управлением умным домом.",
+        "price": 5990,
+        "stock": 33,
+        "in_stock": true,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/7501/01.jpg",
+            "/img/products/7501/02.jpg",
+            "/img/products/7501/03.jpg"
+        ],
+        "properties": {
+            "Звук": "12 Вт",
+            "Связь": "Wi-Fi / Bluetooth",
+            "Ассистент": "Google Assistant"
+        },
+        "description_en": "Smart speaker with a voice assistant and smart home control.",
+        "properties_en": {
+            "Sound": "12 W",
+            "Connectivity": "Wi-Fi / Bluetooth",
+            "Assistant": "Google Assistant"
+        }
+    },
+    {
+        "id": 7502,
+        "category_id": 14,
+        "brand_id": 7,
+        "name": "Philips Hue Starter Kit",
+        "description": "Стартовый набор умного освещения: мост и три лампы с 16 млн оттенков.",
+        "price": 12990,
+        "stock": 14,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7502/01.jpg",
+            "/img/products/7502/02.jpg",
+            "/img/products/7502/03.jpg"
+        ],
+        "properties": {
+            "Лампы": "3× E27",
+            "Оттенки": "16 млн",
+            "Управление": "Hue Bridge / app"
+        },
+        "description_en": "Smart lighting starter kit: a bridge and three bulbs with 16 million shades.",
+        "properties_en": {
+            "Bulbs": "3× E27",
+            "Shades": "16 million",
+            "Control": "Hue Bridge / app"
+        }
+    },
+    {
+        "id": 7503,
+        "category_id": 14,
+        "brand_id": 8,
+        "name": "Mi Smart Bulb Essential",
+        "description": "Умная Wi-Fi лампа с регулировкой яркости и цветовой температуры.",
+        "price": 1290,
+        "stock": 60,
+        "in_stock": true,
+        "rating": 4.3,
+        "photos": [
+            "/img/products/7503/01.jpg",
+            "/img/products/7503/02.jpg"
+        ],
+        "properties": {
+            "Цоколь": "E27",
+            "Яркость": "950 лм",
+            "Связь": "Wi-Fi"
+        },
+        "description_en": "Smart Wi-Fi bulb with adjustable brightness and color temperature.",
+        "properties_en": {
+            "Base": "E27",
+            "Brightness": "950 lm",
+            "Connectivity": "Wi-Fi"
+        }
+    },
+    {
+        "id": 7504,
+        "category_id": 14,
+        "brand_id": 8,
+        "name": "Mi Smart Plug",
+        "description": "Умная розетка с управлением со смартфона и мониторингом энергопотребления.",
+        "price": 990,
+        "stock": 80,
+        "in_stock": true,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/7504/01.jpg"
+        ],
+        "properties": {
+            "Нагрузка": "до 2200 Вт",
+            "Связь": "Wi-Fi",
+            "Управление": "Mi Home"
+        },
+        "description_en": "Smart plug with smartphone control and energy consumption monitoring.",
+        "properties_en": {
+            "Load": "up to 2200 W",
+            "Connectivity": "Wi-Fi",
+            "Control": "Mi Home"
+        }
+    },
+    {
+        "id": 7505,
+        "category_id": 14,
+        "brand_id": 2,
+        "name": "SmartThings Station",
+        "description": "Хаб умного дома Samsung с поддержкой Matter и беспроводной зарядкой.",
+        "price": 7990,
+        "stock": 15,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/7505/01.jpg",
+            "/img/products/7505/02.jpg",
+            "/img/products/7505/03.jpg"
+        ],
+        "properties": {
+            "Протоколы": "Matter / Zigbee / Thread",
+            "Зарядка": "15 Вт Qi",
+            "Связь": "Wi-Fi"
+        },
+        "description_en": "Samsung smart home hub with Matter support and wireless charging.",
+        "properties_en": {
+            "Protocols": "Matter / Zigbee / Thread",
+            "Charging": "15 W Qi",
+            "Connectivity": "Wi-Fi"
+        }
+    },
+    {
+        "id": 7506,
+        "category_id": 14,
+        "brand_id": 8,
+        "name": "Mi Smart Camera C400",
+        "description": "Поворотная Wi-Fi камера 2.5K с ночной съёмкой и обнаружением людей.",
+        "price": 4490,
+        "stock": 26,
+        "in_stock": true,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/7506/01.jpg",
+            "/img/products/7506/02.jpg",
+            "/img/products/7506/03.png"
+        ],
+        "properties": {
+            "Разрешение": "2.5K",
+            "Обзор": "360°",
+            "Ночь": "ИК до 9 м",
+            "Связь": "Wi-Fi"
+        },
+        "description_en": "Swivel 2.5K Wi-Fi camera with night recording and human detection.",
+        "properties_en": {
+            "Resolution": "2.5K",
+            "View": "360°",
+            "Night": "IR up to 9 m",
+            "Connectivity": "Wi-Fi"
+        }
+    },
+    {
+        "id": 7601,
+        "category_id": 20,
+        "brand_id": 3,
+        "name": "LG DualCool",
+        "description": "Настенная сплит-система с инверторным компрессором и низким уровнем шума.",
+        "price": 44990,
+        "stock": 8,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7601/01.jpg",
+            "/img/products/7601/02.jpg",
+            "/img/products/7601/03.jpg"
+        ],
+        "properties": {
+            "Мощность": "2.5 кВт",
+            "Площадь": "до 25 м²",
+            "Класс": "A++",
+            "Особенности": "ионизация"
+        },
+        "description_en": "Wall-mounted split system with an inverter compressor and low noise level.",
+        "properties_en": {
+            "Power": "2.5 kW",
+            "Area": "up to 25 m²",
+            "Class": "A++",
+            "Features": "ionization"
+        }
+    },
+    {
+        "id": 7602,
+        "category_id": 20,
+        "brand_id": 2,
+        "name": "Samsung WindFree",
+        "description": "Кондиционер с технологией мягкого охлаждения без прямого потока воздуха.",
+        "price": 49990,
+        "stock": 6,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7602/01.jpg",
+            "/img/products/7602/02.jpg",
+            "/img/products/7602/03.jpg"
+        ],
+        "properties": {
+            "Мощность": "3.5 кВт",
+            "Площадь": "до 35 м²",
+            "Класс": "A+++",
+            "Wi-Fi": "SmartThings"
+        },
+        "description_en": "Air conditioner with gentle cooling technology and no direct airflow.",
+        "properties_en": {
+            "Power": "3.5 kW",
+            "Area": "up to 35 m²",
+            "Class": "A+++",
+            "Wi-Fi": "SmartThings"
+        }
+    },
+    {
+        "id": 7603,
+        "category_id": 20,
+        "brand_id": 8,
+        "name": "Mi Smart AC",
+        "description": "Умная инверторная сплит-система с управлением через приложение.",
+        "price": 34990,
+        "stock": 13,
+        "in_stock": true,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/7603/01.jpg",
+            "/img/products/7603/02.jpg",
+            "/img/products/7603/03.jpg"
+        ],
+        "properties": {
+            "Мощность": "2.6 кВт",
+            "Площадь": "до 26 м²",
+            "Класс": "A++",
+            "Wi-Fi": "Mi Home"
+        },
+        "description_en": "Smart inverter split system with app control.",
+        "properties_en": {
+            "Power": "2.6 kW",
+            "Area": "up to 26 m²",
+            "Class": "A++",
+            "Wi-Fi": "Mi Home"
+        }
+    },
+    {
+        "id": 7604,
+        "category_id": 20,
+        "brand_id": 5,
+        "name": "Bosch Climate 5000",
+        "description": "Надёжная сплит-система Bosch с тихим ночным режимом и самоочисткой.",
+        "price": 54990,
+        "stock": 5,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7604/01.jpg",
+            "/img/products/7604/02.jpg",
+            "/img/products/7604/03.jpg"
+        ],
+        "properties": {
+            "Мощность": "3.5 кВт",
+            "Площадь": "до 35 м²",
+            "Класс": "A++",
+            "Режим": "ночной 19 дБ"
+        },
+        "description_en": "Reliable Bosch split system with a quiet night mode and self-cleaning.",
+        "properties_en": {
+            "Power": "3.5 kW",
+            "Area": "up to 35 m²",
+            "Class": "A++",
+            "Mode": "night 19 dB"
+        }
+    },
+    {
+        "id": 7701,
+        "category_id": 21,
+        "brand_id": 8,
+        "name": "Smart Humidifier 2",
+        "description": "Ультразвуковой увлажнитель воздуха с управлением через приложение.",
+        "price": 4990,
+        "stock": 29,
+        "in_stock": true,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/7701/01.jpg"
+        ],
+        "properties": {
+            "Бак": "4.5 л",
+            "Площадь": "до 30 м²",
+            "Пар": "350 мл/ч",
+            "Wi-Fi": "Mi Home"
+        },
+        "description_en": "Ultrasonic air humidifier with app control.",
+        "properties_en": {
+            "Tank": "4.5 L",
+            "Area": "up to 30 m²",
+            "Mist": "350 ml/h",
+            "Wi-Fi": "Mi Home"
+        }
+    },
+    {
+        "id": 7702,
+        "category_id": 21,
+        "brand_id": 7,
+        "name": "Philips HU2716",
+        "description": "Увлажнитель воздуха с технологией NanoCloud и гигиеничным испарением.",
+        "price": 7990,
+        "stock": 12,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/7702/01.jpg",
+            "/img/products/7702/02.jpg",
+            "/img/products/7702/03.jpg"
+        ],
+        "properties": {
+            "Бак": "2 л",
+            "Площадь": "до 32 м²",
+            "Технология": "NanoCloud",
+            "Уровень шума": "26 дБ"
+        },
+        "description_en": "Air humidifier with NanoCloud technology and hygienic evaporation.",
+        "properties_en": {
+            "Tank": "2 L",
+            "Area": "up to 32 m²",
+            "Technology": "NanoCloud",
+            "Noise level": "26 dB"
+        }
+    },
+    {
+        "id": 7703,
+        "category_id": 21,
+        "brand_id": 6,
+        "name": "Dyson Purifier Humidify+Cool",
+        "description": "Очиститель, увлажнитель и вентилятор Dyson «три в одном» с HEPA-фильтром.",
+        "price": 64990,
+        "stock": 4,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7703/01.jpg",
+            "/img/products/7703/02.jpg",
+            "/img/products/7703/03.jpg"
+        ],
+        "properties": {
+            "Функции": "очистка + увлажнение + обдув",
+            "Фильтр": "HEPA H13",
+            "Площадь": "до 40 м²",
+            "Управление": "app / пульт"
+        },
+        "description_en": "Dyson three-in-one purifier, humidifier and fan with a HEPA filter.",
+        "properties_en": {
+            "Functions": "purification + humidification + airflow",
+            "Filter": "HEPA H13",
+            "Area": "up to 40 m²",
+            "Control": "app / remote"
+        }
+    },
+    {
+        "id": 7801,
+        "category_id": 22,
+        "brand_id": 14,
+        "name": "JBL Charge 5",
+        "description": "Мощная влагозащищённая колонка с функцией пауэрбанка и звуком JBL Pro.",
+        "price": 14990,
+        "stock": 20,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/7801/01.jpg",
+            "/img/products/7801/02.jpg"
+        ],
+        "properties": {
+            "Мощность": "40 Вт",
+            "Защита": "IP67",
+            "Время работы": "20 ч",
+            "Powerbank": "да"
+        },
+        "description_en": "Powerful waterproof speaker with a power bank function and JBL Pro sound.",
+        "properties_en": {
+            "Power": "40 W",
+            "Protection": "IP67",
+            "Battery life": "20h",
+            "Powerbank": "yes"
+        }
+    },
+    {
+        "id": 7802,
+        "category_id": 22,
+        "brand_id": 14,
+        "name": "JBL Flip 6",
+        "description": "Портативная стереоколонка с пыле- и влагозащитой и насыщенным басом.",
+        "price": 9990,
+        "stock": 24,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/7802/01.jpg",
+            "/img/products/7802/02.jpg"
+        ],
+        "properties": {
+            "Мощность": "30 Вт",
+            "Защита": "IP67",
+            "Время работы": "12 ч",
+            "Связь": "Bluetooth 5.1"
+        },
+        "description_en": "Portable stereo speaker with dust and water resistance and rich bass.",
+        "properties_en": {
+            "Power": "30 W",
+            "Protection": "IP67",
+            "Battery life": "12h",
+            "Connectivity": "Bluetooth 5.1"
+        }
+    },
+    {
+        "id": 7803,
+        "category_id": 22,
+        "brand_id": 4,
+        "name": "Sony SRS-XB13",
+        "description": "Компактная колонка Sony с фирменным усилением баса Extra Bass.",
+        "price": 4990,
+        "stock": 31,
+        "in_stock": true,
+        "rating": 4.4,
+        "photos": [
+            "/img/products/7803/01.jpg",
+            "/img/products/7803/02.jpg",
+            "/img/products/7803/03.jpg"
+        ],
+        "properties": {
+            "Защита": "IP67",
+            "Время работы": "16 ч",
+            "Связь": "Bluetooth 5.0",
+            "Вес": "253 г"
+        },
+        "description_en": "Compact Sony speaker with signature Extra Bass enhancement.",
+        "properties_en": {
+            "Protection": "IP67",
+            "Battery life": "16h",
+            "Connectivity": "Bluetooth 5.0",
+            "Weight": "253 g"
+        }
+    },
+    {
+        "id": 7804,
+        "category_id": 22,
+        "brand_id": 14,
+        "name": "JBL GO 3",
+        "description": "Миниатюрная яркая колонка для прогулок и путешествий.",
+        "price": 3490,
+        "stock": 45,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7804/01.jpg"
+        ],
+        "properties": {
+            "Мощность": "4.2 Вт",
+            "Защита": "IP67",
+            "Время работы": "5 ч",
+            "Вес": "209 г"
+        },
+        "description_en": "Tiny, vibrant speaker for walks and travel.",
+        "properties_en": {
+            "Power": "4.2 W",
+            "Protection": "IP67",
+            "Battery life": "5h",
+            "Weight": "209 g"
+        }
+    },
+    {
+        "id": 7901,
+        "category_id": 23,
+        "brand_id": 2,
+        "name": "Samsung MS23K3513",
+        "description": "Микроволновая печь 23 л с керамическим покрытием и быстрой разморозкой.",
+        "price": 12990,
+        "stock": 17,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/7901/01.jpg",
+            "/img/products/7901/02.jpg",
+            "/img/products/7901/03.jpg"
+        ],
+        "properties": {
+            "Объём": "23 л",
+            "Мощность": "800 Вт",
+            "Покрытие": "керамика",
+            "Управление": "электронное"
+        },
+        "description_en": "23 L microwave oven with a ceramic coating and fast defrosting.",
+        "properties_en": {
+            "Volume": "23 L",
+            "Power": "800 W",
+            "Coating": "ceramic",
+            "Control": "electronic"
+        }
+    },
+    {
+        "id": 7902,
+        "category_id": 23,
+        "brand_id": 3,
+        "name": "LG NeoChef MS2595",
+        "description": "Инверторная микроволновка LG с равномерным нагревом и режимом гриля.",
+        "price": 15990,
+        "stock": 11,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7902/01.jpg",
+            "/img/products/7902/02.jpg",
+            "/img/products/7902/03.jpg"
+        ],
+        "properties": {
+            "Объём": "25 л",
+            "Мощность": "1000 Вт",
+            "Гриль": "да",
+            "Инвертор": "Smart Inverter"
+        },
+        "description_en": "LG inverter microwave with even heating and a grill mode.",
+        "properties_en": {
+            "Volume": "25 L",
+            "Power": "1000 W",
+            "Grill": "yes",
+            "Inverter": "Smart Inverter"
+        }
+    },
+    {
+        "id": 7903,
+        "category_id": 23,
+        "brand_id": 5,
+        "name": "Bosch Serie 2 FFL023MS2",
+        "description": "Компактная микроволновая печь Bosch 20 л с авто-программами.",
+        "price": 13990,
+        "stock": 9,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/7903/01.jpg",
+            "/img/products/7903/02.jpg"
+        ],
+        "properties": {
+            "Объём": "20 л",
+            "Мощность": "800 Вт",
+            "Программы": "авто-разморозка",
+            "Управление": "поворотное"
+        },
+        "description_en": "Compact 20 L Bosch microwave oven with auto programs.",
+        "properties_en": {
+            "Volume": "20 L",
+            "Power": "800 W",
+            "Programs": "auto-defrost",
+            "Control": "rotary"
+        }
+    },
+    {
+        "id": 1005,
+        "category_id": 1,
+        "brand_id": 1,
+        "name": "iPhone 15 Pro Max",
+        "description": "Топовый iPhone с титановым корпусом, чипом A17 Pro и 5-кратным телеобъективом.",
+        "price": 134990,
+        "stock": 7,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/1005/01.jpg",
+            "/img/products/1005/02.jpg",
+            "/img/products/1005/03.png"
+        ],
+        "properties": {
+            "Экран": "6.7\" OLED 120 Гц",
+            "Чип": "A17 Pro",
+            "Память": "256 GB",
+            "Камера": "48 + 12 + 12 Мп",
+            "Зум": "5×"
+        },
+        "description_en": "Top-tier iPhone with a titanium body, A17 Pro chip and a 5x telephoto lens.",
+        "properties_en": {
+            "Display": "6.7\" OLED 120 Hz",
+            "Chip": "A17 Pro",
+            "Memory": "256 GB",
+            "Camera": "48 + 12 + 12 MP",
+            "Zoom": "5×"
+        }
+    },
+    {
+        "id": 1006,
+        "category_id": 1,
+        "brand_id": 2,
+        "name": "Galaxy S24 Ultra",
+        "description": "Флагман Samsung с пером S Pen, титановой рамкой и камерой 200 Мп.",
+        "price": 119990,
+        "stock": 9,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/1006/01.png",
+            "/img/products/1006/02.jpg",
+            "/img/products/1006/03.jpg"
+        ],
+        "properties": {
+            "Экран": "6.8\" AMOLED 120 Гц",
+            "Чип": "Snapdragon 8 Gen 3",
+            "Память": "256 GB",
+            "Камера": "200 Мп",
+            "S Pen": "да"
+        },
+        "description_en": "Samsung flagship with an S Pen, a titanium frame and a 200 MP camera.",
+        "properties_en": {
+            "Display": "6.8\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 8 Gen 3",
+            "Memory": "256 GB",
+            "Camera": "200 MP",
+            "S Pen": "yes"
+        }
+    },
+    {
+        "id": 1007,
+        "category_id": 1,
+        "brand_id": 8,
+        "name": "Redmi Note 13",
+        "description": "Доступный смартфон с AMOLED-экраном 120 Гц и камерой 108 Мп.",
+        "price": 21990,
+        "stock": 34,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/1007/01.jpg",
+            "/img/products/1007/02.jpg",
+            "/img/products/1007/03.jpg"
+        ],
+        "properties": {
+            "Экран": "6.67\" AMOLED 120 Гц",
+            "Чип": "Snapdragon 685",
+            "Память": "128 GB",
+            "Камера": "108 Мп"
+        },
+        "description_en": "Affordable smartphone with a 120 Hz AMOLED display and a 108 MP camera.",
+        "properties_en": {
+            "Display": "6.67\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 685",
+            "Memory": "128 GB",
+            "Camera": "108 MP"
+        }
+    },
+    {
+        "id": 2004,
+        "category_id": 2,
+        "brand_id": 11,
+        "name": "ROG Zephyrus G14",
+        "description": "Компактный игровой ноутбук ASUS с экраном OLED и видеокартой RTX 4060.",
+        "price": 159990,
+        "stock": 5,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/2004/01.jpg"
+        ],
+        "properties": {
+            "Экран": "14\" OLED 120 Гц",
+            "Процессор": "Ryzen 9",
+            "Видео": "RTX 4060",
+            "Память": "16 GB / 1 TB"
+        },
+        "description_en": "Compact ASUS gaming laptop with an OLED display and an RTX 4060 graphics card.",
+        "properties_en": {
+            "Display": "14\" OLED 120 Hz",
+            "Processor": "Ryzen 9",
+            "Graphics": "RTX 4060",
+            "Memory": "16 GB / 1 TB"
+        }
+    },
+    {
+        "id": 2005,
+        "category_id": 2,
+        "brand_id": 12,
+        "name": "ThinkPad X1 Carbon Gen 12",
+        "description": "Лёгкий бизнес-ультрабук Lenovo с защитой MIL-SPEC и матовым экраном.",
+        "price": 139990,
+        "stock": 6,
+        "in_stock": true,
+        "rating": 4.7,
+        "photos": [
+            "/img/products/2005/01.jpg",
+            "/img/products/2005/02.png",
+            "/img/products/2005/03.jpg"
+        ],
+        "properties": {
+            "Экран": "14\" IPS 2.2K",
+            "Процессор": "Intel Core Ultra 7",
+            "Память": "16 GB / 1 TB",
+            "Вес": "1.12 кг"
+        },
+        "description_en": "Lightweight Lenovo business ultrabook with MIL-SPEC durability and a matte display.",
+        "properties_en": {
+            "Display": "14\" IPS 2.2K",
+            "Processor": "Intel Core Ultra 7",
+            "Memory": "16 GB / 1 TB",
+            "Weight": "1.12 kg"
+        }
+    },
+    {
+        "id": 5101,
+        "category_id": 7,
+        "brand_id": 5,
+        "name": "Bosch VeroCup 100",
+        "description": "Автоматическая кофемашина Bosch с керамической кофемолкой и автоматическим капучинатором.",
+        "price": 39990,
+        "stock": 9,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/5101/01.jpg"
+        ],
+        "properties": {
+            "Тип": "автоматическая, зерновая",
+            "Давление": "15 бар",
+            "Кофемолка": "керамическая",
+            "Капучинатор": "автоматический",
+            "Ёмкость": "1.4 л"
+        },
+        "description_en": "Automatic Bosch coffee machine with a ceramic grinder and an automatic milk frother.",
+        "properties_en": {
+            "Type": "automatic, bean-to-cup",
+            "Pressure": "15 bar",
+            "Grinder": "ceramic",
+            "Milk frother": "automatic",
+            "Capacity": "1.4 L"
+        }
+    },
+    {
+        "id": 5103,
+        "category_id": 7,
+        "brand_id": 10,
+        "name": "Tefal Express CM361",
+        "description": "Капельная кофеварка Tefal на 1.25 л с подогревом и противокапельной системой.",
+        "price": 4990,
+        "stock": 26,
+        "in_stock": true,
+        "rating": 4.3,
+        "photos": [
+            "/img/products/5103/01.jpg",
+            "/img/products/5103/02.jpg",
+            "/img/products/5103/03.jpg"
+        ],
+        "properties": {
+            "Тип": "капельная",
+            "Объём": "1.25 л",
+            "Мощность": "1000 Вт",
+            "Подогрев": "да",
+            "Фильтр": "многоразовый"
+        },
+        "description_en": "Tefal drip coffee maker with a 1.25 L capacity, keep-warm plate and an anti-drip system.",
+        "properties_en": {
+            "Type": "drip",
+            "Volume": "1.25 L",
+            "Power": "1000 W",
+            "Keep-warm": "yes",
+            "Filter": "reusable"
+        }
+    },
+    {
+        "id": 7307,
+        "category_id": 18,
+        "brand_id": 17,
+        "name": "Nikon Z6 III",
+        "description": "Полнокадровая беззеркальная камера Nikon с частично-стековой матрицей 24.5 Мп и видео 6K.",
+        "price": 269990,
+        "stock": 5,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/7307/01.jpg",
+            "/img/products/7307/02.jpg",
+            "/img/products/7307/03.jpg"
+        ],
+        "properties": {
+            "Матрица": "24.5 Мп full-frame",
+            "Видео": "6K 60p RAW",
+            "Автофокус": "299 точек",
+            "Серия": "20 кадр/с"
+        },
+        "description_en": "Nikon full-frame mirrorless camera with a partially stacked 24.5 MP sensor and 6K video.",
+        "properties_en": {
+            "Sensor": "24.5 MP full-frame",
+            "Video": "6K 60p RAW",
+            "Autofocus": "299 points",
+            "Burst": "20 fps"
+        }
+    },
+    {
+        "id": 7308,
+        "category_id": 18,
+        "brand_id": 17,
+        "name": "Nikon Zfc",
+        "description": "Стильная беззеркальная камера APS-C в ретро-дизайне с механическими дисками.",
+        "price": 119990,
+        "stock": 11,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7308/01.jpg",
+            "/img/products/7308/02.jpg",
+            "/img/products/7308/03.jpg"
+        ],
+        "properties": {
+            "Матрица": "20.9 Мп APS-C",
+            "Видео": "4K 30p",
+            "Дизайн": "ретро",
+            "Экран": "поворотный"
+        },
+        "description_en": "Stylish APS-C mirrorless camera with a retro design and mechanical dials.",
+        "properties_en": {
+            "Sensor": "20.9 MP APS-C",
+            "Video": "4K 30p",
+            "Design": "retro",
+            "Screen": "swivel"
+        }
+    },
+    {
+        "id": 7404,
+        "category_id": 19,
+        "brand_id": 17,
+        "name": "Nikkor Z 50mm f/1.8 S",
+        "description": "Светосильный портретный объектив серии S для системы Nikon Z.",
+        "price": 64990,
+        "stock": 8,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/7404/01.jpg",
+            "/img/products/7404/02.jpg",
+            "/img/products/7404/03.jpg"
+        ],
+        "properties": {
+            "Крепление": "Nikon Z",
+            "Светосила": "f/1.8",
+            "Фокус": "50 мм",
+            "Серия": "S-line"
+        },
+        "description_en": "Bright S-series portrait lens for the Nikon Z system.",
+        "properties_en": {
+            "Mount": "Nikon Z",
+            "Aperture": "f/1.8",
+            "Focal length": "50 mm",
+            "Series": "S-line"
+        }
+    },
+    {
+        "id": 2006,
+        "category_id": 2,
+        "brand_id": 18,
+        "name": "Acer Swift 14 AI",
+        "description": "Лёгкий ультрабук Acer с процессором Intel Core Ultra и матовым OLED-экраном.",
+        "price": 89990,
+        "stock": 14,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/2006/01.jpg",
+            "/img/products/2006/02.jpg",
+            "/img/products/2006/03.jpg"
+        ],
+        "properties": {
+            "Экран": "14\" OLED 2.8K",
+            "Процессор": "Intel Core Ultra 7",
+            "Память": "16 GB / 1 TB",
+            "Вес": "1.3 кг"
+        },
+        "description_en": "Lightweight Acer ultrabook with an Intel Core Ultra processor and a matte OLED display.",
+        "properties_en": {
+            "Display": "14\" OLED 2.8K",
+            "Processor": "Intel Core Ultra 7",
+            "Memory": "16 GB / 1 TB",
+            "Weight": "1.3 kg"
+        }
+    },
+    {
+        "id": 2007,
+        "category_id": 2,
+        "brand_id": 18,
+        "name": "Acer Aspire 5",
+        "description": "Универсальный ноутбук Acer для работы и учёбы с экраном Full HD.",
+        "price": 54990,
+        "stock": 22,
+        "in_stock": true,
+        "rating": 4.3,
+        "photos": [
+            "/img/products/2007/01.jpg",
+            "/img/products/2007/02.jpg",
+            "/img/products/2007/03.png"
+        ],
+        "properties": {
+            "Экран": "15.6\" IPS Full HD",
+            "Процессор": "Intel Core i5",
+            "Память": "16 GB / 512 GB",
+            "Видео": "Iris Xe"
+        },
+        "description_en": "Versatile Acer laptop for work and study with a Full HD display.",
+        "properties_en": {
+            "Display": "15.6\" IPS Full HD",
+            "Processor": "Intel Core i5",
+            "Memory": "16 GB / 512 GB",
+            "Graphics": "Iris Xe"
+        }
+    },
+    {
+        "id": 4004,
+        "category_id": 4,
+        "brand_id": 19,
+        "name": "Sennheiser Momentum 4",
+        "description": "Беспроводные наушники Sennheiser с активным шумоподавлением и автономностью до 60 часов.",
+        "price": 34990,
+        "stock": 18,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/4004/01.jpg",
+            "/img/products/4004/02.png"
+        ],
+        "properties": {
+            "Тип": "накладные, беспроводные",
+            "Шумоподавление": "адаптивное ANC",
+            "Автономность": "до 60 ч",
+            "Кодеки": "aptX Adaptive"
+        },
+        "description_en": "Sennheiser wireless headphones with active noise cancellation and up to 60 hours of battery life.",
+        "properties_en": {
+            "Type": "over-ear, wireless",
+            "Noise cancellation": "adaptive ANC",
+            "Battery life": "up to 60h",
+            "Codecs": "aptX Adaptive"
+        }
+    },
+    {
+        "id": 4005,
+        "category_id": 4,
+        "brand_id": 19,
+        "name": "Sennheiser HD 660S2",
+        "description": "Открытые проводные наушники Sennheiser для аудиофилов с детальной серединой.",
+        "price": 49990,
+        "stock": 7,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/4005/01.jpg",
+            "/img/products/4005/02.jpg",
+            "/img/products/4005/03.jpg"
+        ],
+        "properties": {
+            "Тип": "открытые, проводные",
+            "Импеданс": "300 Ом",
+            "Драйверы": "38 мм",
+            "Частоты": "8–41500 Гц"
+        },
+        "description_en": "Open-back wired Sennheiser headphones for audiophiles with detailed mids.",
+        "properties_en": {
+            "Type": "open-back, wired",
+            "Impedance": "300 Ohm",
+            "Drivers": "38 mm",
+            "Frequency": "8–41500 Hz"
+        }
+    }
+]
