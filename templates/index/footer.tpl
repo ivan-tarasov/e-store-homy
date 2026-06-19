@@ -33,6 +33,7 @@
                         <li><a href="/about/">О магазине</a></li>
                         <li><a href="/terms/">Оплата и доставка</a></li>
                         <li><a href="/feedback/">Обратная связь</a></li>
+                        <li><a href="/credits/">Источники изображений</a></li>
                      </ul>
                   </div>
                </div>

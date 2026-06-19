@@ -1,0 +1,200 @@
+[
+  {
+    "brand_slug": "apple",
+    "brand_name": "Apple",
+    "file": "File:Apple logo black.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Original:  Rob Janoff",
+    "local_path": "public/img/brands/apple.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "samsung",
+    "brand_name": "Samsung",
+    "file": "File:Samsung old logo before year 2015.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Samsung_old_logo_before_year_2015.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Samsung",
+    "local_path": "public/img/brands/samsung.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "lg",
+    "brand_name": "LG",
+    "file": "File:LG logo (2014).svg",
+    "page": "https://commons.wikimedia.org/wiki/File:LG_logo_(2014).svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "LG Corporation",
+    "local_path": "public/img/brands/lg.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "sony",
+    "brand_name": "Sony",
+    "file": "File:Logo of the Sony Corporation (make.believe).svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Sony_Corporation_(make.believe).svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Sony Corporation",
+    "local_path": "public/img/brands/sony.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "bosch",
+    "brand_name": "Bosch",
+    "file": "File:Robert Bosch Stiftung logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Robert_Bosch_Stiftung_logo.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Unknown authorUnknown author",
+    "local_path": "public/img/brands/bosch.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "dyson",
+    "brand_name": "Dyson",
+    "file": "File:Dyson (Unternehmen) logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Dyson_(Unternehmen)_logo.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Unknown authorUnknown author",
+    "local_path": "public/img/brands/dyson.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "philips",
+    "brand_name": "Philips",
+    "file": "File:Philips AVENT logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Philips_AVENT_logo.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Philips AVENT",
+    "local_path": "public/img/brands/philips.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "xiaomi",
+    "brand_name": "Xiaomi",
+    "file": "File:Xiaomi logo (2021-).svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Xiaomi_logo_(2021-).svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Xiaomi",
+    "local_path": "public/img/brands/xiaomi.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "tefal",
+    "brand_name": "Tefal",
+    "file": "File:Tefal logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tefal_logo.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Tefal",
+    "local_path": "public/img/brands/tefal.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "asus",
+    "brand_name": "ASUS",
+    "file": "File:Asus blue logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Asus_blue_logo.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "ASUSTeK Computer Inc.",
+    "local_path": "public/img/brands/asus.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "lenovo",
+    "brand_name": "Lenovo",
+    "file": "File:Lenovo logo 2015.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Lenovo_logo_2015.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Lenovo Group",
+    "local_path": "public/img/brands/lenovo.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "canon",
+    "brand_name": "Canon",
+    "file": "File:Canon EOS.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Canon_EOS.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Vargklo",
+    "local_path": "public/img/brands/canon.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "jbl",
+    "brand_name": "JBL",
+    "file": "File:JBL logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:JBL_logo.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "JBL",
+    "local_path": "public/img/brands/jbl.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "nintendo",
+    "brand_name": "Nintendo",
+    "file": "File:Nintendo logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nintendo_logo.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Nintendo",
+    "local_path": "public/img/brands/nintendo.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "microsoft",
+    "brand_name": "Microsoft",
+    "file": "File:Microsoft Office logos (2013-2019).svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Microsoft_Office_logos_(2013-2019).svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Microsoft Office",
+    "local_path": "public/img/brands/microsoft.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "nikon",
+    "brand_name": "Nikon",
+    "file": "File:Nikon Logo.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nikon_Logo.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Nikon Corporation",
+    "local_path": "public/img/brands/nikon.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "acer",
+    "brand_name": "Acer",
+    "file": "File:Acer 2011.svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Acer_2011.svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Acer, Inc.",
+    "local_path": "public/img/brands/acer.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  },
+  {
+    "brand_slug": "sennheiser",
+    "brand_name": "Sennheiser",
+    "file": "File:Sennheiser logo (2019).svg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sennheiser_logo_(2019).svg",
+    "license": "Public domain",
+    "license_url": null,
+    "author": "Sennheiser",
+    "local_path": "public/img/brands/sennheiser.svg",
+    "note": "Trademark of the respective owner; used for identification only."
+  }
+]

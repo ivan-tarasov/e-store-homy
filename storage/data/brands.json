@@ -3,96 +3,126 @@
         "id": 1,
         "slug": "apple",
         "name": "Apple",
-        "homepage": "https://apple.com"
+        "homepage": "https://apple.com",
+        "logo": "/img/brands/apple.svg"
     },
     {
         "id": 2,
         "slug": "samsung",
         "name": "Samsung",
-        "homepage": "https://samsung.com"
+        "homepage": "https://samsung.com",
+        "logo": "/img/brands/samsung.svg"
     },
     {
         "id": 3,
         "slug": "lg",
         "name": "LG",
-        "homepage": "https://lg.com"
+        "homepage": "https://lg.com",
+        "logo": "/img/brands/lg.svg"
     },
     {
         "id": 4,
         "slug": "sony",
         "name": "Sony",
-        "homepage": "https://sony.com"
+        "homepage": "https://sony.com",
+        "logo": "/img/brands/sony.svg"
     },
     {
         "id": 5,
         "slug": "bosch",
         "name": "Bosch",
-        "homepage": "https://bosch-home.com"
+        "homepage": "https://bosch-home.com",
+        "logo": "/img/brands/bosch.svg"
     },
     {
         "id": 6,
         "slug": "dyson",
         "name": "Dyson",
-        "homepage": "https://dyson.com"
+        "homepage": "https://dyson.com",
+        "logo": "/img/brands/dyson.svg"
     },
     {
         "id": 7,
         "slug": "philips",
         "name": "Philips",
-        "homepage": "https://philips.com"
+        "homepage": "https://philips.com",
+        "logo": "/img/brands/philips.svg"
     },
     {
         "id": 8,
         "slug": "xiaomi",
         "name": "Xiaomi",
-        "homepage": "https://mi.com"
-    },
-    {
-        "id": 9,
-        "slug": "delonghi",
-        "name": "DeLonghi",
-        "homepage": "https://delonghi.com"
+        "homepage": "https://mi.com",
+        "logo": "/img/brands/xiaomi.svg"
     },
     {
         "id": 10,
         "slug": "tefal",
         "name": "Tefal",
-        "homepage": "https://tefal.com"
+        "homepage": "https://tefal.com",
+        "logo": "/img/brands/tefal.svg"
     },
     {
         "id": 11,
         "slug": "asus",
         "name": "ASUS",
-        "homepage": "https://asus.com"
+        "homepage": "https://asus.com",
+        "logo": "/img/brands/asus.svg"
     },
     {
         "id": 12,
         "slug": "lenovo",
         "name": "Lenovo",
-        "homepage": "https://lenovo.com"
+        "homepage": "https://lenovo.com",
+        "logo": "/img/brands/lenovo.svg"
     },
     {
         "id": 13,
         "slug": "canon",
         "name": "Canon",
-        "homepage": "https://canon.com"
+        "homepage": "https://canon.com",
+        "logo": "/img/brands/canon.svg"
     },
     {
         "id": 14,
         "slug": "jbl",
         "name": "JBL",
-        "homepage": "https://jbl.com"
+        "homepage": "https://jbl.com",
+        "logo": "/img/brands/jbl.svg"
     },
     {
         "id": 15,
         "slug": "nintendo",
         "name": "Nintendo",
-        "homepage": "https://nintendo.com"
+        "homepage": "https://nintendo.com",
+        "logo": "/img/brands/nintendo.svg"
     },
     {
         "id": 16,
         "slug": "microsoft",
         "name": "Microsoft",
-        "homepage": "https://xbox.com"
+        "homepage": "https://xbox.com",
+        "logo": "/img/brands/microsoft.svg"
+    },
+    {
+        "id": 17,
+        "slug": "nikon",
+        "name": "Nikon",
+        "homepage": "https://nikon.com",
+        "logo": "/img/brands/nikon.svg"
+    },
+    {
+        "id": 18,
+        "slug": "acer",
+        "name": "Acer",
+        "homepage": "https://acer.com",
+        "logo": "/img/brands/acer.svg"
+    },
+    {
+        "id": 19,
+        "slug": "sennheiser",
+        "name": "Sennheiser",
+        "homepage": "https://sennheiser.com",
+        "logo": "/img/brands/sennheiser.svg"
     }
 ]

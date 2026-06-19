@@ -437,6 +437,36 @@ header .top-cart-row .top-cart-holder .checkout .le-button {
     flex-direction: column;
 }
 
+/* Brand strip: borderless logos, muted grayscale that colorises on hover.
+ * row-gap gives vertical breathing room between wrapped rows; the row is
+ * centre-aligned so a partial last row never leaves a lopsided gap. */
+.brands-row {
+    padding: 2.5em 0;
+    border-top: 1px solid #eee;
+}
+.brands-row .brand-grid {
+    row-gap: 1.75em;
+}
+.brands-row .brand-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    min-height: 56px;
+}
+.brands-row .brand-logo {
+    max-width: 100%;
+    max-height: 38px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.55;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+}
+.brands-row .brand-logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
 /* Mobile: keep absolute-positioned dropdowns inside the viewport */
 @media (max-width: 767px) {
     /* Cart dropdown — full-width-ish, anchored to right edge */

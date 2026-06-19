@@ -28,6 +28,7 @@ use App\Action\Checkout\SubmitCheckoutAction;
 use App\Action\Errors\NotFoundAction;
 use App\Action\Home\HomeAction;
 use App\Action\Pages\AboutAction;
+use App\Action\Pages\CreditsAction;
 use App\Action\Pages\FeedbackAction;
 use App\Action\Pages\TermsAction;
 use App\Action\Product\ProductShowAction;
@@ -204,6 +205,7 @@ final class App
             AccountAction::class => new AccountAction($this->layout, $this->tpl, $this->auth, $this->orders),
             OrdersAction::class => new OrdersAction($this->layout, $this->tpl, $this->auth, $this->orders, $this->locale),
             AboutAction::class => new AboutAction($this->layout, $this->tpl),
+            CreditsAction::class => new CreditsAction($this->layout, $this->rootDir),
             TermsAction::class => new TermsAction($this->layout, $this->tpl),
             FeedbackAction::class => new FeedbackAction($this->layout, $this->tpl, $this->session),
             SearchAction::class => new SearchAction($this->products, $this->categories, $this->brands, $this->slugify),
@@ -261,6 +263,8 @@ final class App
 
             $r->addRoute('GET', '/about', AboutAction::class);
             $r->addRoute('GET', '/about/', AboutAction::class);
+            $r->addRoute('GET', '/credits', CreditsAction::class);
+            $r->addRoute('GET', '/credits/', CreditsAction::class);
             $r->addRoute('GET', '/terms', TermsAction::class);
             $r->addRoute('GET', '/terms/', TermsAction::class);
             $r->addRoute('GET', '/feedback', FeedbackAction::class);

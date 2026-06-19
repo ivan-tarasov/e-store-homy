@@ -357,28 +357,6 @@
         }
     },
     {
-        "id": 5101,
-        "category_id": 7,
-        "brand_id": 9,
-        "name": "DeLonghi Magnifica S",
-        "description": "Автоматическая кофемашина с встроенной кофемолкой.",
-        "price": 49990,
-        "stock": 7,
-        "in_stock": true,
-        "rating": 4.7,
-        "photos": [
-            "/img/products/5101/01.png",
-            "/img/products/5101/02.jpg",
-            "/img/products/5101/03.jpg",
-            "/img/products/5101/04.jpg"
-        ],
-        "properties": {
-            "Тип": "Автоматическая",
-            "Капучинатор": "Ручной",
-            "Объём бака": "1.8 л"
-        }
-    },
-    {
         "id": 5102,
         "category_id": 7,
         "brand_id": 7,
@@ -397,27 +375,6 @@
         "properties": {
             "Тип": "Автоматическая",
             "LatteGo": "Да"
-        }
-    },
-    {
-        "id": 5103,
-        "category_id": 7,
-        "brand_id": 9,
-        "name": "DeLonghi Dedica EC685",
-        "description": "Рожковая кофемашина с термоблоком и капучинатором.",
-        "price": 22990,
-        "stock": 12,
-        "in_stock": true,
-        "rating": 4.4,
-        "photos": [
-            "/img/products/5103/01.jpg",
-            "/img/products/5103/02.jpg",
-            "/img/products/5103/03.jpg",
-            "/img/products/5103/04.jpg"
-        ],
-        "properties": {
-            "Тип": "Рожковая",
-            "Капучинатор": "Ручной"
         }
     },
     {
@@ -1593,6 +1550,203 @@
             "Процессор": "Intel Core Ultra 7",
             "Память": "16 GB / 1 TB",
             "Вес": "1.12 кг"
+        }
+    },
+    {
+        "id": 5101,
+        "category_id": 7,
+        "brand_id": 5,
+        "name": "Bosch VeroCup 100",
+        "description": "Автоматическая кофемашина Bosch с керамической кофемолкой и автоматическим капучинатором.",
+        "price": 39990,
+        "stock": 9,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/5101/01.jpg"
+        ],
+        "properties": {
+            "Тип": "автоматическая, зерновая",
+            "Давление": "15 бар",
+            "Кофемолка": "керамическая",
+            "Капучинатор": "автоматический",
+            "Ёмкость": "1.4 л"
+        }
+    },
+    {
+        "id": 5103,
+        "category_id": 7,
+        "brand_id": 10,
+        "name": "Tefal Express CM361",
+        "description": "Капельная кофеварка Tefal на 1.25 л с подогревом и противокапельной системой.",
+        "price": 4990,
+        "stock": 26,
+        "in_stock": true,
+        "rating": 4.3,
+        "photos": [
+            "/img/products/5103/01.jpg",
+            "/img/products/5103/02.jpg",
+            "/img/products/5103/03.jpg"
+        ],
+        "properties": {
+            "Тип": "капельная",
+            "Объём": "1.25 л",
+            "Мощность": "1000 Вт",
+            "Подогрев": "да",
+            "Фильтр": "многоразовый"
+        }
+    },
+    {
+        "id": 7307,
+        "category_id": 18,
+        "brand_id": 17,
+        "name": "Nikon Z6 III",
+        "description": "Полнокадровая беззеркальная камера Nikon с частично-стековой матрицей 24.5 Мп и видео 6K.",
+        "price": 269990,
+        "stock": 5,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/7307/01.jpg",
+            "/img/products/7307/02.jpg",
+            "/img/products/7307/03.jpg"
+        ],
+        "properties": {
+            "Матрица": "24.5 Мп full-frame",
+            "Видео": "6K 60p RAW",
+            "Автофокус": "299 точек",
+            "Серия": "20 кадр/с"
+        }
+    },
+    {
+        "id": 7308,
+        "category_id": 18,
+        "brand_id": 17,
+        "name": "Nikon Zfc",
+        "description": "Стильная беззеркальная камера APS-C в ретро-дизайне с механическими дисками.",
+        "price": 119990,
+        "stock": 11,
+        "in_stock": true,
+        "rating": 4.6,
+        "photos": [
+            "/img/products/7308/01.jpg",
+            "/img/products/7308/02.jpg",
+            "/img/products/7308/03.jpg"
+        ],
+        "properties": {
+            "Матрица": "20.9 Мп APS-C",
+            "Видео": "4K 30p",
+            "Дизайн": "ретро",
+            "Экран": "поворотный"
+        }
+    },
+    {
+        "id": 7404,
+        "category_id": 19,
+        "brand_id": 17,
+        "name": "Nikkor Z 50mm f/1.8 S",
+        "description": "Светосильный портретный объектив серии S для системы Nikon Z.",
+        "price": 64990,
+        "stock": 8,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/7404/01.jpg",
+            "/img/products/7404/02.jpg",
+            "/img/products/7404/03.jpg"
+        ],
+        "properties": {
+            "Крепление": "Nikon Z",
+            "Светосила": "f/1.8",
+            "Фокус": "50 мм",
+            "Серия": "S-line"
+        }
+    },
+    {
+        "id": 2006,
+        "category_id": 2,
+        "brand_id": 18,
+        "name": "Acer Swift 14 AI",
+        "description": "Лёгкий ультрабук Acer с процессором Intel Core Ultra и матовым OLED-экраном.",
+        "price": 89990,
+        "stock": 14,
+        "in_stock": true,
+        "rating": 4.5,
+        "photos": [
+            "/img/products/2006/01.jpg",
+            "/img/products/2006/02.jpg",
+            "/img/products/2006/03.jpg"
+        ],
+        "properties": {
+            "Экран": "14\" OLED 2.8K",
+            "Процессор": "Intel Core Ultra 7",
+            "Память": "16 GB / 1 TB",
+            "Вес": "1.3 кг"
+        }
+    },
+    {
+        "id": 2007,
+        "category_id": 2,
+        "brand_id": 18,
+        "name": "Acer Aspire 5",
+        "description": "Универсальный ноутбук Acer для работы и учёбы с экраном Full HD.",
+        "price": 54990,
+        "stock": 22,
+        "in_stock": true,
+        "rating": 4.3,
+        "photos": [
+            "/img/products/2007/01.jpg",
+            "/img/products/2007/02.jpg",
+            "/img/products/2007/03.png"
+        ],
+        "properties": {
+            "Экран": "15.6\" IPS Full HD",
+            "Процессор": "Intel Core i5",
+            "Память": "16 GB / 512 GB",
+            "Видео": "Iris Xe"
+        }
+    },
+    {
+        "id": 4004,
+        "category_id": 4,
+        "brand_id": 19,
+        "name": "Sennheiser Momentum 4",
+        "description": "Беспроводные наушники Sennheiser с активным шумоподавлением и автономностью до 60 часов.",
+        "price": 34990,
+        "stock": 18,
+        "in_stock": true,
+        "rating": 4.8,
+        "photos": [
+            "/img/products/4004/01.jpg",
+            "/img/products/4004/02.png"
+        ],
+        "properties": {
+            "Тип": "накладные, беспроводные",
+            "Шумоподавление": "адаптивное ANC",
+            "Автономность": "до 60 ч",
+            "Кодеки": "aptX Adaptive"
+        }
+    },
+    {
+        "id": 4005,
+        "category_id": 4,
+        "brand_id": 19,
+        "name": "Sennheiser HD 660S2",
+        "description": "Открытые проводные наушники Sennheiser для аудиофилов с детальной серединой.",
+        "price": 49990,
+        "stock": 7,
+        "in_stock": true,
+        "rating": 4.9,
+        "photos": [
+            "/img/products/4005/01.jpg",
+            "/img/products/4005/02.jpg",
+            "/img/products/4005/03.jpg"
+        ],
+        "properties": {
+            "Тип": "открытые, проводные",
+            "Импеданс": "300 Ом",
+            "Драйверы": "38 мм",
+            "Частоты": "8–41500 Гц"
         }
     }
 ]

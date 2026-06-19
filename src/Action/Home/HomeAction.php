@@ -81,10 +81,13 @@ HTML;
     {
         $items = '';
         foreach ($this->brands->all() as $brand) {
-            $logo = sprintf('/img/brands/%s.svg', rawurlencode($brand->slug));
+            // ?v=2 busts browsers caching the old text-wordmark placeholders
+            $logo = htmlspecialchars($brand->logoPath() . '?v=2', ENT_QUOTES, 'UTF-8');
             $name = htmlspecialchars($brand->name, ENT_QUOTES, 'UTF-8');
             $items .= sprintf(
-                '<div class="col-6 col-sm-4 col-md-2" style="padding:1em;"><div style="background:#fff; border:1px solid #eee; padding:.5em; height:80px; display:flex; align-items:center; justify-content:center;"><img src="%s" alt="%s" style="max-width:100%%; max-height:60px;" /></div></div>',
+                '<div class="col-4 col-sm-3 col-md-2 brand-cell">'
+                . '<img class="brand-logo" src="%s" alt="%s" loading="lazy" />'
+                . '</div>',
                 $logo,
                 $name,
             );
