@@ -9,7 +9,7 @@
          <div class="col-8">
             <div class="title"><b>{item_brand}</b> {item_name}</div>
             <div class="price">{item_cost}</div>
-            <div class="title"><span id="item-qty{item_id}">{item_qty}</span> шт.</div>
+            <div class="title"><span id="item-qty{item_id}">{item_qty}</span> {{cart.qty_suffix}}</div>
          </div>
       </div>
       <form method="POST" action="">

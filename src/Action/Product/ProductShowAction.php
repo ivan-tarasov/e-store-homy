@@ -17,6 +17,7 @@ use App\Service\CartService;
 use App\Service\PriceFormatter;
 use App\Service\ProductCardRenderer;
 use App\Service\RussianLocale;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -60,17 +61,18 @@ final class ProductShowAction
         $reviews = $this->renderReviews($rawReviews);
         $similar = $this->renderSimilar($product);
 
-        $stock = $product->inStock ? 'на складе' : 'под заказ';
+        $stock = $product->inStock ? Lang::t('product.in_stock') : Lang::t('product.out_stock');
         $stockClass = $product->inStock ? 'available' : 'not-available';
         $title = ($category?->singular ?? '') . ' '
             . htmlspecialchars($brand?->name ?? '', ENT_QUOTES, 'UTF-8') . ' '
             . htmlspecialchars($product->name, ENT_QUOTES, 'UTF-8');
 
         $cartButton = $this->cart->has($product->id)
-            ? '<a class="le-button huge incart" href="/cart/">В корзине</a>'
+            ? '<a class="le-button huge incart" href="/cart/">' . Lang::t('product.in_cart') . '</a>'
             : sprintf(
-                '<form method="post" action="/cart/add"><input type="hidden" name="id" value="%d" /><button class="le-button huge" type="submit">В корзину</button></form>',
+                '<form method="post" action="/cart/add"><input type="hidden" name="id" value="%d" /><button class="le-button huge" type="submit">%s</button></form>',
                 $product->id,
+                Lang::t('product.add_to_cart'),
             );
 
         $body = $this->tpl->render('product', 'single-product', [
@@ -149,7 +151,7 @@ final class ProductShowAction
     private function renderProperties(Product $product): string
     {
         if ($product->properties === []) {
-            return '<p class="text-muted">Характеристики товара будут доступны позже.</p>';
+            return '<p class="text-muted">' . Lang::t('product.specs_none') . '</p>';
         }
         $rows = '';
         foreach ($product->properties as $name => $value) {
@@ -160,7 +162,8 @@ final class ProductShowAction
             );
         }
         return sprintf(
-            '<div class="row" style="margin-bottom:2em;"><div class="col-md-12"><h3 class="lead">Основные характеристики</h3></div><div class="col-md-12">%s</div></div>',
+            '<div class="row" style="margin-bottom:2em;"><div class="col-md-12"><h3 class="lead">%s</h3></div><div class="col-md-12">%s</div></div>',
+            Lang::t('product.specs_heading'),
             $rows,
         );
     }
@@ -169,26 +172,26 @@ final class ProductShowAction
     private function renderReviews(array $reviews): string
     {
         if ($reviews === []) {
-            return '<div class="card card-body bg-light">Отзывов пока нет.</div>';
+            return '<div class="card card-body bg-light">' . Lang::t('product.reviews_none') . '</div>';
         }
         $html = '';
         foreach ($reviews as $review) {
             $html .= sprintf(
                 '<div class="opinion" style="border-bottom:1px solid #eee;padding:1em 0;">'
                 . '<div><strong>%s</strong> <small class="text-muted">%s</small></div>'
-                . '<div class="rating">Оценка: %d / 5</div>'
+                . '<div class="rating">%s</div>'
                 . '<p>%s</p>'
                 . '%s%s'
                 . '</div>',
                 htmlspecialchars($review->author, ENT_QUOTES, 'UTF-8'),
                 $this->locale->formatDate($review->createdAt),
-                $review->grade,
+                Lang::t('product.review_grade', ['n' => $review->grade]),
                 nl2br(htmlspecialchars($review->comment, ENT_QUOTES, 'UTF-8')),
                 $review->pros !== null
-                    ? '<p><strong>Плюсы:</strong> ' . htmlspecialchars($review->pros, ENT_QUOTES, 'UTF-8') . '</p>'
+                    ? '<p><strong>' . Lang::t('product.review_pros') . '</strong> ' . htmlspecialchars($review->pros, ENT_QUOTES, 'UTF-8') . '</p>'
                     : '',
                 $review->cons !== null
-                    ? '<p><strong>Минусы:</strong> ' . htmlspecialchars($review->cons, ENT_QUOTES, 'UTF-8') . '</p>'
+                    ? '<p><strong>' . Lang::t('product.review_cons') . '</strong> ' . htmlspecialchars($review->cons, ENT_QUOTES, 'UTF-8') . '</p>'
                     : '',
             );
         }
@@ -215,6 +218,6 @@ final class ProductShowAction
         foreach ($items as $item) {
             $html .= $this->cards->miniCard($item);
         }
-        return '<section class="container" style="padding:2em 0;"><h3>Похожие товары</h3><div class="row">' . $html . '</div></section>';
+        return '<section class="container" style="padding:2em 0;"><h3>' . Lang::t('product.same_category') . '</h3><div class="row">' . $html . '</div></section>';
     }
 }

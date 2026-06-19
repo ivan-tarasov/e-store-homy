@@ -9,6 +9,7 @@ use App\Http\Response;
 use App\Service\CartService;
 use App\Service\PriceFormatter;
 use App\Service\Slugify;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -29,10 +30,10 @@ final class CartAction
     {
         if ($this->cart->isEmpty()) {
             $body = '<section class="container" style="padding:3em 0;text-align:center;">'
-                . '<h1>Корзина пуста</h1>'
-                . '<p>Добавьте товары из <a href="/category/">каталога</a>.</p>'
+                . '<h1>' . Lang::t('cartpage.empty_title') . '</h1>'
+                . '<p>' . Lang::t('cartpage.empty_text', ['link' => '<a href="/category/">' . Lang::t('cartpage.empty_link') . '</a>']) . '</p>'
                 . '</section>';
-            return Response::html($this->layout->render($body, new PageMeta('Корзина пуста')));
+            return Response::html($this->layout->render($body, new PageMeta(Lang::t('cartpage.empty_title'))));
         }
 
         $rows = '';
@@ -46,7 +47,7 @@ final class CartAction
                 . '<form method="post" action="/cart/update" style="display:inline-flex;gap:.25em;">'
                 . '<input type="hidden" name="id" value="%d" />'
                 . '<input type="number" name="qty" value="%d" min="1" max="99" style="width:4em;" />'
-                . '<button class="le-button small" type="submit">Обновить</button></form>'
+                . '<button class="le-button small" type="submit">' . Lang::t('cartpage.update') . '</button></form>'
                 . '</td>'
                 . '<td class="text-end">%s</td>'
                 . '<td><form method="post" action="/cart/remove"><input type="hidden" name="id" value="%d" /><button class="le-button small" type="submit">×</button></form></td>'
@@ -65,21 +66,28 @@ final class CartAction
 
         $body = sprintf(
             '<section class="container" style="padding:2em 0;">'
-            . '<h1>Корзина</h1>'
+            . '<h1>%s</h1>'
             . '<div class="table-responsive">'
             . '<table class="table" style="width:100%%;"><thead><tr>'
-            . '<th>Товар</th><th class="text-end">Цена</th><th class="text-center">Кол-во</th><th class="text-end">Сумма</th><th></th>'
+            . '<th>%s</th><th class="text-end">%s</th><th class="text-center">%s</th><th class="text-end">%s</th><th></th>'
             . '</tr></thead><tbody>%s</tbody>'
-            . '<tfoot><tr><th colspan="3" class="text-end">Итого</th><th class="text-end">%s</th><th></th></tr></tfoot>'
+            . '<tfoot><tr><th colspan="3" class="text-end">%s</th><th class="text-end">%s</th><th></th></tr></tfoot>'
             . '</table>'
             . '</div>'
-            . '<p class="text-end" style="margin-top:2em;"><a class="le-button huge" href="/checkout/">Оформить заказ</a></p>'
+            . '<p class="text-end" style="margin-top:2em;"><a class="le-button huge" href="/checkout/">%s</a></p>'
             . '</section>',
+            Lang::t('cartpage.title'),
+            Lang::t('cartpage.col_product'),
+            Lang::t('cartpage.col_price'),
+            Lang::t('cartpage.col_qty'),
+            Lang::t('cartpage.col_sum'),
             $rows,
+            Lang::t('cartpage.total'),
             $total,
+            Lang::t('cartpage.checkout'),
         );
 
-        return Response::html($this->layout->render($body, new PageMeta('Корзина'), $this->layout->breadcrumb(null, 'Корзина')));
+        return Response::html($this->layout->render($body, new PageMeta(Lang::t('cartpage.title')), $this->layout->breadcrumb(null, Lang::t('cartpage.title'))));
     }
 
     private function productUrl(int $id, string $name): string

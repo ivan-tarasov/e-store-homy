@@ -7,6 +7,7 @@ namespace App\Action\Auth;
 use App\Http\Request;
 use App\Http\Response;
 use App\Service\AuthService;
+use App\Support\Lang;
 use App\Support\Session;
 
 final class SubmitLoginAction
@@ -24,12 +25,12 @@ final class SubmitLoginAction
         $password = $request->input('password', '') ?? '';
 
         if ($email === '' || $password === '') {
-            $this->session->setFlash('login_error', 'Введите e-mail и пароль.');
+            $this->session->setFlash('login_error', Lang::t('login.error_empty'));
             return Response::redirect('/login/');
         }
 
         if ($this->auth->attempt($email, $password) === null) {
-            $this->session->setFlash('login_error', 'Пара e-mail/пароль не подходит.');
+            $this->session->setFlash('login_error', Lang::t('login.error_bad'));
             return Response::redirect('/login/');
         }
 

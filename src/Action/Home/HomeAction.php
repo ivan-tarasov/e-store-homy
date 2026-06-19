@@ -10,6 +10,7 @@ use App\Http\Response;
 use App\Repository\BrandRepository;
 use App\Repository\ProductRepository;
 use App\Service\ProductCardRenderer;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -35,9 +36,9 @@ final class HomeAction
         $body = $heroBanner . $newArrivals . $brandsBanner;
 
         $meta = new PageMeta(
-            title: 'Homy — каталог бытовой техники и электроники',
-            description: 'Демо-витрина магазина бытовой техники: смартфоны, ноутбуки, ТВ, аудио и техника для дома.',
-            keywords: 'бытовая техника, электроника, смартфоны, ноутбуки, ТВ, демо',
+            title: Lang::t('home.meta_title'),
+            description: Lang::t('home.meta_desc'),
+            keywords: Lang::t('home.meta_keywords'),
         );
 
         return Response::html($this->layout->render($body, $meta));
@@ -45,27 +46,26 @@ final class HomeAction
 
     private function renderHero(): string
     {
-        return <<<'HTML'
-<section id="hero">
-   <div class="container hero-content">
-      <div class="hero-text">
-         <span class="hero-kicker"><span class="hero-kicker-dot"></span>PORTFOLIO DEMO</span>
-         <h1 class="hero-title">
-            Бытовая техника,<br/>
-            <span class="hero-title-accent">собранная для демо</span>
-         </h1>
-         <p class="hero-subtitle">PHP 8 · файловое хранилище · реальные фото с Wikimedia Commons</p>
-         <div class="hero-ctas">
-            <a class="hero-cta hero-cta-primary" href="/category/">Открыть каталог →</a>
-            <a class="hero-cta hero-cta-secondary" href="/about/">О проекте</a>
-         </div>
-      </div>
-      <div class="hero-products">
-         <img src="/img/banners/hero-products.svg" alt="" />
-      </div>
-   </div>
-</section>
-HTML;
+        return sprintf(
+            '<section id="hero">'
+            . '<div class="container hero-content">'
+            . '<div class="hero-text">'
+            . '<span class="hero-kicker"><span class="hero-kicker-dot"></span>%s</span>'
+            . '<h1 class="hero-title">%s<br/><span class="hero-title-accent">%s</span></h1>'
+            . '<p class="hero-subtitle">%s</p>'
+            . '<div class="hero-ctas">'
+            . '<a class="hero-cta hero-cta-primary" href="/category/">%s</a>'
+            . '<a class="hero-cta hero-cta-secondary" href="/about/">%s</a>'
+            . '</div></div>'
+            . '<div class="hero-products"><img src="/img/banners/hero-products.svg" alt="" /></div>'
+            . '</div></section>',
+            Lang::t('hero.kicker'),
+            Lang::t('hero.title_line1'),
+            Lang::t('hero.title_accent'),
+            Lang::t('hero.subtitle'),
+            Lang::t('hero.cta_catalog'),
+            Lang::t('hero.cta_about'),
+        );
     }
 
     private function renderNewArrivals(): string

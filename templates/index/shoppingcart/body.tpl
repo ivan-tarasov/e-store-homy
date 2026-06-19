@@ -8,7 +8,7 @@
          </div>
 
          <div class="total-price-basket">
-            <span class="lbl">Корзина:</span>
+            <span class="lbl">{{cart.label}}</span>
             <span class="total-price">
                <span class="value" id="sub-total">{total_value}</span>
             </span>
@@ -27,11 +27,11 @@
                <div class="row g-2">
                   <div class="col-6">
                      <a href="/cart/" class="le-button btn btn-sm btn-block w-100">
-                        В корзину <i class="fa-solid fa-arrow-right"></i>
+                        {{cart.to_cart}} <i class="fa-solid fa-arrow-right"></i>
                      </a>
                   </div>
                   <div class="col-6">
-                     <a href="/checkout/" class="le-button btn btn-block w-100">Оформить заказ</a>
+                     <a href="/checkout/" class="le-button btn btn-block w-100">{{cart.checkout}}</a>
                   </div>
                </div>
             </div>

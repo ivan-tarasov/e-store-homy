@@ -21,6 +21,14 @@
             "Память": "128 GB",
             "Камера": "48 Мп + 12 Мп",
             "Аккумулятор": "до 20 ч видео"
+        },
+        "description_en": "Smartphone with a 6.1\" Super Retina XDR display, A16 Bionic chip and a 48 MP camera system.",
+        "properties_en": {
+            "Display": "6.1\" OLED 2556×1179",
+            "Chip": "Apple A16 Bionic",
+            "Memory": "128 GB",
+            "Camera": "48 MP + 12 MP",
+            "Battery": "up to 20h video"
         }
     },
     {
@@ -44,6 +52,13 @@
             "Чип": "Snapdragon 8 Gen 3",
             "Память": "256 GB",
             "Камера": "50 + 12 + 10 Мп"
+        },
+        "description_en": "Samsung flagship smartphone with a 6.2\" Dynamic AMOLED 2X display and AI features.",
+        "properties_en": {
+            "Display": "6.2\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 8 Gen 3",
+            "Memory": "256 GB",
+            "Camera": "50 + 12 + 10 MP"
         }
     },
     {
@@ -67,6 +82,13 @@
             "Чип": "Snapdragon 7s Gen 2",
             "Память": "256 GB",
             "Камера": "200 Мп"
+        },
+        "description_en": "Smartphone with a 200 MP main camera, a 120 Hz AMOLED display and a 5100 mAh battery.",
+        "properties_en": {
+            "Display": "6.67\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 7s Gen 2",
+            "Memory": "256 GB",
+            "Camera": "200 MP"
         }
     },
     {
@@ -89,6 +111,12 @@
             "Экран": "6.36\" AMOLED",
             "Чип": "Snapdragon 8 Gen 3",
             "Память": "512 GB"
+        },
+        "description_en": "Compact flagship with a Leica camera and Snapdragon 8 Gen 3.",
+        "properties_en": {
+            "Display": "6.36\" AMOLED",
+            "Chip": "Snapdragon 8 Gen 3",
+            "Memory": "512 GB"
         }
     },
     {
@@ -112,6 +140,13 @@
             "Память": "16 GB",
             "Накопитель": "512 GB SSD",
             "Экран": "13.6\" Liquid Retina"
+        },
+        "description_en": "Slim ultrabook powered by the Apple M3 chip with a 13.6\" Liquid Retina display.",
+        "properties_en": {
+            "Chip": "Apple M3",
+            "Memory": "16 GB",
+            "Storage": "512 GB SSD",
+            "Display": "13.6\" Liquid Retina"
         }
     },
     {
@@ -134,6 +169,12 @@
             "Процессор": "Intel Core i7",
             "Память": "16 GB",
             "Экран": "14\" 4K"
+        },
+        "description_en": "Lightweight business laptop with a 14\" 4K display and a magnesium body.",
+        "properties_en": {
+            "Processor": "Intel Core i7",
+            "Memory": "16 GB",
+            "Display": "14\" 4K"
         }
     },
     {
@@ -156,6 +197,12 @@
             "Процессор": "Intel Core i7-13700H",
             "Память": "16 GB",
             "Видеокарта": "RTX 4050"
+        },
+        "description_en": "Powerful laptop with discrete graphics and a 120 Hz 2.5K display.",
+        "properties_en": {
+            "Processor": "Intel Core i7-13700H",
+            "Memory": "16 GB",
+            "Graphics": "RTX 4050"
         }
     },
     {
@@ -179,6 +226,13 @@
             "Тип матрицы": "OLED",
             "HDR": "Dolby Vision IQ",
             "Частота": "120 Гц"
+        },
+        "description_en": "55-inch OLED TV with the α9 Gen6 processor and Dolby Vision support.",
+        "properties_en": {
+            "Screen size": "55\"",
+            "Panel type": "OLED",
+            "HDR": "Dolby Vision IQ",
+            "Refresh rate": "120 Hz"
         }
     },
     {
@@ -201,6 +255,12 @@
             "Диагональ": "65\"",
             "Разрешение": "4K Ultra HD",
             "Тип матрицы": "QLED"
+        },
+        "description_en": "65\" QLED TV with 4K HDR support.",
+        "properties_en": {
+            "Screen size": "65\"",
+            "Resolution": "4K Ultra HD",
+            "Panel type": "QLED"
         }
     },
     {
@@ -223,6 +283,12 @@
             "Диагональ": "55\"",
             "Тип матрицы": "Full-array LED",
             "Платформа": "Google TV"
+        },
+        "description_en": "Full-array LED TV with an XR processor and Google TV.",
+        "properties_en": {
+            "Screen size": "55\"",
+            "Panel type": "Full-array LED",
+            "Platform": "Google TV"
         }
     },
     {
@@ -245,6 +311,12 @@
             "Тип": "TWS",
             "Шумоподавление": "Активное",
             "Время работы": "до 30 ч с кейсом"
+        },
+        "description_en": "Wireless earbuds with active noise cancellation and spatial audio.",
+        "properties_en": {
+            "Type": "TWS",
+            "Noise cancellation": "Active",
+            "Battery life": "up to 30h with case"
         }
     },
     {
@@ -267,6 +339,12 @@
             "Тип": "Накладные",
             "Шумоподавление": "Активное",
             "Время работы": "30 ч"
+        },
+        "description_en": "Over-ear headphones with best-in-class noise cancellation.",
+        "properties_en": {
+            "Type": "Over-ear",
+            "Noise cancellation": "Active",
+            "Battery life": "30h"
         }
     },
     {
@@ -288,6 +366,11 @@
         "properties": {
             "Тип": "Накладные",
             "Hi-Res": "Да"
+        },
+        "description_en": "Premium headphones with Hi-Res Audio and adaptive noise cancellation.",
+        "properties_en": {
+            "Type": "Over-ear",
+            "Hi-Res": "Yes"
         }
     },
     {
@@ -311,6 +394,13 @@
             "Тип": "Двухкамерный",
             "NoFrost": "Да",
             "Энергопотребление": "A++"
+        },
+        "description_en": "Two-compartment refrigerator with a NoFrost system.",
+        "properties_en": {
+            "Volume": "366 L",
+            "Type": "Two-compartment",
+            "NoFrost": "Yes",
+            "Energy consumption": "A++"
         }
     },
     {
@@ -333,6 +423,12 @@
             "Объём": "419 л",
             "Тип": "Двухкамерный",
             "Инверторный компрессор": "Да"
+        },
+        "description_en": "Refrigerator with an inverter compressor and a fresh zone.",
+        "properties_en": {
+            "Volume": "419 L",
+            "Type": "Two-compartment",
+            "Inverter compressor": "Yes"
         }
     },
     {
@@ -354,6 +450,11 @@
         "properties": {
             "Объём": "367 л",
             "Twin Cooling": "Да"
+        },
+        "description_en": "Refrigerator with Twin Cooling Plus technology.",
+        "properties_en": {
+            "Volume": "367 L",
+            "Twin Cooling": "Yes"
         }
     },
     {
@@ -375,6 +476,11 @@
         "properties": {
             "Тип": "Автоматическая",
             "LatteGo": "Да"
+        },
+        "description_en": "Fully automatic coffee machine with the LatteGo system.",
+        "properties_en": {
+            "Type": "Automatic",
+            "LatteGo": "Yes"
         }
     },
     {
@@ -397,6 +503,12 @@
             "Тип": "Беспроводной",
             "Лазерная подсветка": "Да",
             "Время работы": "до 60 мин"
+        },
+        "description_en": "Cordless vacuum cleaner with a laser illumination and an LCD screen.",
+        "properties_en": {
+            "Type": "Cordless",
+            "Laser illumination": "Yes",
+            "Battery life": "up to 60 min"
         }
     },
     {
@@ -419,6 +531,12 @@
             "Тип": "Робот",
             "Лидар": "Да",
             "Самоочистка": "Да"
+        },
+        "description_en": "Robot vacuum with LiDAR and automatic brush washing.",
+        "properties_en": {
+            "Type": "Robot",
+            "LiDAR": "Yes",
+            "Self-cleaning": "Yes"
         }
     },
     {
@@ -440,6 +558,11 @@
         "properties": {
             "Тип": "Беспроводной",
             "Время работы": "45 мин"
+        },
+        "description_en": "Lightweight stick vacuum cleaner with a flexible tube.",
+        "properties_en": {
+            "Type": "Cordless",
+            "Battery life": "45 min"
         }
     },
     {
@@ -462,6 +585,12 @@
             "Загрузка": "10 кг",
             "Класс": "A+++",
             "Отжим": "1600 об/мин"
+        },
+        "description_en": "Washing machine with an inverter motor and 10 kg load capacity.",
+        "properties_en": {
+            "Load": "10 kg",
+            "Class": "A+++",
+            "Spin": "1600 rpm"
         }
     },
     {
@@ -484,6 +613,12 @@
             "Загрузка": "9 кг",
             "AI DD": "Да",
             "Отжим": "1400 об/мин"
+        },
+        "description_en": "Washing machine with a direct drive and AI DD.",
+        "properties_en": {
+            "Load": "9 kg",
+            "AI DD": "Yes",
+            "Spin": "1400 rpm"
         }
     },
     {
@@ -506,6 +641,13 @@
             "Чип": "Apple M2",
             "Память": "128 GB",
             "Связь": "Wi-Fi 6E"
+        },
+        "description_en": "Apple tablet with an 11\" Liquid Retina display, M2 chip and Apple Pencil Pro support.",
+        "properties_en": {
+            "Display": "11\" Liquid Retina 2360×1640",
+            "Chip": "Apple M2",
+            "Memory": "128 GB",
+            "Connectivity": "Wi-Fi 6E"
         }
     },
     {
@@ -528,6 +670,13 @@
             "Чип": "Apple M4",
             "Память": "256 GB",
             "Вес": "579 г"
+        },
+        "description_en": "Professional tablet with a 12.9\" Ultra Retina XDR (OLED) display and the M4 chip.",
+        "properties_en": {
+            "Display": "12.9\" OLED 120 Hz",
+            "Chip": "Apple M4",
+            "Memory": "256 GB",
+            "Weight": "579 g"
         }
     },
     {
@@ -550,6 +699,13 @@
             "Чип": "Snapdragon 8 Gen 2",
             "Память": "256 GB",
             "Защита": "IP68"
+        },
+        "description_en": "Samsung flagship Android tablet with an 11\" Dynamic AMOLED 2X display and an included S Pen.",
+        "properties_en": {
+            "Display": "11\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 8 Gen 2",
+            "Memory": "256 GB",
+            "Protection": "IP68"
         }
     },
     {
@@ -572,6 +728,13 @@
             "Чип": "Snapdragon 870",
             "Память": "128 GB",
             "Батарея": "8840 мА·ч"
+        },
+        "description_en": "Affordable tablet with an 11\" 144 Hz display and quad-speaker stereo sound.",
+        "properties_en": {
+            "Display": "11\" IPS 144 Hz",
+            "Chip": "Snapdragon 870",
+            "Memory": "128 GB",
+            "Battery": "8840 mAh"
         }
     },
     {
@@ -594,6 +757,13 @@
             "Чип": "MediaTek Dimensity 7050",
             "Память": "128 GB",
             "Звук": "4× JBL"
+        },
+        "description_en": "Large 12.7\" tablet for entertainment and note-taking with the Lenovo Tab Pen Plus.",
+        "properties_en": {
+            "Display": "12.7\" IPS 2944×1840",
+            "Chip": "MediaTek Dimensity 7050",
+            "Memory": "128 GB",
+            "Sound": "4× JBL"
         }
     },
     {
@@ -616,6 +786,13 @@
             "Чип": "MediaTek Helio G99",
             "Память": "64 GB",
             "Батарея": "5100 мА·ч"
+        },
+        "description_en": "Compact and affordable tablet for the web, reading and video.",
+        "properties_en": {
+            "Display": "8.7\" TFT",
+            "Chip": "MediaTek Helio G99",
+            "Memory": "64 GB",
+            "Battery": "5100 mAh"
         }
     },
     {
@@ -636,6 +813,12 @@
         "properties": {
             "Накопитель": "1 TB SSD",
             "Разрешение": "до 4K 120 Гц",
+            "GPU": "10.3 TFLOPs RDNA2"
+        },
+        "description_en": "Updated compact version of the PS5 with a disc drive and 1 TB of storage.",
+        "properties_en": {
+            "Storage": "1 TB SSD",
+            "Resolution": "up to 4K 120 Hz",
             "GPU": "10.3 TFLOPs RDNA2"
         }
     },
@@ -658,6 +841,12 @@
             "Накопитель": "1 TB SSD",
             "Разрешение": "до 4K 120 Гц",
             "GPU": "12 TFLOPs RDNA2"
+        },
+        "description_en": "Microsoft's most powerful console with 4K support and a fast SSD.",
+        "properties_en": {
+            "Storage": "1 TB SSD",
+            "Resolution": "up to 4K 120 Hz",
+            "GPU": "12 TFLOPs RDNA2"
         }
     },
     {
@@ -678,6 +867,12 @@
             "Накопитель": "512 GB SSD",
             "Разрешение": "до 1440p 120 Гц",
             "Формат": "цифровой"
+        },
+        "description_en": "Compact digital console for 1440p gaming without a disc drive.",
+        "properties_en": {
+            "Storage": "512 GB SSD",
+            "Resolution": "up to 1440p 120 Hz",
+            "Format": "digital"
         }
     },
     {
@@ -697,6 +892,12 @@
             "Экран": "7\" OLED",
             "Накопитель": "64 GB",
             "Режимы": "ТВ / настольный / портативный"
+        },
+        "description_en": "Hybrid console with a vivid 7\" OLED screen for gaming at home and on the go.",
+        "properties_en": {
+            "Display": "7\" OLED",
+            "Storage": "64 GB",
+            "Modes": "TV / tabletop / handheld"
         }
     },
     {
@@ -716,6 +917,12 @@
             "Экран": "5.5\" LCD",
             "Накопитель": "32 GB",
             "Вес": "275 г"
+        },
+        "description_en": "Lightweight portable version of the Switch for gaming on the go.",
+        "properties_en": {
+            "Display": "5.5\" LCD",
+            "Storage": "32 GB",
+            "Weight": "275 g"
         }
     },
     {
@@ -737,6 +944,12 @@
             "Накопитель": "2 TB SSD",
             "Разрешение": "до 8K",
             "Особенности": "PSSR апскейл"
+        },
+        "description_en": "Advanced version of the PS5 with enhanced graphics and ray tracing.",
+        "properties_en": {
+            "Storage": "2 TB SSD",
+            "Resolution": "up to 8K",
+            "Features": "PSSR upscaling"
         }
     },
     {
@@ -758,6 +971,12 @@
             "Подключение": "Bluetooth / USB-C",
             "Батарея": "1560 мА·ч",
             "Особенности": "haptic feedback"
+        },
+        "description_en": "Wireless controller for the PS5 with haptic feedback and adaptive triggers.",
+        "properties_en": {
+            "Connection": "Bluetooth / USB-C",
+            "Battery": "1560 mAh",
+            "Features": "haptic feedback"
         }
     },
     {
@@ -779,6 +998,12 @@
             "Подключение": "Bluetooth / USB-C",
             "Питание": "2× AA",
             "Совместимость": "Xbox / PC"
+        },
+        "description_en": "Xbox gamepad with textured triggers and a Share button.",
+        "properties_en": {
+            "Connection": "Bluetooth / USB-C",
+            "Power": "2× AA",
+            "Compatibility": "Xbox / PC"
         }
     },
     {
@@ -800,6 +1025,12 @@
             "Сенсор": "19000 dpi",
             "Кнопки": "6",
             "Подключение": "USB / 2.4 ГГц"
+        },
+        "description_en": "ASUS ROG gaming mouse with a 19000 dpi sensor and swappable switches.",
+        "properties_en": {
+            "Sensor": "19000 dpi",
+            "Buttons": "6",
+            "Connection": "USB / 2.4 GHz"
         }
     },
     {
@@ -821,6 +1052,12 @@
             "Переключатели": "ROG NX",
             "Подсветка": "RGB Aura Sync",
             "Формат": "full-size"
+        },
+        "description_en": "ASUS ROG mechanical gaming keyboard with RGB backlighting.",
+        "properties_en": {
+            "Switches": "ROG NX",
+            "Backlighting": "RGB Aura Sync",
+            "Format": "full-size"
         }
     },
     {
@@ -843,6 +1080,13 @@
             "Видео": "4K 60p",
             "Стабилизация": "до 8 ступеней",
             "Серия": "40 кадр/с"
+        },
+        "description_en": "Full-frame mirrorless camera with a 24 MP sensor and 4K 60p recording.",
+        "properties_en": {
+            "Sensor": "24.2 MP full-frame",
+            "Video": "4K 60p",
+            "Stabilization": "up to 8 stops",
+            "Burst": "40 fps"
         }
     },
     {
@@ -864,6 +1108,13 @@
             "Видео": "4K 30p",
             "Вес": "375 г",
             "Видоискатель": "OLED 2.36 млн"
+        },
+        "description_en": "Lightweight APS-C mirrorless camera for beginners and vloggers.",
+        "properties_en": {
+            "Sensor": "24.2 MP APS-C",
+            "Video": "4K 30p",
+            "Weight": "375 g",
+            "Viewfinder": "OLED 2.36M"
         }
     },
     {
@@ -886,6 +1137,13 @@
             "Видео": "4K 60p",
             "Автофокус": "759 точек",
             "Стабилизация": "5.5 ступеней"
+        },
+        "description_en": "Versatile full-frame camera with a 33 MP sensor and advanced autofocus.",
+        "properties_en": {
+            "Sensor": "33 MP full-frame",
+            "Video": "4K 60p",
+            "Autofocus": "759 points",
+            "Stabilization": "5.5 stops"
         }
     },
     {
@@ -908,6 +1166,13 @@
             "Видео": "4K 30p",
             "Экран": "поворотный",
             "Микрофон": "направленный 3-капсюльный"
+        },
+        "description_en": "Vlogging camera with interchangeable APS-C lenses and a swivel screen.",
+        "properties_en": {
+            "Sensor": "24.2 MP APS-C",
+            "Video": "4K 30p",
+            "Screen": "swivel",
+            "Microphone": "directional 3-capsule"
         }
     },
     {
@@ -929,6 +1194,13 @@
             "Видео": "4K 25p",
             "Экран": "поворотный сенсорный",
             "Вес": "449 г"
+        },
+        "description_en": "Compact DSLR camera with a swivel screen and Dual Pixel AF.",
+        "properties_en": {
+            "Sensor": "24.1 MP APS-C",
+            "Video": "4K 25p",
+            "Screen": "swivel touchscreen",
+            "Weight": "449 g"
         }
     },
     {
@@ -949,6 +1221,13 @@
             "Видео": "4K 30p",
             "Автофокус": "425 точек",
             "Серия": "11 кадр/с"
+        },
+        "description_en": "APS-C mirrorless camera with fast 0.02s autofocus.",
+        "properties_en": {
+            "Sensor": "24.2 MP APS-C",
+            "Video": "4K 30p",
+            "Autofocus": "425 points",
+            "Burst": "11 fps"
         }
     },
     {
@@ -971,6 +1250,13 @@
             "Светосила": "f/1.8",
             "Фокус": "50 мм",
             "Вес": "160 г"
+        },
+        "description_en": "Bright portrait lens with a fixed 50 mm focal length.",
+        "properties_en": {
+            "Mount": "Canon RF",
+            "Aperture": "f/1.8",
+            "Focal length": "50 mm",
+            "Weight": "160 g"
         }
     },
     {
@@ -993,6 +1279,13 @@
             "Светосила": "f/1.8",
             "Фокус": "50 мм",
             "Вес": "186 г"
+        },
+        "description_en": "Affordable full-frame 50 mm prime for Sony E-mount cameras.",
+        "properties_en": {
+            "Mount": "Sony FE",
+            "Aperture": "f/1.8",
+            "Focal length": "50 mm",
+            "Weight": "186 g"
         }
     },
     {
@@ -1015,6 +1308,13 @@
             "Светосила": "f/4",
             "Диапазон": "24-105 мм",
             "Стабилизация": "до 5 ступеней"
+        },
+        "description_en": "Versatile professional L-series zoom lens with image stabilization.",
+        "properties_en": {
+            "Mount": "Canon RF",
+            "Aperture": "f/4",
+            "Range": "24-105 mm",
+            "Stabilization": "up to 5 stops"
         }
     },
     {
@@ -1036,6 +1336,12 @@
             "Звук": "12 Вт",
             "Связь": "Wi-Fi / Bluetooth",
             "Ассистент": "Google Assistant"
+        },
+        "description_en": "Smart speaker with a voice assistant and smart home control.",
+        "properties_en": {
+            "Sound": "12 W",
+            "Connectivity": "Wi-Fi / Bluetooth",
+            "Assistant": "Google Assistant"
         }
     },
     {
@@ -1057,6 +1363,12 @@
             "Лампы": "3× E27",
             "Оттенки": "16 млн",
             "Управление": "Hue Bridge / app"
+        },
+        "description_en": "Smart lighting starter kit: a bridge and three bulbs with 16 million shades.",
+        "properties_en": {
+            "Bulbs": "3× E27",
+            "Shades": "16 million",
+            "Control": "Hue Bridge / app"
         }
     },
     {
@@ -1077,6 +1389,12 @@
             "Цоколь": "E27",
             "Яркость": "950 лм",
             "Связь": "Wi-Fi"
+        },
+        "description_en": "Smart Wi-Fi bulb with adjustable brightness and color temperature.",
+        "properties_en": {
+            "Base": "E27",
+            "Brightness": "950 lm",
+            "Connectivity": "Wi-Fi"
         }
     },
     {
@@ -1096,6 +1414,12 @@
             "Нагрузка": "до 2200 Вт",
             "Связь": "Wi-Fi",
             "Управление": "Mi Home"
+        },
+        "description_en": "Smart plug with smartphone control and energy consumption monitoring.",
+        "properties_en": {
+            "Load": "up to 2200 W",
+            "Connectivity": "Wi-Fi",
+            "Control": "Mi Home"
         }
     },
     {
@@ -1117,6 +1441,12 @@
             "Протоколы": "Matter / Zigbee / Thread",
             "Зарядка": "15 Вт Qi",
             "Связь": "Wi-Fi"
+        },
+        "description_en": "Samsung smart home hub with Matter support and wireless charging.",
+        "properties_en": {
+            "Protocols": "Matter / Zigbee / Thread",
+            "Charging": "15 W Qi",
+            "Connectivity": "Wi-Fi"
         }
     },
     {
@@ -1139,6 +1469,13 @@
             "Обзор": "360°",
             "Ночь": "ИК до 9 м",
             "Связь": "Wi-Fi"
+        },
+        "description_en": "Swivel 2.5K Wi-Fi camera with night recording and human detection.",
+        "properties_en": {
+            "Resolution": "2.5K",
+            "View": "360°",
+            "Night": "IR up to 9 m",
+            "Connectivity": "Wi-Fi"
         }
     },
     {
@@ -1161,6 +1498,13 @@
             "Площадь": "до 25 м²",
             "Класс": "A++",
             "Особенности": "ионизация"
+        },
+        "description_en": "Wall-mounted split system with an inverter compressor and low noise level.",
+        "properties_en": {
+            "Power": "2.5 kW",
+            "Area": "up to 25 m²",
+            "Class": "A++",
+            "Features": "ionization"
         }
     },
     {
@@ -1182,6 +1526,13 @@
             "Мощность": "3.5 кВт",
             "Площадь": "до 35 м²",
             "Класс": "A+++",
+            "Wi-Fi": "SmartThings"
+        },
+        "description_en": "Air conditioner with gentle cooling technology and no direct airflow.",
+        "properties_en": {
+            "Power": "3.5 kW",
+            "Area": "up to 35 m²",
+            "Class": "A+++",
             "Wi-Fi": "SmartThings"
         }
     },
@@ -1205,6 +1556,13 @@
             "Площадь": "до 26 м²",
             "Класс": "A++",
             "Wi-Fi": "Mi Home"
+        },
+        "description_en": "Smart inverter split system with app control.",
+        "properties_en": {
+            "Power": "2.6 kW",
+            "Area": "up to 26 m²",
+            "Class": "A++",
+            "Wi-Fi": "Mi Home"
         }
     },
     {
@@ -1227,6 +1585,13 @@
             "Площадь": "до 35 м²",
             "Класс": "A++",
             "Режим": "ночной 19 дБ"
+        },
+        "description_en": "Reliable Bosch split system with a quiet night mode and self-cleaning.",
+        "properties_en": {
+            "Power": "3.5 kW",
+            "Area": "up to 35 m²",
+            "Class": "A++",
+            "Mode": "night 19 dB"
         }
     },
     {
@@ -1246,6 +1611,13 @@
             "Бак": "4.5 л",
             "Площадь": "до 30 м²",
             "Пар": "350 мл/ч",
+            "Wi-Fi": "Mi Home"
+        },
+        "description_en": "Ultrasonic air humidifier with app control.",
+        "properties_en": {
+            "Tank": "4.5 L",
+            "Area": "up to 30 m²",
+            "Mist": "350 ml/h",
             "Wi-Fi": "Mi Home"
         }
     },
@@ -1269,6 +1641,13 @@
             "Площадь": "до 32 м²",
             "Технология": "NanoCloud",
             "Уровень шума": "26 дБ"
+        },
+        "description_en": "Air humidifier with NanoCloud technology and hygienic evaporation.",
+        "properties_en": {
+            "Tank": "2 L",
+            "Area": "up to 32 m²",
+            "Technology": "NanoCloud",
+            "Noise level": "26 dB"
         }
     },
     {
@@ -1291,6 +1670,13 @@
             "Фильтр": "HEPA H13",
             "Площадь": "до 40 м²",
             "Управление": "app / пульт"
+        },
+        "description_en": "Dyson three-in-one purifier, humidifier and fan with a HEPA filter.",
+        "properties_en": {
+            "Functions": "purification + humidification + airflow",
+            "Filter": "HEPA H13",
+            "Area": "up to 40 m²",
+            "Control": "app / remote"
         }
     },
     {
@@ -1312,6 +1698,13 @@
             "Защита": "IP67",
             "Время работы": "20 ч",
             "Powerbank": "да"
+        },
+        "description_en": "Powerful waterproof speaker with a power bank function and JBL Pro sound.",
+        "properties_en": {
+            "Power": "40 W",
+            "Protection": "IP67",
+            "Battery life": "20h",
+            "Powerbank": "yes"
         }
     },
     {
@@ -1333,6 +1726,13 @@
             "Защита": "IP67",
             "Время работы": "12 ч",
             "Связь": "Bluetooth 5.1"
+        },
+        "description_en": "Portable stereo speaker with dust and water resistance and rich bass.",
+        "properties_en": {
+            "Power": "30 W",
+            "Protection": "IP67",
+            "Battery life": "12h",
+            "Connectivity": "Bluetooth 5.1"
         }
     },
     {
@@ -1355,6 +1755,13 @@
             "Время работы": "16 ч",
             "Связь": "Bluetooth 5.0",
             "Вес": "253 г"
+        },
+        "description_en": "Compact Sony speaker with signature Extra Bass enhancement.",
+        "properties_en": {
+            "Protection": "IP67",
+            "Battery life": "16h",
+            "Connectivity": "Bluetooth 5.0",
+            "Weight": "253 g"
         }
     },
     {
@@ -1375,6 +1782,13 @@
             "Защита": "IP67",
             "Время работы": "5 ч",
             "Вес": "209 г"
+        },
+        "description_en": "Tiny, vibrant speaker for walks and travel.",
+        "properties_en": {
+            "Power": "4.2 W",
+            "Protection": "IP67",
+            "Battery life": "5h",
+            "Weight": "209 g"
         }
     },
     {
@@ -1397,6 +1811,13 @@
             "Мощность": "800 Вт",
             "Покрытие": "керамика",
             "Управление": "электронное"
+        },
+        "description_en": "23 L microwave oven with a ceramic coating and fast defrosting.",
+        "properties_en": {
+            "Volume": "23 L",
+            "Power": "800 W",
+            "Coating": "ceramic",
+            "Control": "electronic"
         }
     },
     {
@@ -1419,6 +1840,13 @@
             "Мощность": "1000 Вт",
             "Гриль": "да",
             "Инвертор": "Smart Inverter"
+        },
+        "description_en": "LG inverter microwave with even heating and a grill mode.",
+        "properties_en": {
+            "Volume": "25 L",
+            "Power": "1000 W",
+            "Grill": "yes",
+            "Inverter": "Smart Inverter"
         }
     },
     {
@@ -1440,6 +1868,13 @@
             "Мощность": "800 Вт",
             "Программы": "авто-разморозка",
             "Управление": "поворотное"
+        },
+        "description_en": "Compact 20 L Bosch microwave oven with auto programs.",
+        "properties_en": {
+            "Volume": "20 L",
+            "Power": "800 W",
+            "Programs": "auto-defrost",
+            "Control": "rotary"
         }
     },
     {
@@ -1463,6 +1898,14 @@
             "Память": "256 GB",
             "Камера": "48 + 12 + 12 Мп",
             "Зум": "5×"
+        },
+        "description_en": "Top-tier iPhone with a titanium body, A17 Pro chip and a 5x telephoto lens.",
+        "properties_en": {
+            "Display": "6.7\" OLED 120 Hz",
+            "Chip": "A17 Pro",
+            "Memory": "256 GB",
+            "Camera": "48 + 12 + 12 MP",
+            "Zoom": "5×"
         }
     },
     {
@@ -1486,6 +1929,14 @@
             "Память": "256 GB",
             "Камера": "200 Мп",
             "S Pen": "да"
+        },
+        "description_en": "Samsung flagship with an S Pen, a titanium frame and a 200 MP camera.",
+        "properties_en": {
+            "Display": "6.8\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 8 Gen 3",
+            "Memory": "256 GB",
+            "Camera": "200 MP",
+            "S Pen": "yes"
         }
     },
     {
@@ -1508,6 +1959,13 @@
             "Чип": "Snapdragon 685",
             "Память": "128 GB",
             "Камера": "108 Мп"
+        },
+        "description_en": "Affordable smartphone with a 120 Hz AMOLED display and a 108 MP camera.",
+        "properties_en": {
+            "Display": "6.67\" AMOLED 120 Hz",
+            "Chip": "Snapdragon 685",
+            "Memory": "128 GB",
+            "Camera": "108 MP"
         }
     },
     {
@@ -1528,6 +1986,13 @@
             "Процессор": "Ryzen 9",
             "Видео": "RTX 4060",
             "Память": "16 GB / 1 TB"
+        },
+        "description_en": "Compact ASUS gaming laptop with an OLED display and an RTX 4060 graphics card.",
+        "properties_en": {
+            "Display": "14\" OLED 120 Hz",
+            "Processor": "Ryzen 9",
+            "Graphics": "RTX 4060",
+            "Memory": "16 GB / 1 TB"
         }
     },
     {
@@ -1550,6 +2015,13 @@
             "Процессор": "Intel Core Ultra 7",
             "Память": "16 GB / 1 TB",
             "Вес": "1.12 кг"
+        },
+        "description_en": "Lightweight Lenovo business ultrabook with MIL-SPEC durability and a matte display.",
+        "properties_en": {
+            "Display": "14\" IPS 2.2K",
+            "Processor": "Intel Core Ultra 7",
+            "Memory": "16 GB / 1 TB",
+            "Weight": "1.12 kg"
         }
     },
     {
@@ -1571,6 +2043,14 @@
             "Кофемолка": "керамическая",
             "Капучинатор": "автоматический",
             "Ёмкость": "1.4 л"
+        },
+        "description_en": "Automatic Bosch coffee machine with a ceramic grinder and an automatic milk frother.",
+        "properties_en": {
+            "Type": "automatic, bean-to-cup",
+            "Pressure": "15 bar",
+            "Grinder": "ceramic",
+            "Milk frother": "automatic",
+            "Capacity": "1.4 L"
         }
     },
     {
@@ -1594,6 +2074,14 @@
             "Мощность": "1000 Вт",
             "Подогрев": "да",
             "Фильтр": "многоразовый"
+        },
+        "description_en": "Tefal drip coffee maker with a 1.25 L capacity, keep-warm plate and an anti-drip system.",
+        "properties_en": {
+            "Type": "drip",
+            "Volume": "1.25 L",
+            "Power": "1000 W",
+            "Keep-warm": "yes",
+            "Filter": "reusable"
         }
     },
     {
@@ -1616,6 +2104,13 @@
             "Видео": "6K 60p RAW",
             "Автофокус": "299 точек",
             "Серия": "20 кадр/с"
+        },
+        "description_en": "Nikon full-frame mirrorless camera with a partially stacked 24.5 MP sensor and 6K video.",
+        "properties_en": {
+            "Sensor": "24.5 MP full-frame",
+            "Video": "6K 60p RAW",
+            "Autofocus": "299 points",
+            "Burst": "20 fps"
         }
     },
     {
@@ -1638,6 +2133,13 @@
             "Видео": "4K 30p",
             "Дизайн": "ретро",
             "Экран": "поворотный"
+        },
+        "description_en": "Stylish APS-C mirrorless camera with a retro design and mechanical dials.",
+        "properties_en": {
+            "Sensor": "20.9 MP APS-C",
+            "Video": "4K 30p",
+            "Design": "retro",
+            "Screen": "swivel"
         }
     },
     {
@@ -1660,6 +2162,13 @@
             "Светосила": "f/1.8",
             "Фокус": "50 мм",
             "Серия": "S-line"
+        },
+        "description_en": "Bright S-series portrait lens for the Nikon Z system.",
+        "properties_en": {
+            "Mount": "Nikon Z",
+            "Aperture": "f/1.8",
+            "Focal length": "50 mm",
+            "Series": "S-line"
         }
     },
     {
@@ -1682,6 +2191,13 @@
             "Процессор": "Intel Core Ultra 7",
             "Память": "16 GB / 1 TB",
             "Вес": "1.3 кг"
+        },
+        "description_en": "Lightweight Acer ultrabook with an Intel Core Ultra processor and a matte OLED display.",
+        "properties_en": {
+            "Display": "14\" OLED 2.8K",
+            "Processor": "Intel Core Ultra 7",
+            "Memory": "16 GB / 1 TB",
+            "Weight": "1.3 kg"
         }
     },
     {
@@ -1704,6 +2220,13 @@
             "Процессор": "Intel Core i5",
             "Память": "16 GB / 512 GB",
             "Видео": "Iris Xe"
+        },
+        "description_en": "Versatile Acer laptop for work and study with a Full HD display.",
+        "properties_en": {
+            "Display": "15.6\" IPS Full HD",
+            "Processor": "Intel Core i5",
+            "Memory": "16 GB / 512 GB",
+            "Graphics": "Iris Xe"
         }
     },
     {
@@ -1725,6 +2248,13 @@
             "Шумоподавление": "адаптивное ANC",
             "Автономность": "до 60 ч",
             "Кодеки": "aptX Adaptive"
+        },
+        "description_en": "Sennheiser wireless headphones with active noise cancellation and up to 60 hours of battery life.",
+        "properties_en": {
+            "Type": "over-ear, wireless",
+            "Noise cancellation": "adaptive ANC",
+            "Battery life": "up to 60h",
+            "Codecs": "aptX Adaptive"
         }
     },
     {
@@ -1747,6 +2277,13 @@
             "Импеданс": "300 Ом",
             "Драйверы": "38 мм",
             "Частоты": "8–41500 Гц"
+        },
+        "description_en": "Open-back wired Sennheiser headphones for audiophiles with detailed mids.",
+        "properties_en": {
+            "Type": "open-back, wired",
+            "Impedance": "300 Ohm",
+            "Drivers": "38 mm",
+            "Frequency": "8–41500 Hz"
         }
     }
 ]

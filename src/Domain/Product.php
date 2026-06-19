@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Domain;
 
+use App\Support\Lang;
+
 final class Product
 {
     /**
@@ -39,14 +41,28 @@ final class Product
             categoryId: (int) $row['category_id'],
             brandId: (int) $row['brand_id'],
             name: (string) $row['name'],
-            description: (string) ($row['description'] ?? ''),
+            description: (string) (self::localized($row, 'description') ?? ''),
             price: (int) $row['price'],
             stock: (int) ($row['stock'] ?? 0),
             inStock: (bool) ($row['in_stock'] ?? false),
             rating: (float) ($row['rating'] ?? 0),
             photos: array_values(array_map(strval(...), $row['photos'] ?? [])),
-            properties: $row['properties'] ?? [],
+            properties: self::localized($row, 'properties') ?? [],
             promoSlug: $row['promo_slug'] ?? null,
         );
+    }
+
+    /**
+     * English variant (`<field>_en`) when the UI locale is English and a
+     * translation exists; otherwise the base (Russian) field.
+     *
+     * @param array<string, mixed> $row
+     */
+    private static function localized(array $row, string $field): mixed
+    {
+        if (Lang::isEnglish() && !empty($row[$field . '_en'])) {
+            return $row[$field . '_en'];
+        }
+        return $row[$field] ?? null;
     }
 }

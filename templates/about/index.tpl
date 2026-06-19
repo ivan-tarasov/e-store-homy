@@ -1,31 +1,28 @@
 <main id="about-us">
    <div class="container inner-top-xs inner-bottom-sm" style="padding:2em 0;">
-      <h1>О магазине</h1>
-      <p class="lead">Это портфолио-проект — переписанный современный фронтенд магазина бытовой техники.</p>
-      <p>Оригинальный код был построен на самописном PHP-движке с прямым доступом к MySQL и MongoDB.
-      В демо-версии все данные хранятся в JSON-файлах в каталоге <code>storage/data/</code>,
-      авторизация работает на bcrypt, маршрутизация — на FastRoute, а логирование — на Monolog.</p>
-      <p>Цель проекта — продемонстрировать рефакторинг кода: удаление зависимостей от инфраструктуры,
-      переход на PSR-4, чистую структуру действий, репозиториев и сервисов.</p>
+      <h1>{{about.title}}</h1>
+      <p class="lead">{{about.p1}}</p>
+      <p>{{about.p2}}</p>
+      <p>{{about.p3}}</p>
 
-      <h2>Что демонстрирует проект</h2>
+      <h2>{{about.demo_head}}</h2>
       <ul>
-         <li>каталог товаров с категориями, брендами и фильтрами;</li>
-         <li>карточку товара с характеристиками и отзывами;</li>
-         <li>корзину и оформление заказа (заказы пишутся в JSON);</li>
-         <li>авторизацию по bcrypt-паролю на демо-пользователях;</li>
-         <li>поиск по каталогу.</li>
+         <li>{{about.demo_1}}</li>
+         <li>{{about.demo_2}}</li>
+         <li>{{about.demo_3}}</li>
+         <li>{{about.demo_4}}</li>
+         <li>{{about.demo_5}}</li>
       </ul>
 
-      <h2>Стек</h2>
+      <h2>{{about.stack_head}}</h2>
       <ul>
          <li>PHP 8.1+</li>
          <li>Composer / PSR-4</li>
-         <li>nikic/fast-route — маршрутизация</li>
-         <li>monolog/monolog — логирование</li>
-         <li>ramsey/uuid — UUID-генерация</li>
-         <li>vlucas/phpdotenv — конфигурация</li>
-         <li>симпле template engine на <code>{key}</code>-подстановках</li>
+         <li>{{about.stack_route}}</li>
+         <li>{{about.stack_log}}</li>
+         <li>{{about.stack_uuid}}</li>
+         <li>{{about.stack_env}}</li>
+         <li>{{about.stack_tpl}}</li>
       </ul>
    </div>
 </main>

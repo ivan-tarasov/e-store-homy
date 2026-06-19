@@ -8,6 +8,7 @@ use App\Http\Request;
 use App\Http\Response;
 use App\Repository\ProductRepository;
 use App\Service\ProductCardRenderer;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 
@@ -33,11 +34,10 @@ final class SearchResultsAction
         $qSafe = htmlspecialchars($q, ENT_QUOTES, 'UTF-8');
 
         if ($results === []) {
-            $content = sprintf(
-                '<p class="text-muted">По запросу «%s» ничего не найдено. '
-                . 'Попробуйте другое слово или <a href="/category/">перейдите в каталог</a>.</p>',
-                $qSafe,
-            );
+            $content = '<p class="text-muted">' . Lang::t('search.none', [
+                'q' => $qSafe,
+                'link' => '<a href="/category/">' . Lang::t('search.none_link') . '</a>',
+            ]) . '</p>';
         } else {
             $grid = '';
             foreach ($results as $product) {
@@ -46,20 +46,39 @@ final class SearchResultsAction
             $content = sprintf('<div class="row">%s</div>', $grid);
         }
 
+        $n = count($results);
+        $resWord = Lang::isEnglish()
+            ? Lang::t($n === 1 ? 'word.results.one' : 'word.results.few')
+            : $this->pluralResults($n);
+
         $body = sprintf(
             '<section class="container" style="padding:2em 0;">'
-            . '<h1>Поиск: «%s» <small class="text-muted" style="font-size:.5em;">%d результат(ов)</small></h1>'
+            . '<h1>%s <small class="text-muted" style="font-size:.5em;">%s</small></h1>'
             . '%s'
             . '</section>',
-            $qSafe,
-            count($results),
+            Lang::t('search.results_title', ['q' => $qSafe]),
+            Lang::t('search.results_count', ['count' => $n, 'word' => $resWord]),
             $content,
         );
 
         return Response::html($this->layout->render(
             $body,
-            new PageMeta('Поиск: ' . $q),
-            $this->layout->breadcrumb(null, 'Поиск'),
+            new PageMeta(Lang::t('search.meta', ['q' => $q])),
+            $this->layout->breadcrumb(null, Lang::t('search.breadcrumb')),
         ));
+    }
+
+    private function pluralResults(int $n): string
+    {
+        $mod10 = $n % 10;
+        $mod100 = $n % 100;
+        if ($mod100 >= 11 && $mod100 <= 14) {
+            return Lang::t('word.results.many');
+        }
+        return match (true) {
+            $mod10 === 1 => Lang::t('word.results.one'),
+            $mod10 >= 2 && $mod10 <= 4 => Lang::t('word.results.few'),
+            default => Lang::t('word.results.many'),
+        };
     }
 }

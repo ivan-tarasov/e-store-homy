@@ -15,7 +15,7 @@
          <div class="body">
 
             <div class="availability">
-               <label>Доступность:</label>
+               <label>{{product.availability}}</label>
                <span class="{available_bool}available">{prod_axistence}</span>
             </div>
 
@@ -54,15 +54,15 @@
       <div class="tab-holder">
 
          <ul class="nav nav-tabs simple">
-            <li class="nav-item"><a class="nav-link active" href="#additional-info" data-bs-toggle="tab">Характеристики</a></li>
-            <li class="nav-item"><a class="nav-link" href="#reviews" data-bs-toggle="tab">Отзывы ({reviews_count})</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#additional-info" data-bs-toggle="tab">{{product.specs_tab}}</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews" data-bs-toggle="tab">{{product.reviews_tab}} ({reviews_count})</a></li>
          </ul>
 
          <div class="tab-content">
             <div class="tab-pane active" id="additional-info">
                {properties}
                <div class="meta-row">
-                  <small>* Это демо-данные. Реальные характеристики могут отличаться.</small>
+                  <small>{{product.demo_note}}</small>
                </div>
             </div>
 

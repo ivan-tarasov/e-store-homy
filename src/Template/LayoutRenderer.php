@@ -10,6 +10,7 @@ use App\Service\AuthService;
 use App\Service\CartService;
 use App\Service\PriceFormatter;
 use App\Service\Slugify;
+use App\Support\Lang;
 
 /**
  * Builds the HTML chrome (head, top nav, header, main menu, breadcrumb, footer)
@@ -46,14 +47,15 @@ final class LayoutRenderer
 
         $topLinks = $this->tpl->render('index', 'header/navigation/links', [
             'auth_menu' => $this->renderAuthMenu(),
+            'lang_switcher' => $this->renderLangSwitcher(),
         ]);
 
         $middle = $this->tpl->render('index', 'header/middle', [
-            'logo_alt' => $this->shopName,
+            'logo_alt' => Lang::t('shop.name'),
             'top_cart' => $this->renderTopCart(),
             'homy_phone' => $this->shopPhone,
             'homy_email' => $this->shopEmail,
-            'search_txt' => 'Поиск по каталогу...',
+            'search_txt' => Lang::t('search.placeholder'),
         ]);
 
         $menu = $this->tpl->render('index', 'header/menu', [
@@ -66,21 +68,21 @@ final class LayoutRenderer
             'recomended-body' => '',
             'on-sale-body' => '',
             'top-rated-body' => '',
-            'subscribe' => 'Подписаться на нашу рассылку',
-            'gogogo' => 'Вперёд!',
-            'addr_descr' => 'Демо-версия магазина. Это портфолио-проект.',
-            'homy_address' => $this->shopAddress,
+            'subscribe' => Lang::t('footer.subscribe'),
+            'gogogo' => Lang::t('footer.go'),
+            'addr_descr' => Lang::t('footer.about_short'),
+            'homy_address' => Lang::t('shop.address'),
             'homy_phone' => $this->shopPhone,
-            'social_btns' => 'Социальные сети',
-            'prod_catalog' => 'Каталог товаров',
-            'price_update' => 'демо-данные',
+            'social_btns' => Lang::t('footer.social'),
+            'prod_catalog' => Lang::t('footer.catalog'),
+            'price_update' => '',
             'iconset' => 'round',
             'icon_size' => '32',
             'effect' => 'hvr-pulse-shrink',
             'quick_menu' => $this->renderQuickMenu(),
             'admin_inf' => '',
             'cp_year' => '2014–' . date('Y'),
-            'oferta' => 'Демо-версия. Заказы не оформляются по-настоящему.',
+            'oferta' => Lang::t('footer.oferta'),
         ]);
 
         return $head . $topLinks . $middle . $menu . ($breadcrumb ?? '') . $body . $footer;
@@ -89,7 +91,7 @@ final class LayoutRenderer
     public function breadcrumb(?int $categoryId, ?string $extra = null): string
     {
         $items = '<li class="breadcrumb-item"><a href="/"><i class="fa-solid fa-home"></i></a></li>';
-        $items .= '<li class="breadcrumb-item"><a href="/category/">Каталог</a></li>';
+        $items .= '<li class="breadcrumb-item"><a href="/category/">' . Lang::t('breadcrumb.catalog') . '</a></li>';
 
         if ($categoryId !== null) {
             foreach ($this->categories->path($categoryId) as $cat) {
@@ -119,12 +121,23 @@ final class LayoutRenderer
 
         $user = $this->auth->currentUser();
         $adminLink = $this->auth->isAdmin()
-            ? '<li><a href="/admin/" title="Админ-панель"><i class="fa-solid fa-cog"></i> Админ</a></li>'
+            ? '<li><a href="/admin/" title="' . Lang::t('auth.admin_title') . '"><i class="fa-solid fa-cog"></i> ' . Lang::t('auth.admin') . '</a></li>'
             : '';
         return $this->tpl->render('index', 'header/navigation/auth-true', [
-            'username' => $user?->displayName() ?? 'Личный кабинет',
+            'username' => $user?->displayName() ?? Lang::t('auth.account'),
             'admin' => $adminLink,
         ]);
+    }
+
+    private function renderLangSwitcher(): string
+    {
+        $current = Lang::locale();
+        $links = '';
+        foreach (['en' => 'EN', 'ru' => 'RU'] as $code => $label) {
+            $active = $code === $current ? ' class="active"' : '';
+            $links .= sprintf('<a href="/lang/%s"%s>%s</a>', $code, $active, $label);
+        }
+        return '<li class="lang-switch"><i class="fa-solid fa-globe"></i> ' . $links . '</li>';
     }
 
     private function renderTopCart(): string
@@ -133,8 +146,8 @@ final class LayoutRenderer
         if ($lines === []) {
             return $this->tpl->render('index', 'shoppingcart/body', [
                 'total_items' => '0',
-                'total_value' => 'пуста',
-                'top_cart_items' => '<li class="text-center"><div class="h4 lead">Ваша корзина пуста</div></li>',
+                'total_value' => Lang::t('cart.empty_short'),
+                'top_cart_items' => '<li class="text-center"><div class="h4 lead">' . Lang::t('cart.dropdown_empty') . '</div></li>',
             ]);
         }
 

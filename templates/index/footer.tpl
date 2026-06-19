@@ -28,12 +28,12 @@
             <div class="col-12 col-md-3">
                <div class="link-widget">
                   <div class="widget">
-                     <h3>Сервисы</h3>
+                     <h3>{{footer.services}}</h3>
                      <ul>
-                        <li><a href="/about/">О магазине</a></li>
-                        <li><a href="/terms/">Оплата и доставка</a></li>
-                        <li><a href="/feedback/">Обратная связь</a></li>
-                        <li><a href="/credits/">Источники изображений</a></li>
+                        <li><a href="/about/">{{footer.about}}</a></li>
+                        <li><a href="/terms/">{{footer.delivery}}</a></li>
+                        <li><a href="/feedback/">{{footer.feedback}}</a></li>
+                        <li><a href="/credits/">{{footer.credits}}</a></li>
                      </ul>
                   </div>
                </div>
@@ -42,10 +42,10 @@
             <div class="col-12 col-md-2">
                <div class="link-widget">
                   <div class="widget">
-                     <h3>Аккаунт</h3>
+                     <h3>{{footer.account}}</h3>
                      <ul>
-                        <li><a href="/login/">Вход / Регистрация</a></li>
-                        <li><a href="/my/">Личный кабинет</a></li>
+                        <li><a href="/login/">{{footer.account_login}}</a></li>
+                        <li><a href="/my/">{{footer.account_cabinet}}</a></li>
                      </ul>
                   </div>
                </div>
@@ -63,7 +63,7 @@
                </div>
                <div class="col-12">
                   <div class="copyright">
-                     {cp_year} &copy; <a href="/">Homy demo</a> — портфолио-проект.
+                     {cp_year} &copy; <a href="/">Homy demo</a> — {{footer.tagline}}
                      {admin_inf}
                   </div>
                </div>

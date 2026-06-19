@@ -8,6 +8,7 @@ use App\Http\Request;
 use App\Http\Response;
 use App\Repository\OrderRepository;
 use App\Service\AuthService;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -34,17 +35,19 @@ final class AccountAction
 
         $body = sprintf(
             '<section class="container" style="padding:2em 0;">'
-            . '<h1>Личный кабинет</h1>'
-            . '<p>Здравствуйте, <strong>%s</strong>!</p>'
+            . '<h1>%s</h1>'
+            . '<p>%s</p>'
             . '<ul>'
-            . '<li><a href="/my/orders/">Мои заказы (%d)</a></li>'
-            . '<li><a href="/logout/">Выйти</a></li>'
+            . '<li><a href="/my/orders/">%s</a></li>'
+            . '<li><a href="/logout/">%s</a></li>'
             . '</ul>'
             . '</section>',
-            htmlspecialchars($user->displayName(), ENT_QUOTES, 'UTF-8'),
-            $orderCount,
+            Lang::t('account.title'),
+            Lang::t('account.greeting', ['name' => '<strong>' . htmlspecialchars($user->displayName(), ENT_QUOTES, 'UTF-8') . '</strong>']),
+            Lang::t('account.my_orders', ['n' => $orderCount]),
+            Lang::t('account.logout'),
         );
 
-        return Response::html($this->layout->render($body, new PageMeta('Личный кабинет')));
+        return Response::html($this->layout->render($body, new PageMeta(Lang::t('account.title'))));
     }
 }

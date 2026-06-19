@@ -10,7 +10,7 @@
          </div>
          <div class="breadcrumb-nav-holder minimal">
             <ul>
-               <li class="breadcrumb-item"><a href="#" onclick="window.history.back();return false;"><i class="fa-solid fa-backward-fast"></i>&nbsp;&nbsp;Назад</a></li>
+               <li class="breadcrumb-item"><a href="#" onclick="window.history.back();return false;"><i class="fa-solid fa-backward-fast"></i>&nbsp;&nbsp;{{breadcrumb.back}}</a></li>
             </ul>
          </div>
       </div>

@@ -11,6 +11,7 @@ use App\Repository\BrandRepository;
 use App\Repository\CategoryRepository;
 use App\Repository\ProductRepository;
 use App\Service\ProductCardRenderer;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -72,7 +73,7 @@ final class CategoryShowAction
 
         $meta = new PageMeta(
             title: $category->name . ' — Homy',
-            description: $category->description ?? ('Категория ' . $category->name),
+            description: $category->description ?? (Lang::t('category.meta_prefix') . ' ' . $category->name),
         );
 
         return Response::html($this->layout->render($body, $meta, $this->layout->breadcrumb($category->id)));
@@ -105,11 +106,12 @@ final class CategoryShowAction
         }
 
         $reset = $activeBrandSlug !== null
-            ? sprintf('<p><a href="/category/%s/">Сбросить фильтр</a></p>', rawurlencode($catSlug))
+            ? sprintf('<p><a href="/category/%s/">%s</a></p>', rawurlencode($catSlug), Lang::t('category.reset_filter'))
             : '';
 
         return sprintf(
-            '<aside class="sidebar"><h3>Производитель</h3><ul class="list-unstyled">%s</ul>%s</aside>',
+            '<aside class="sidebar"><h3>%s</h3><ul class="list-unstyled">%s</ul>%s</aside>',
+            Lang::t('category.brand_filter'),
             $items,
             $reset,
         );
@@ -122,10 +124,10 @@ final class CategoryShowAction
             : sprintf('/category/%s/', rawurlencode($catSlug));
 
         $options = [
-            'default'    => 'По умолчанию',
-            'price-asc'  => 'Цена ↑',
-            'price-desc' => 'Цена ↓',
-            'rating-desc' => 'По рейтингу',
+            'default'    => Lang::t('category.sort_default'),
+            'price-asc'  => Lang::t('category.sort_price_asc'),
+            'price-desc' => Lang::t('category.sort_price_desc'),
+            'rating-desc' => Lang::t('category.sort_rating'),
         ];
 
         $select = '';
@@ -141,14 +143,15 @@ final class CategoryShowAction
 
         return sprintf(
             '<div class="sort-bar" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1em;">'
-            . '<span class="text-muted" style="font-size:.9em;">%d товар(ов)</span>'
+            . '<span class="text-muted" style="font-size:.9em;">%s</span>'
             . '<form method="get" action="%s" style="display:flex;align-items:center;gap:.5em;">'
-            . '<label style="font-size:.9em;margin:0;">Сортировка:</label>'
+            . '<label style="font-size:.9em;margin:0;">%s</label>'
             . '<select name="sort" class="form-control" style="width:auto;height:2em;padding:0 .5em;font-size:.9em;" onchange="this.form.submit()">%s</select>'
             . '</form>'
             . '</div>',
-            $total,
+            Lang::t('category.count', ['count' => $total]),
             htmlspecialchars($base, ENT_QUOTES, 'UTF-8'),
+            Lang::t('category.sort_label'),
             $select,
         );
     }
@@ -157,7 +160,7 @@ final class CategoryShowAction
     private function renderProductGrid(array $items): string
     {
         if ($items === []) {
-            return '<p class="text-muted">В этой категории пока нет товаров.</p>';
+            return '<p class="text-muted">' . Lang::t('category.empty') . '</p>';
         }
 
         $html = '';

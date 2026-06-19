@@ -6,6 +6,7 @@ namespace App\Action\Pages;
 
 use App\Http\Request;
 use App\Http\Response;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 
@@ -33,21 +34,16 @@ final class CreditsAction
         $logos  = $this->load('/public/img/brands/credits.json');
 
         $body = '<section class="container" style="padding:2em 0;">'
-            . '<h1>Источники изображений</h1>'
-            . '<p class="text-muted" style="max-width:720px;">'
-            . 'Это некоммерческий учебный портфолио-проект. Фотографии товаров взяты '
-            . 'из <a href="https://commons.wikimedia.org/" rel="noopener" target="_blank">Wikimedia Commons</a> '
-            . 'и используются по их свободным лицензиям (CC BY-SA, CC BY, CC0, общественное достояние). '
-            . 'Логотипы брендов являются товарными знаками соответствующих владельцев и приведены '
-            . 'исключительно для идентификации товаров.</p>'
+            . '<h1>' . Lang::t('credits.title') . '</h1>'
+            . '<p class="text-muted" style="max-width:720px;">' . Lang::t('credits.intro') . '</p>'
             . $this->logosSection($logos)
             . $this->photosSection($photos)
             . '</section>';
 
         return Response::html($this->layout->render(
             $body,
-            new PageMeta('Источники изображений'),
-            $this->layout->breadcrumb(null, 'Источники изображений'),
+            new PageMeta(Lang::t('credits.title')),
+            $this->layout->breadcrumb(null, Lang::t('credits.title')),
         ));
     }
 
@@ -66,10 +62,10 @@ final class CreditsAction
                 $this->sourceCell($c),
             );
         }
-        return '<h2 style="margin-top:1.5em;">Логотипы брендов</h2>'
-            . '<p class="text-muted">Товарные знаки соответствующих владельцев.</p>'
+        return '<h2 style="margin-top:1.5em;">' . Lang::t('credits.logos_head') . '</h2>'
+            . '<p class="text-muted">' . Lang::t('credits.logos_note') . '</p>'
             . '<div class="table-responsive"><table class="table">'
-            . '<thead><tr><th>Бренд</th><th>Лицензия</th><th>Источник</th></tr></thead>'
+            . '<thead><tr><th>' . Lang::t('credits.col_brand') . '</th><th>' . Lang::t('credits.col_license') . '</th><th>' . Lang::t('credits.col_source') . '</th></tr></thead>'
             . '<tbody>' . $rows . '</tbody></table></div>';
     }
 
@@ -96,10 +92,10 @@ final class CreditsAction
                 $this->sourceCell($c),
             );
         }
-        return '<h2 style="margin-top:1.5em;">Фотографии товаров</h2>'
-            . '<p class="text-muted">Источник: Wikimedia Commons.</p>'
+        return '<h2 style="margin-top:1.5em;">' . Lang::t('credits.photos_head') . '</h2>'
+            . '<p class="text-muted">' . Lang::t('credits.photos_note') . '</p>'
             . '<div class="table-responsive"><table class="table">'
-            . '<thead><tr><th>Товар</th><th>Автор</th><th>Лицензия</th><th>Источник</th></tr></thead>'
+            . '<thead><tr><th>' . Lang::t('credits.col_product') . '</th><th>' . Lang::t('credits.col_author') . '</th><th>' . Lang::t('credits.col_license') . '</th><th>' . Lang::t('credits.col_source') . '</th></tr></thead>'
             . '<tbody>' . $rows . '</tbody></table></div>';
     }
 

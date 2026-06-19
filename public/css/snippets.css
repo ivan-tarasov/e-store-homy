@@ -437,6 +437,33 @@ header .top-cart-row .top-cart-holder .checkout .le-button {
     flex-direction: column;
 }
 
+/* Language switcher in the top bar */
+.top-bar ul.right li.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: .35em;
+}
+.top-bar ul.right li.lang-switch i {
+    opacity: .6;
+    font-size: .85em;
+}
+.top-bar ul.right li.lang-switch a {
+    display: inline-block;
+    padding: 0 .3em;
+    font-weight: 600;
+    font-size: .85em;
+    letter-spacing: .03em;
+    opacity: .6;
+}
+.top-bar ul.right li.lang-switch a:hover {
+    opacity: 1;
+}
+.top-bar ul.right li.lang-switch a.active {
+    opacity: 1;
+    color: var(--color-primary, #f27a24);
+    text-decoration: underline;
+}
+
 /* Brand strip: borderless logos, muted grayscale that colorises on hover.
  * row-gap gives vertical breathing room between wrapped rows; the row is
  * centre-aligned so a partial last row never leaves a lopsided gap. */

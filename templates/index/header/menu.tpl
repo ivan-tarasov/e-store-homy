@@ -2,7 +2,7 @@
    <div class="container">
       <div class="yamm navbar navbar-expand-lg">
 
-         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mc-horizontal-menu-collapse" aria-controls="mc-horizontal-menu-collapse" aria-expanded="false" aria-label="Категории товаров">
+         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mc-horizontal-menu-collapse" aria-controls="mc-horizontal-menu-collapse" aria-expanded="false" aria-label="{{search.menu_aria}}">
             <span class="navbar-toggler-icon"></span>
          </button>
 

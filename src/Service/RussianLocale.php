@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 namespace App\Service;
 
+use App\Support\Lang;
+
 /**
- * Tiny Russian locale helper for plurals and date formatting.
+ * Tiny locale helper for plurals and date formatting.
  *
  * The previous codebase pulled in a 1.2k-line third-party library for this;
- * the demo only needs two functions. Days and months are inflected the way
- * they read in regular Russian text ("3 января 2026 года").
+ * the demo only needs a few functions. Russian months are inflected the way
+ * they read in regular text ("3 января 2026 года"); English uses a plain
+ * "3 January 2026" form. Date output follows the active UI language.
  */
 final class RussianLocale
 {
@@ -17,6 +20,12 @@ final class RussianLocale
         1 => 'января',  'февраля', 'марта',  'апреля',
              'мая',     'июня',    'июля',   'августа',
              'сентября','октября', 'ноября', 'декабря',
+    ];
+
+    private const MONTHS_EN = [
+        1 => 'January',  'February', 'March',    'April',
+             'May',      'June',     'July',     'August',
+             'September','October',  'November', 'December',
     ];
 
     /**
@@ -46,17 +55,25 @@ final class RussianLocale
     public function formatDateTime(int $timestamp): string
     {
         $day = (int) date('j', $timestamp);
-        $month = self::MONTHS[(int) date('n', $timestamp)];
         $year = date('Y', $timestamp);
         $time = date('H:i', $timestamp);
-        return sprintf('%d %s %s года в %s', $day, $month, $year, $time);
+        $monthNum = (int) date('n', $timestamp);
+
+        if (Lang::isEnglish()) {
+            return sprintf('%d %s %s, %s', $day, self::MONTHS_EN[$monthNum], $year, $time);
+        }
+        return sprintf('%d %s %s года в %s', $day, self::MONTHS[$monthNum], $year, $time);
     }
 
     public function formatDate(int $timestamp): string
     {
         $day = (int) date('j', $timestamp);
-        $month = self::MONTHS[(int) date('n', $timestamp)];
         $year = date('Y', $timestamp);
-        return sprintf('%d %s %s года', $day, $month, $year);
+        $monthNum = (int) date('n', $timestamp);
+
+        if (Lang::isEnglish()) {
+            return sprintf('%d %s %s', $day, self::MONTHS_EN[$monthNum], $year);
+        }
+        return sprintf('%d %s %s года', $day, self::MONTHS[$monthNum], $year);
     }
 }

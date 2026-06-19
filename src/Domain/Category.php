@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Domain;
 
+use App\Support\Lang;
+
 final class Category
 {
     public function __construct(
@@ -24,10 +26,24 @@ final class Category
             id: (int) $row['id'],
             parentId: isset($row['parent_id']) ? (int) $row['parent_id'] : null,
             slug: (string) $row['slug'],
-            name: (string) $row['name'],
-            singular: (string) $row['singular'],
+            name: (string) self::localized($row, 'name'),
+            singular: (string) self::localized($row, 'singular'),
             icon: $row['icon'] ?? null,
-            description: $row['description'] ?? null,
+            description: self::localized($row, 'description'),
         );
+    }
+
+    /**
+     * Pick the English variant (`<field>_en`) when the UI locale is English and
+     * a translation exists; otherwise fall back to the base (Russian) field.
+     *
+     * @param array<string, mixed> $row
+     */
+    private static function localized(array $row, string $field): mixed
+    {
+        if (Lang::isEnglish() && !empty($row[$field . '_en'])) {
+            return $row[$field . '_en'];
+        }
+        return $row[$field] ?? null;
     }
 }

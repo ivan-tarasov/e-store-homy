@@ -45,6 +45,10 @@ final class TemplateEngine
     /** @param array<string, scalar|null> $vars */
     private function substitute(string $template, array $vars): string
     {
+        // 1) translation tokens {{ some.key }} → localized string (run first so
+        //    the single-brace data pass below never mangles them).
+        $template = $this->resolveTranslations($template);
+
         if ($vars === []) {
             return preg_replace('/\{[a-zA-Z0-9_-]+\}/', '', $template) ?? $template;
         }
@@ -58,5 +62,14 @@ final class TemplateEngine
         $output = str_replace($search, $replace, $template);
         // strip remaining placeholders so unset keys don't leak into HTML
         return preg_replace('/\{[a-zA-Z0-9_-]+\}/', '', $output) ?? $output;
+    }
+
+    private function resolveTranslations(string $template): string
+    {
+        return preg_replace_callback(
+            '/\{\{\s*([a-zA-Z0-9_.]+)\s*\}\}/',
+            static fn (array $m): string => \App\Support\Lang::t($m[1]),
+            $template,
+        ) ?? $template;
     }
 }

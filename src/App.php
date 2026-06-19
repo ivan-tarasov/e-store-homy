@@ -30,6 +30,7 @@ use App\Action\Home\HomeAction;
 use App\Action\Pages\AboutAction;
 use App\Action\Pages\CreditsAction;
 use App\Action\Pages\FeedbackAction;
+use App\Action\Pages\LangAction;
 use App\Action\Pages\TermsAction;
 use App\Action\Product\ProductShowAction;
 use App\Action\Search\SearchAction;
@@ -47,6 +48,8 @@ use App\Service\CartService;
 use App\Service\PriceFormatter;
 use App\Service\ProductCardRenderer;
 use App\Service\RussianLocale;
+use App\Service\Translator;
+use App\Support\Lang;
 use App\Service\Slugify;
 use App\Storage\JsonStore;
 use App\Support\Session;
@@ -102,6 +105,15 @@ final class App
 
         $session = new Session();
         $session->start();
+
+        // Resolve UI language: session → cookie → default (English). Set the
+        // translator before any data is read so locale-aware domain objects
+        // (Category/Product) pick the right fields.
+        $lang = $session->get('lang') ?? ($_COOKIE['lang'] ?? 'en');
+        if (!in_array($lang, Translator::supported(), true)) {
+            $lang = 'en';
+        }
+        Lang::init(new Translator((string) $lang, $rootDir . '/lang'));
 
         $tpl = new TemplateEngine($rootDir . '/templates');
 
@@ -206,6 +218,7 @@ final class App
             OrdersAction::class => new OrdersAction($this->layout, $this->tpl, $this->auth, $this->orders, $this->locale),
             AboutAction::class => new AboutAction($this->layout, $this->tpl),
             CreditsAction::class => new CreditsAction($this->layout, $this->rootDir),
+            LangAction::class => new LangAction($this->session),
             TermsAction::class => new TermsAction($this->layout, $this->tpl),
             FeedbackAction::class => new FeedbackAction($this->layout, $this->tpl, $this->session),
             SearchAction::class => new SearchAction($this->products, $this->categories, $this->brands, $this->slugify),
@@ -265,6 +278,7 @@ final class App
             $r->addRoute('GET', '/about/', AboutAction::class);
             $r->addRoute('GET', '/credits', CreditsAction::class);
             $r->addRoute('GET', '/credits/', CreditsAction::class);
+            $r->addRoute('GET', '/lang/{code}', LangAction::class);
             $r->addRoute('GET', '/terms', TermsAction::class);
             $r->addRoute('GET', '/terms/', TermsAction::class);
             $r->addRoute('GET', '/feedback', FeedbackAction::class);

@@ -7,6 +7,7 @@ namespace App\Action\Auth;
 use App\Http\Request;
 use App\Http\Response;
 use App\Service\AuthService;
+use App\Support\Lang;
 use App\Support\Session;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
@@ -34,24 +35,29 @@ final class LoginAction
             ? sprintf('<div class="alert alert-danger">%s</div>', htmlspecialchars((string) $error, ENT_QUOTES, 'UTF-8'))
             : '';
 
+        $title = Lang::t('login.title');
+        $passwordLabel = Lang::t('login.password');
+        $submit = Lang::t('login.submit');
+        $demoUsers = Lang::t('login.demo_users');
+
         $body = <<<HTML
 <section class="container" style="padding:2em 0; max-width:480px;">
-    <h1>Вход</h1>
+    <h1>{$title}</h1>
     {$errorBox}
     <form method="post" action="/login/">
         <div class="mb-3"><label>E-mail</label><input class="form-control" type="email" name="email" required autofocus /></div>
-        <div class="mb-3"><label>Пароль</label><input class="form-control" type="password" name="password" required /></div>
-        <button class="le-button huge" type="submit">Войти</button>
+        <div class="mb-3"><label>{$passwordLabel}</label><input class="form-control" type="password" name="password" required /></div>
+        <button class="le-button huge" type="submit">{$submit}</button>
     </form>
     <hr/>
     <p class="text-muted">
-        В демо-версии есть тестовые пользователи:<br/>
+        {$demoUsers}<br/>
         <code>demo@homy.local</code> / <code>demo</code><br/>
         <code>admin@homy.local</code> / <code>admin</code>
     </p>
 </section>
 HTML;
 
-        return Response::html($this->layout->render($body, new PageMeta('Вход')));
+        return Response::html($this->layout->render($body, new PageMeta(Lang::t('login.title'))));
     }
 }

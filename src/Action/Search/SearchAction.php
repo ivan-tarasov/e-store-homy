@@ -10,6 +10,7 @@ use App\Repository\BrandRepository;
 use App\Repository\CategoryRepository;
 use App\Repository\ProductRepository;
 use App\Service\Slugify;
+use App\Support\Lang;
 
 final class SearchAction
 {
@@ -31,7 +32,7 @@ final class SearchAction
 
         $matches = $this->products->search($term, 6);
         if ($matches === []) {
-            return Response::json([['id' => '#', 'value' => '', 'label' => 'Ничего не найдено']]);
+            return Response::json([['id' => '#', 'value' => '', 'label' => Lang::t('search.ac_none')]]);
         }
 
         $out = [];
@@ -43,7 +44,7 @@ final class SearchAction
                 'value' => $product->name,
                 'label' => sprintf(
                     '%s — %s',
-                    $category?->name ?? 'Каталог',
+                    $category?->name ?? Lang::t('search.ac_catalog'),
                     ($brand?->name ?? '') . ' ' . $product->name,
                 ),
             ];

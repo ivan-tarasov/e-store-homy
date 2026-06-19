@@ -26,8 +26,8 @@
                <div class="control-group">
                   <input id="search-form" name="q" placeholder="{search_txt}"
                      type="text" class="search-field"
-                     autocomplete="off" aria-label="Поиск товаров" />
-                  <button class="search-button" type="submit" aria-label="Найти"></button>
+                     autocomplete="off" aria-label="{{search.aria_field}}" />
+                  <button class="search-button" type="submit" aria-label="{{search.aria_button}}"></button>
                </div>
             </form>
          </div>

@@ -7,6 +7,7 @@ namespace App\Service;
 use App\Domain\Product;
 use App\Repository\BrandRepository;
 use App\Repository\CategoryRepository;
+use App\Support\Lang;
 
 final class ProductCardRenderer
 {
@@ -34,7 +35,7 @@ final class ProductCardRenderer
 
         $stockHtml = '';
         if ($withStock) {
-            $stock = $product->inStock ? 'на складе' : 'под заказ';
+            $stock = $product->inStock ? Lang::t('product.in_stock') : Lang::t('product.out_stock');
             $cls = $product->inStock ? 'available' : 'not-available';
             $stockHtml = sprintf(
                 '<div class="text-muted" style="font-size:.85em;"><span class="%s">%s</span></div>',
@@ -48,9 +49,10 @@ final class ProductCardRenderer
             $cartHtml = sprintf(
                 '<form method="post" action="/cart/add" style="margin-top:.5em;">'
                 . '<input type="hidden" name="id" value="%d" />'
-                . '<button class="le-button small" type="submit">В корзину</button>'
+                . '<button class="le-button small" type="submit">%s</button>'
                 . '</form>',
                 $product->id,
+                Lang::t('product.add_to_cart'),
             );
         }
 

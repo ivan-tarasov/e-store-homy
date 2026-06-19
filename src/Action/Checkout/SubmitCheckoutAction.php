@@ -10,6 +10,7 @@ use App\Http\Response;
 use App\Repository\OrderRepository;
 use App\Service\AuthService;
 use App\Service\CartService;
+use App\Support\Lang;
 use App\Support\Session;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
@@ -38,7 +39,7 @@ final class SubmitCheckoutAction
         $note = trim($request->input('note', '') ?? '');
 
         if ($name === '' || $phone === '' || $address === '') {
-            $this->session->setFlash('checkout_error', 'Заполните все обязательные поля.');
+            $this->session->setFlash('checkout_error', Lang::t('checkout.error_required'));
             return Response::redirect('/checkout/');
         }
 
@@ -69,14 +70,17 @@ final class SubmitCheckoutAction
 
         $body = sprintf(
             '<section class="container" style="padding:3em 0;text-align:center;">'
-            . '<h1>Спасибо, заказ оформлен!</h1>'
-            . '<p>Номер вашего заказа: <strong>%s</strong></p>'
-            . '<p class="text-muted">Это демо: заказ записан в <code>storage/runtime/orders.json</code>.</p>'
-            . '<p><a class="le-button" href="/">На главную</a></p>'
+            . '<h1>%s</h1>'
+            . '<p>%s</p>'
+            . '<p class="text-muted">%s</p>'
+            . '<p><a class="le-button" href="/">%s</a></p>'
             . '</section>',
-            htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8'),
+            Lang::t('checkout.success_title'),
+            Lang::t('checkout.success_number', ['id' => '<strong>' . htmlspecialchars($order->id, ENT_QUOTES, 'UTF-8') . '</strong>']),
+            Lang::t('checkout.success_demo'),
+            Lang::t('checkout.to_home'),
         );
 
-        return Response::html($this->layout->render($body, new PageMeta('Заказ оформлен')));
+        return Response::html($this->layout->render($body, new PageMeta(Lang::t('checkout.success_meta'))));
     }
 }

@@ -6,6 +6,7 @@ namespace App\Action\Pages;
 
 use App\Http\Request;
 use App\Http\Response;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -24,8 +25,8 @@ final class AboutAction
         $body = $this->tpl->render('about', 'index');
         return Response::html($this->layout->render(
             $body,
-            new PageMeta('О магазине'),
-            $this->layout->breadcrumb(null, 'О магазине'),
+            new PageMeta(Lang::t('about.title')),
+            $this->layout->breadcrumb(null, Lang::t('about.title')),
         ));
     }
 }

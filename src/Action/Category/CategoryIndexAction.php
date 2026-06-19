@@ -9,6 +9,7 @@ use App\Http\Response;
 use App\Repository\CategoryRepository;
 use App\Repository\ProductRepository;
 use App\Service\RussianLocale;
+use App\Support\Lang;
 use App\Template\LayoutRenderer;
 use App\Template\PageMeta;
 use App\Template\TemplateEngine;
@@ -42,22 +43,28 @@ final class CategoryIndexAction
         }
 
         $count = count($this->products->all());
-        $word = $this->locale->plural($count, ['позиция', 'позиции', 'позиций']);
+        $word = Lang::isEnglish()
+            ? Lang::t($count === 1 ? 'word.items.one' : 'word.items.few')
+            : $this->locale->plural($count, [
+                Lang::t('word.items.one'),
+                Lang::t('word.items.few'),
+                Lang::t('word.items.many'),
+            ]);
 
         $body = sprintf(
             '<section class="container" style="padding:2em 0;">'
-            . '<h1>Каталог</h1>'
-            . '<p>В каталоге %d %s.</p>'
+            . '<h1>%s</h1>'
+            . '<p>%s</p>'
             . '<div class="row">%s</div>'
             . '</section>',
-            $count,
-            $word,
+            Lang::t('catalog.title'),
+            Lang::t('catalog.intro', ['count' => $count, 'word' => $word]),
             $banners,
         );
 
         $meta = new PageMeta(
-            title: 'Каталог бытовой техники и электроники',
-            description: 'Каталог категорий товаров.',
+            title: Lang::t('catalog.meta_title'),
+            description: Lang::t('catalog.meta_desc'),
         );
 
         return Response::html($this->layout->render($body, $meta, $this->layout->breadcrumb(null)));
